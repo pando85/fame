@@ -1,0 +1,46 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #f9a011;
+  --ifm-color-primary-dark: #e8940e;
+  --ifm-color-primary-darker: #d1850c;
+  --ifm-color-primary-darkest: #b1720d;
+  --ifm-color-primary-light: #ffb338;
+  --ifm-color-primary-lighter: #ffc361;
+  --ifm-color-primary-lightest: #ffcf83;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #a021b1;
+  --ifm-color-primary-dark: #7c1b89;
+  --ifm-color-primary-darker: #581461;
+  --ifm-color-primary-darkest: #481150;
+  --ifm-color-primary-light: #a735b6;
+  --ifm-color-primary-lighter: #a747b4;
+  --ifm-color-primary-lightest: #be75c7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.copyleft {
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+.markdown {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.markdown h1 {
+  --ifm-h1-font-size: 3rem;
+  margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );
+}

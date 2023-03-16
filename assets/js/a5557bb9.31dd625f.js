@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[5991],{3885:e=>{e.exports=JSON.parse('{"permalink":"/","page":1,"postsPerPage":25,"totalPages":1,"totalCount":25,"blogDescription":"Archivo de recetas de cocina, \xf1am \xf1am.","blogTitle":"Fame"}')}}]);

@@ -4,10 +4,20 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud/</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Sun, 20 Nov 2022 20:46:08 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Mar 2023 13:13:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[Crema de calabacín]]></title>
+            <link>https://fame.grigri.cloud/Crema de calabacín</link>
+            <guid>/Crema de calabacín</guid>
+            <pubDate>Thu, 16 Mar 2023 13:13:53 GMT</pubDate>
+            <description><![CDATA[Ingredientes]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a class="hash-link" href="#ingredientes" title="Enlace directo al encabezado">​</a></h2><ul><li>0.5 kg de calabacín</li><li>media cebolla / lo blanco de un puerro</li><li>leche</li><li>un poco de queso cremoso</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a class="hash-link" href="#elaboración" title="Enlace directo al encabezado">​</a></h2><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a class="hash-link" href="#preparación" title="Enlace directo al encabezado">​</a></h3><p>Picar la parte blanca del puerro o la cebolla y sofreír ligeramente.</p><p>Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde. Podemos pelarlo una sí una no como una camisa de rayas.</p><p>Se añade un poco de leche y se cocina unos 30 minutos a fuego lento. Si lo queremos más líquido añadimos un poco más luego.</p><p>Añadimos un poco de queso cremoso, lo trituramos todo y a disfrutar!</p>]]></content:encoded>
+            <category>crema</category>
+            <category>verduras</category>
+        </item>
         <item>
             <title><![CDATA[Almendras garrapiñadas]]></title>
             <link>https://fame.grigri.cloud/Almendras garrapiñadas</link>

@@ -12,8 +12,6 @@ tags: [crema, verduras]
 
 ## Elaboración
 
-### Preparación
-
 Picar la parte blanca del puerro o la cebolla y sofreír ligeramente.
 
 Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde. Podemos pelarlo una sí una no como una camisa de rayas.

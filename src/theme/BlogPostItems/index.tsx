@@ -14,7 +14,9 @@ import type {Props} from '@theme/BlogPostItems';
 export default function BlogPostItems({
   items,
 }: Props): JSX.Element {
-  const sorted_items = items.sort((a, b) => a.content.metadata.title > b.content.metadata.title);
+  // TODO: Fix sorted issues in Firefox
+  //const sorted_items = items.sort((a, b) => a.content.metadata.title > b.content.metadata.title);
+  const sorted_items = items;
   return (
     <>
       {sorted_items.map(({content: BlogPostContent}) => (

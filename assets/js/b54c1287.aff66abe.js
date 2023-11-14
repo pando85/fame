@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[2392],{9083:a=>{a.exports=JSON.parse('{"label":"plato principal","permalink":"/tags/plato-principal","allTagsPath":"/tags","count":10}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[8252],{5244:e=>{e.exports=JSON.parse('{"permalink":"/tags/plato-principal","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Archivo de recetas de cocina, \xf1am \xf1am.","blogTitle":"Fame"}')}}]);

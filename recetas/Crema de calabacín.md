@@ -1,6 +1,6 @@
 ---
 image: ./img/crema_de_calabacin.jpg
-tags: [crema, verduras]
+tags: [entrante, crema, verduras]
 ---
 
 ## Ingredientes

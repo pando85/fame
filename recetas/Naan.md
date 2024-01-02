@@ -1,6 +1,6 @@
 ---
 image: ./img/naan.jpg
-tags: [pan]
+tags: [pan, india]
 author: teresa
 ---
 

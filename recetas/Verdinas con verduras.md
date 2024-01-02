@@ -1,6 +1,6 @@
 ---
 image: ./img/verdinas_con_verduras.jpg
-tags: [plato principal, cuchara]
+tags: [plato principal, cuchara, vegetariana]
 ---
 
 ## Ingredientes

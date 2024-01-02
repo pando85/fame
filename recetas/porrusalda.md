@@ -1,6 +1,6 @@
 ---
 image: ./img/porrusalda.jpg
-tags: [verduras]
+tags: [entrante, vegetariana]
 ---
 
 ## Ingredientes

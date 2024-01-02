@@ -40,6 +40,10 @@
   text-align: center;
 }
 
+.markdown ul {
+  list-style-position: inside;
+}
+
 .markdown h1 {
   --ifm-h1-font-size: 3rem;
   margin-bottom: calc( var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading) );

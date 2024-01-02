@@ -4,10 +4,29 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud/</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Tue, 02 Jan 2024 15:44:46 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Jan 2024 16:25:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[porrusalda]]></title>
+            <link>https://fame.grigri.cloud/porrusalda</link>
+            <guid>https://fame.grigri.cloud/porrusalda</guid>
+            <pubDate>Tue, 02 Jan 2024 16:25:48 GMT</pubDate>
+            <description><![CDATA[Ingredientes]]></description>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>2 puerros</li>
+<li>2 zanahorias</li>
+<li>2 trozos de calabaza medianos</li>
+<li>1 chorrito de aceite de oliva</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Añadir todo a la olla expréss con un poquito de sal y cubrir justo con agua, mejor quedarse corto y añadir al final. 5 minutos con el pitorro arriba y apagar.</p>
+<p>Pasarlo todo con la batidora antes de servir.</p>]]></content:encoded>
+            <category>entrante</category>
+            <category>vegetariana</category>
+        </item>
         <item>
             <title><![CDATA[Pollo asado y noodles]]></title>
             <link>https://fame.grigri.cloud/Pollo asado y noodles</link>
@@ -135,6 +154,7 @@ Vídeo: <a href="https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104">htt
 </li>
 </ul>
 <p>Ref: <a href="https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html">https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html</a></p>]]></content:encoded>
+            <category>entrante</category>
             <category>caldo</category>
         </item>
         <item>
@@ -180,6 +200,7 @@ Te puede interesar  Merluza a la gallega</p>
 <p>Ref: <a href="https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html">https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html</a></p>]]></content:encoded>
             <category>plato principal</category>
             <category>cuchara</category>
+            <category>vegetariana</category>
         </item>
         <item>
             <title><![CDATA[Crema de calabacín]]></title>
@@ -199,6 +220,7 @@ Te puede interesar  Merluza a la gallega</p>
 <p>Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde. Podemos pelarlo una sí una no, como una camisa de rayas.</p>
 <p>Se añade un poco de leche y se cocina unos 30 minutos a fuego lento. Si lo queremos más líquido añadimos un poco más luego.</p>
 <p>Añadimos un poco de queso cremoso, lo trituramos todo y a disfrutar!</p>]]></content:encoded>
+            <category>entrante</category>
             <category>crema</category>
             <category>verduras</category>
         </item>
@@ -702,32 +724,6 @@ cuidado desde un primer momento o rebajar las expectativas en cuanto a la gordur
 muesli en futuras replicaciones de la receta.</p>
 <p>Para las siguientes ediciones de la receta procuraré ser breve.</p>]]></content:encoded>
             <category>desayuno</category>
-        </item>
-        <item>
-            <title><![CDATA[Naan]]></title>
-            <link>https://fame.grigri.cloud/Naan</link>
-            <guid>https://fame.grigri.cloud/Naan</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
-<ul>
-<li>250g de harina de espelta integral</li>
-<li>200g de masa madre</li>
-<li>1 cucharadita de sal</li>
-<li>120g de yogur griego</li>
-</ul>
-<h2 id="elaboración">Elaboración</h2>
-<p>En Terminator, mezcla la<strong>masa madre</strong>, el<strong>yogur</strong>y la<strong>sal</strong>. Luego incorpora lentamente la
-**harina **mientras Terminator amasa. Le pones film transparente y a <strong>reposar 4 horas</strong>. Si la hace
-por la noche, vete a dormir a gusto: la pones a «fermentar en frío» en el frigo y
-«se mezclan mejor los sabores porque lo hace más lento» («si tú lo dices...
-»).</p>
-<p>Al día siguiente, mientras el pollo tikka masala se calienta en el puchero, en una sartén mediana
-vas echando porciones de unos 150g previamente hechas bolitas y aplastadas. La masa se pega mucho,
-pero huye de la harina, <strong>aplánalas usando aceite</strong>. Cuidado que se queman con mirarlas. Suben un
-poco y hacen burbujitas.</p>
-<p>Enlace a la receta original: <a href="http://chezdashita.blogspot.com/2010/02/pan-naan.html">http://chezdashita.blogspot.com/2010/02/pan-naan.html</a></p>]]></content:encoded>
-            <category>pan</category>
         </item>
     </channel>
 </rss>

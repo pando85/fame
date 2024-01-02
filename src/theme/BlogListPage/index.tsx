@@ -42,9 +42,13 @@ function BlogListPageContent(props: Props): JSX.Element {
   const {items} = props;
   const [searchTerm, setSearchTerm] = React.useState('');
 
-  const filteredItems = items.filter((item) =>
-    item.content.metadata.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredItems = items.filter((item) => {
+    const titleMatch = item.content.metadata.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const tagsMatch = item.content.metadata.tags?.some(tag =>
+      tag.label.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    return titleMatch || tagsMatch;
+  });
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);

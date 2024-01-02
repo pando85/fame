@@ -4,21 +4,95 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud/</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Tue, 14 Nov 2023 16:36:06 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Jan 2024 15:44:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[Pollo asado y noodles]]></title>
+            <link>https://fame.grigri.cloud/Pollo asado y noodles</link>
+            <guid>https://fame.grigri.cloud/Pollo asado y noodles</guid>
+            <pubDate>Tue, 02 Jan 2024 15:44:46 GMT</pubDate>
+            <description><![CDATA[Ingredientes]]></description>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<h3 id="pollo-asado">Pollo asado</h3>
+<ul>
+<li>2 pollos</li>
+<li>3 manzanas</li>
+<li>5 patatas</li>
+<li>3 cebollas</li>
+<li>1l caldo de pollo o verduras</li>
+</ul>
+<h3 id="noodles">Noodles</h3>
+<ul>
+<li>500g noodles</li>
+<li>400g setas shiitake o champiñones</li>
+<li>2 zanahorias</li>
+<li>2 pak choi</li>
+<li>100ml salsa de soja</li>
+<li>1 cucharada de pasta de miso</li>
+<li>2 dientes de ajo</li>
+<li>1 trozo de jengibre</li>
+<li>1 trozo de cúrcuma</li>
+<li>1l caldo de pollo o verduras</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Para asar el pollo le ponemos en el horno a 180 grados durante una hora con todos los ingredientes troceados en la bandeja del horno. Añadimos sal, pimienta y especias al gusto, le suelo añadir unos dientes de ajo aplastados.</p>
+<p>Para los noodles, deshuesar el pollo y separar la carne. Se prepara un caldo con 2 cebollas y las carcasas del pollo durante 40 minutos cociendo. Al terminar se tiran los huesos y se sigue cociendo añadiendo el caldo con la cebolla triturada. También añadimos la zanahoria cortada en rodajas.</p>
+<p>En una sarten se sofrie el ajo, el jengibre y la cúrcuma bien picaditos. Se añaden al caldo y en la misma sartén se frien los hongos cortados en rodajas de medio centímetro de grosor.</p>
+<p>Los noodles y el pak choi se cocinan en los últimos minutos con el caldo hirviendo. También se añade la pasta de miso y la salsa de soja.</p>
+<p>Emplatar con las setas y el pollo que habíamos retirado previamente.</p>]]></content:encoded>
+            <category>plato principal</category>
+            <category>caldo</category>
+        </item>
         <item>
             <title><![CDATA[Shoyu ramen]]></title>
             <link>https://fame.grigri.cloud/Shoyu ramen</link>
             <guid>https://fame.grigri.cloud/Shoyu ramen</guid>
             <pubDate>Tue, 14 Nov 2023 16:36:06 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>algas Kombu (opcional)</li><li>katsuobushi (opcional)</li><li>2l caldo de pollo</li><li>3 dientes de ajo</li><li>4 ajetes</li><li>2 cebollino</li><li>1 trozo de jengibre (~2.4cm)</li><li>salsa de soja</li><li>4 muslos de pollo deshuesados con piel</li><li>miel</li><li>500g de fideos de ramen sin cocinar</li><li>250g setas shiitake</li><li>2 huevos</li><li>aceite de sésamo</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><ul><li>En una cazuela dónde vamos a preparar el caldo, saltear las setas en rodajas 2-3 minutos y retirar.</li><li>En la misma cazuela, saltear el cebollino picado en rodajas con 1 ajo y 1 trozo de jengibre picado. Añadir el caldo de
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>algas Kombu (opcional)</li>
+<li>katsuobushi (opcional)</li>
+<li>2l caldo de pollo</li>
+<li>3 dientes de ajo</li>
+<li>4 ajetes</li>
+<li>2 cebollino</li>
+<li>1 trozo de jengibre (~2.4cm)</li>
+<li>salsa de soja</li>
+<li>4 muslos de pollo deshuesados con piel</li>
+<li>miel</li>
+<li>500g de fideos de ramen sin cocinar</li>
+<li>250g setas shiitake</li>
+<li>2 huevos</li>
+<li>aceite de sésamo</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<ul>
+<li>En una cazuela dónde vamos a preparar el caldo, saltear las setas en rodajas 2-3 minutos y retirar.</li>
+<li>En la misma cazuela, saltear el cebollino picado en rodajas con 1 ajo y 1 trozo de jengibre picado. Añadir el caldo de
 pollo y 1/4 de taza(60g) de salsa de soja. Poner a ebullición y bajar fuego. Dejar cocinando 5-10
-minutos. Añadir sal al gusto.</li><li>Preparar fideos de ramen por sepado.</li><li>Picar cebollino muy fino y retirar.</li><li>Mezclar 2 chucharadas (30g) de salsa de soja con 2 cucharadas (30g) de miel y un ajo aplastado.</li><li>Dorar el pollo durante 3 minutos. Usar la salsa con soja y miel para pintar el pollo por ambos
-lados mientras lo terminamos de dorar.</li></ul><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="emplatado-por-persona">Emplatado (por persona)<a href="#emplatado-por-persona" class="hash-link" aria-label="Enlace directo al Emplatado (por persona)" title="Enlace directo al Emplatado (por persona)">​</a></h3><ul><li>113g de fiedos de ramen sin cocinar</li><li>480ml de caldo</li><li>4 champiñones shiitake cortados finos y dorados</li><li>1/2 huevo pasado por agua</li><li>1 trozo de pollo shoyu, cortado en rodajas</li><li>3 tallos de cebolla verde, cortados finamente.</li><li>2 cucharaditas (9g) de aceite de sésamo tostado</li><li>1 chorrito de aceite de sésamo tostado</li></ul><p>Ref: <a href="https://www.joshuaweissman.com/post/i-made-the-easiest-ramen-ever" target="_blank" rel="noopener noreferrer">https://www.joshuaweissman.com/post/i-made-the-easiest-ramen-ever</a>
-Vídeo: <a href="https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104" target="_blank" rel="noopener noreferrer">https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104</a></p>]]></content:encoded>
+minutos. Añadir sal al gusto.</li>
+<li>Preparar fideos de ramen por sepado.</li>
+<li>Picar cebollino muy fino y retirar.</li>
+<li>Mezclar 2 chucharadas (30g) de salsa de soja con 2 cucharadas (30g) de miel y un ajo aplastado.</li>
+<li>Dorar el pollo durante 3 minutos. Usar la salsa con soja y miel para pintar el pollo por ambos
+lados mientras lo terminamos de dorar.</li>
+</ul>
+<h3 id="emplatado-por-persona">Emplatado (por persona)</h3>
+<ul>
+<li>113g de fiedos de ramen sin cocinar</li>
+<li>480ml de caldo</li>
+<li>4 champiñones shiitake cortados finos y dorados</li>
+<li>1/2 huevo pasado por agua</li>
+<li>1 trozo de pollo shoyu, cortado en rodajas</li>
+<li>3 tallos de cebolla verde, cortados finamente.</li>
+<li>2 cucharaditas (9g) de aceite de sésamo tostado</li>
+<li>1 chorrito de aceite de sésamo tostado</li>
+</ul>
+<p>Ref: <a href="https://www.joshuaweissman.com/post/i-made-the-easiest-ramen-ever">https://www.joshuaweissman.com/post/i-made-the-easiest-ramen-ever</a>
+Vídeo: <a href="https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104">https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104</a></p>]]></content:encoded>
             <category>plato principal</category>
             <category>cuchara</category>
         </item>
@@ -28,7 +102,39 @@ Vídeo: <a href="https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104" tar
             <guid>https://fame.grigri.cloud/Caldo de verduras</guid>
             <pubDate>Thu, 16 Mar 2023 19:19:49 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>3 puerros</li><li>2 tomates</li><li>2 patatas pequeñas</li><li>2 nabos</li><li>1 ramillete de apio</li><li>1 pimiento rojo</li><li>1 cebolleta grande</li><li>Medio repollo</li><li>4 zanahorias</li><li>Pimienta negra</li><li>2 hojas de laurel</li><li>Perejil</li><li>5 litros de agua</li><li>Sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><ul><li><p>Si queremos un poco de color en el caldo, ponemos una gotita de aceite y tostamos la cebolleta hasta que se dore, simplemente cortada por la mitad.</p></li><li><p>Una vez tostada agregamos todos los ingredientes a la olla y cubrimos con agua. Para 4 litros de caldo que me han salido a mi he puesto unos 5 litros de agua. Ponemos una cucharada sopera de sal.</p></li><li><p>Cocemos durante 1 hora y media.</p></li><li><p>Pasada esa hora colamos el caldo y reservamos. Este no hace falta desgrasarlo ya que no tiene ni gota de grasa.</p></li></ul><p>Ref: <a href="https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html" target="_blank" rel="noopener noreferrer">https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>3 puerros</li>
+<li>2 tomates</li>
+<li>2 patatas pequeñas</li>
+<li>2 nabos</li>
+<li>1 ramillete de apio</li>
+<li>1 pimiento rojo</li>
+<li>1 cebolleta grande</li>
+<li>Medio repollo</li>
+<li>4 zanahorias</li>
+<li>Pimienta negra</li>
+<li>2 hojas de laurel</li>
+<li>Perejil</li>
+<li>5 litros de agua</li>
+<li>Sal</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<ul>
+<li>
+<p>Si queremos un poco de color en el caldo, ponemos una gotita de aceite y tostamos la cebolleta hasta que se dore, simplemente cortada por la mitad.</p>
+</li>
+<li>
+<p>Una vez tostada agregamos todos los ingredientes a la olla y cubrimos con agua. Para 4 litros de caldo que me han salido a mi he puesto unos 5 litros de agua. Ponemos una cucharada sopera de sal.</p>
+</li>
+<li>
+<p>Cocemos durante 1 hora y media.</p>
+</li>
+<li>
+<p>Pasada esa hora colamos el caldo y reservamos. Este no hace falta desgrasarlo ya que no tiene ni gota de grasa.</p>
+</li>
+</ul>
+<p>Ref: <a href="https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html">https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html</a></p>]]></content:encoded>
             <category>caldo</category>
         </item>
         <item>
@@ -37,8 +143,41 @@ Vídeo: <a href="https://youtu.be/eDSwdEDKYds?si=ZLqXuFpumQavvwYG&amp;t=104" tar
             <guid>https://fame.grigri.cloud/Verdinas con verduras</guid>
             <pubDate>Thu, 16 Mar 2023 19:19:49 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>500 gramos de verdinas</li><li>1 manojo de espárragos trigueros</li><li>2 zanahorias</li><li>2 cebollas</li><li>1 pimiento rojo</li><li>1 pimiento verde</li><li>1 par de ajos</li><li>1 hoja de laurel</li><li>1 bolsa de espinacas</li><li>1 cucharadita de pimentón de la Vera</li><li>Sal</li><li>Caldo de verduras</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-antes">El día antes<a href="#el-día-antes" class="hash-link" aria-label="Enlace directo al El día antes" title="Enlace directo al El día antes">​</a></h3><p>Ponemos a remojo las verdinas con abundante agua durante 12h. Es importante no tenerlas demasiado tiempo (p.e. 24h) ni demasiado poco porque si no nos quedarán duras.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="#preparación" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación">​</a></h3><ul><li><p>Cortamos las verduras en brunoise y las pochamos a fuego lento durante unos 30 minutos. La única verdura que agregaremos al final será la espinaca.</p></li><li><p>Mientras están pochándose las verduras, cocemos las verdinas. En una olla express ponemos las verdinas desde agua fría con una cebolla, una zanahoria, unos ajos y la hoja de laurel. Las cocemos durante unos 25 minutos. Si cuando abramos la olla están un poco duras, las pondremos un poco más. Eso puede también deberse al tipo de agua que tengamos en nuestra provincia. Si el agua está considerada «dura» tendremos que tenerlas más tiempo.
-Te puede interesar  Merluza a la gallega</p></li><li><p>Con las verduras pochadas, agregamos una cucharada de pimentón dulce y rehogamos un poco. Cubrimos con caldo de verduras e incorporamos las verdinas cocidas. Las verdinas previamente las habremos colado del agua de cocerlas.</p></li><li><p>Ahora es momento de agregar las espinacas y dejarlo todo cocer a fuego lento durante unos 20 minutos para que se liguen todos los sabores. Rectificamos de sal al final y listo. Un plato sano y delicioso.</p></li></ul><p>Ref: <a href="https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html" target="_blank" rel="noopener noreferrer">https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html</a></p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>500 gramos de verdinas</li>
+<li>1 manojo de espárragos trigueros</li>
+<li>2 zanahorias</li>
+<li>2 cebollas</li>
+<li>1 pimiento rojo</li>
+<li>1 pimiento verde</li>
+<li>1 par de ajos</li>
+<li>1 hoja de laurel</li>
+<li>1 bolsa de espinacas</li>
+<li>1 cucharadita de pimentón de la Vera</li>
+<li>Sal</li>
+<li>Caldo de verduras</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<h3 id="el-día-antes">El día antes</h3>
+<p>Ponemos a remojo las verdinas con abundante agua durante 12h. Es importante no tenerlas demasiado tiempo (p.e. 24h) ni demasiado poco porque si no nos quedarán duras.</p>
+<h3 id="preparación">Preparación</h3>
+<ul>
+<li>
+<p>Cortamos las verduras en brunoise y las pochamos a fuego lento durante unos 30 minutos. La única verdura que agregaremos al final será la espinaca.</p>
+</li>
+<li>
+<p>Mientras están pochándose las verduras, cocemos las verdinas. En una olla express ponemos las verdinas desde agua fría con una cebolla, una zanahoria, unos ajos y la hoja de laurel. Las cocemos durante unos 25 minutos. Si cuando abramos la olla están un poco duras, las pondremos un poco más. Eso puede también deberse al tipo de agua que tengamos en nuestra provincia. Si el agua está considerada «dura» tendremos que tenerlas más tiempo.
+Te puede interesar  Merluza a la gallega</p>
+</li>
+<li>
+<p>Con las verduras pochadas, agregamos una cucharada de pimentón dulce y rehogamos un poco. Cubrimos con caldo de verduras e incorporamos las verdinas cocidas. Las verdinas previamente las habremos colado del agua de cocerlas.</p>
+</li>
+<li>
+<p>Ahora es momento de agregar las espinacas y dejarlo todo cocer a fuego lento durante unos 20 minutos para que se liguen todos los sabores. Rectificamos de sal al final y listo. Un plato sano y delicioso.</p>
+</li>
+</ul>
+<p>Ref: <a href="https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html">https://recetasdecocina.elmundo.es/2019/06/verdinas-verduras-receta-sana.html</a></p>]]></content:encoded>
             <category>plato principal</category>
             <category>cuchara</category>
         </item>
@@ -48,7 +187,18 @@ Te puede interesar  Merluza a la gallega</p></li><li><p>Con las verduras pochada
             <guid>https://fame.grigri.cloud/Crema de calabacín</guid>
             <pubDate>Thu, 16 Mar 2023 13:13:53 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>0.5 kg de calabacín</li><li>media cebolla / lo blanco de un puerro</li><li>leche</li><li>un poco de queso cremoso</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Picar la parte blanca del puerro o la cebolla y sofreír ligeramente.</p><p>Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde. Podemos pelarlo una sí una no, como una camisa de rayas.</p><p>Se añade un poco de leche y se cocina unos 30 minutos a fuego lento. Si lo queremos más líquido añadimos un poco más luego.</p><p>Añadimos un poco de queso cremoso, lo trituramos todo y a disfrutar!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>0.5 kg de calabacín</li>
+<li>media cebolla / lo blanco de un puerro</li>
+<li>leche</li>
+<li>un poco de queso cremoso</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Picar la parte blanca del puerro o la cebolla y sofreír ligeramente.</p>
+<p>Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde. Podemos pelarlo una sí una no, como una camisa de rayas.</p>
+<p>Se añade un poco de leche y se cocina unos 30 minutos a fuego lento. Si lo queremos más líquido añadimos un poco más luego.</p>
+<p>Añadimos un poco de queso cremoso, lo trituramos todo y a disfrutar!</p>]]></content:encoded>
             <category>crema</category>
             <category>verduras</category>
         </item>
@@ -58,12 +208,22 @@ Te puede interesar  Merluza a la gallega</p></li><li><p>Con las verduras pochada
             <guid>https://fame.grigri.cloud/Almendras garrapiñadas</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>2 cucharadas de agua</li><li>4 cucharadas de almendras crudas</li><li>3 cucharadas de azúcar</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>En esta receta utilizaremos almendras crudas con piel y sin cascara. Utilizaremos un bol para todos
-los ingredientes. Si queremos hacer 4 boles de almendras, usaremos también 3 de azúcar y 2 de agua.</p><p>En primer lugar, añadimos en una cazuela de acero inoxidable todos los ingredientes. La ponemos a
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>2 cucharadas de agua</li>
+<li>4 cucharadas de almendras crudas</li>
+<li>3 cucharadas de azúcar</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>En esta receta utilizaremos almendras crudas con piel y sin cascara. Utilizaremos un bol para todos
+los ingredientes. Si queremos hacer 4 boles de almendras, usaremos también 3 de azúcar y 2 de agua.</p>
+<p>En primer lugar, añadimos en una cazuela de acero inoxidable todos los ingredientes. La ponemos a
 fuego medio removiendo para unir los ingredientes y dejamos que vaya cociendo hasta que evapore el
-agua.</p><p>El resultado será un compuesto blanco que no dejaremos de remover a fuego medio hasta que
+agua.</p>
+<p>El resultado será un compuesto blanco que no dejaremos de remover a fuego medio hasta que
 caramelice. Cuando veamos un tono tostado, volcamos en un mármol limpio y untado con aceite y con la
-ayuda de un tenedor, separaremos las almendras unas de las otras.</p><p>Dejamos enfriar y guardamos en tarros de cristal para conservar.</p>]]></content:encoded>
+ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
+<p>Dejamos enfriar y guardamos en tarros de cristal para conservar.</p>]]></content:encoded>
             <category>aperitivo</category>
         </item>
         <item>
@@ -72,18 +232,46 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p><p>Dejamos 
             <guid>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>100ml de aceite de coco</li><li>100ml de agua</li><li>1 cucharadita de canela molida</li><li>20g de dátiles</li><li>300g de harina integral</li><li>4 huevos M</li><li>1 cucharadita de jengibre molido</li><li>100ml de leche</li><li>1 sobre de levadura química</li><li>4 o 2 plátanos</li><li>1 pizca de sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="toffe-de-dátiles">Toffe de dátiles<a href="#toffe-de-dátiles" class="hash-link" aria-label="Enlace directo al Toffe de dátiles" title="Enlace directo al Toffe de dátiles">​</a></h3><p>La noche anterior, en un vaso ponemos al remojo los dátiles deshuesados con la leche y el agua.</p><p>A la mañana o la tarde siguiente ponemos en un cacito a fuego lento el contenido. Añadimos una
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>100ml de aceite de coco</li>
+<li>100ml de agua</li>
+<li>1 cucharadita de canela molida</li>
+<li>20g de dátiles</li>
+<li>300g de harina integral</li>
+<li>4 huevos M</li>
+<li>1 cucharadita de jengibre molido</li>
+<li>100ml de leche</li>
+<li>1 sobre de levadura química</li>
+<li>4 o 2 plátanos</li>
+<li>1 pizca de sal</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<h3 id="toffe-de-dátiles">Toffe de dátiles</h3>
+<p>La noche anterior, en un vaso ponemos al remojo los dátiles deshuesados con la leche y el agua.</p>
+<p>A la mañana o la tarde siguiente ponemos en un cacito a fuego lento el contenido. Añadimos una
 cucharadita de canela. Removemos para que no se pegue. Cuando se ha consumido el líquido por
-completo y el conjunto adquiere un aspecto deleznable, lo tenemos. Sabe mejor que luce.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="bizcocho">Bizcocho<a href="#bizcocho" class="hash-link" aria-label="Enlace directo al Bizcocho" title="Enlace directo al Bizcocho">​</a></h3><p>Si acabamos de hacer el tofe debemos enfriarlo antes de mezclarlo con más ingredientes. El cacito,
+completo y el conjunto adquiere un aspecto deleznable, lo tenemos. Sabe mejor que luce.</p>
+<h3 id="bizcocho">Bizcocho</h3>
+<p>Si acabamos de hacer el tofe debemos enfriarlo antes de mezclarlo con más ingredientes. El cacito,
 se puede poner en contacto con agua fría en un cuenco, cambiando el agua un par de veces ya se pone
-a tono.</p><p>Volcamos el toffe y los plátanos maduros en el vaso de la batidora y trituamos.</p><p>La pasta dulce esta la vertemos al bol de Terminator (Es mi robot de cocina, de esos con varillas
-que te remueven las cosas)</p><p>Cogemos 4 huevos M de gallinas felices, separamos claras de yemas y añadimos las yemas al mejunje.
+a tono.</p>
+<p>Volcamos el toffe y los plátanos maduros en el vaso de la batidora y trituamos.</p>
+<p>La pasta dulce esta la vertemos al bol de Terminator (Es mi robot de cocina, de esos con varillas
+que te remueven las cosas)</p>
+<p>Cogemos 4 huevos M de gallinas felices, separamos claras de yemas y añadimos las yemas al mejunje.
 Añadimos también 100ml de aceite de coco (Azúcar sólo la reglamentaria pero grasa toda la posible,
-no se puede ser infinito fit, señoris, lo uno o lo otro o nos entran ganas de morirnos).</p><p>En otro bol, mezclamos la harina integral(300g), la levadura (un sobre) una pizca de sal y una
+no se puede ser infinito fit, señoris, lo uno o lo otro o nos entran ganas de morirnos).</p>
+<p>En otro bol, mezclamos la harina integral(300g), la levadura (un sobre) una pizca de sal y una
 cucharadita de jengibre molido y otra de canela molida. No tamices, te va a dar igual: si la harina
-es integral, luego vas a tener que volcar las cáscaras.</p><p>Mientras Terminator terminatea a buena velocidad, por la ventanita que deja, vamos echando el polvo
-que acabamos de hacer en el segundo bol.</p><p>Volcamos toooodo esto que tenemos el en vol de Terminator al segundo bol, limpiamos el bol de
-Terminator y que nos monte las claras.</p><p>Ahora, con mucho cuidado y movimientos envolventes ligamos las claras con el resto.</p><p>Separamos en moldes enharinados y al horno a 200°C.</p><p>Mi horno es una mierda así que para que no se quemen los bizcochos pero suban tengo que ponerles
+es integral, luego vas a tener que volcar las cáscaras.</p>
+<p>Mientras Terminator terminatea a buena velocidad, por la ventanita que deja, vamos echando el polvo
+que acabamos de hacer en el segundo bol.</p>
+<p>Volcamos toooodo esto que tenemos el en vol de Terminator al segundo bol, limpiamos el bol de
+Terminator y que nos monte las claras.</p>
+<p>Ahora, con mucho cuidado y movimientos envolventes ligamos las claras con el resto.</p>
+<p>Separamos en moldes enharinados y al horno a 200°C.</p>
+<p>Mi horno es una mierda así que para que no se quemen los bizcochos pero suban tengo que ponerles
 sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <category>postre</category>
         </item>
@@ -93,11 +281,23 @@ sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <guid>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 chile</li><li>1 pepino</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Rasca el exterior del pepino con un tenedor para crear surcos.</p><p>Con el puño, golpea el pepino plano, luego córtalo en rodajas y colócalo en un tazón con una pizca
-de sal marina realmente buena. Arrugue agresivamente y déjelo por 5 minutos.</p><p>Golpea las hojuelas de chile y la pimienta de Sichuan en un mortero hasta que estén finas. Después
-añade y rompe ligeramente las semillas de sésamo.</p><p>Vierte la mezcla en una sartén antiadherente seca y tuesta a fuego medio hasta que esté dorado,
-revolviendo regularmente.</p><p>Agarra el pepino con las manos y exprime con fuerza para eliminar cualquier líquido salado. luego
-transfiéralo a un tazón para servir.</p><p>Aliña con la soja, el vinagre y el aceite, luego junta y espolvorea las semillas calientes.</p><p>¡Tadaa!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1 chile</li>
+<li>1 pepino</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Rasca el exterior del pepino con un tenedor para crear surcos.</p>
+<p>Con el puño, golpea el pepino plano, luego córtalo en rodajas y colócalo en un tazón con una pizca
+de sal marina realmente buena. Arrugue agresivamente y déjelo por 5 minutos.</p>
+<p>Golpea las hojuelas de chile y la pimienta de Sichuan en un mortero hasta que estén finas. Después
+añade y rompe ligeramente las semillas de sésamo.</p>
+<p>Vierte la mezcla en una sartén antiadherente seca y tuesta a fuego medio hasta que esté dorado,
+revolviendo regularmente.</p>
+<p>Agarra el pepino con las manos y exprime con fuerza para eliminar cualquier líquido salado. luego
+transfiéralo a un tazón para servir.</p>
+<p>Aliña con la soja, el vinagre y el aceite, luego junta y espolvorea las semillas calientes.</p>
+<p>¡Tadaa!</p>]]></content:encoded>
             <category>entrante</category>
             <category>ensalada</category>
             <category>vegetariana</category>
@@ -108,8 +308,26 @@ transfiéralo a un tazón para servir.</p><p>Aliña con la soja, el vinagre y el
             <guid>https://fame.grigri.cloud/Cocido</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 chorizo</li><li>1 espinazo</li><li>300g de garbanzos</li><li>1 hueso jamon</li><li>1 hueso rodilla</li><li>1kg de morcillo</li><li>1 puerro</li><li>1 zanahoria</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-anterior">El día anterior<a href="#el-día-anterior" class="hash-link" aria-label="Enlace directo al El día anterior" title="Enlace directo al El día anterior">​</a></h3><p>Poner en remojo los garbanzos con agua caliente y abundante sal.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="#preparación" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación">​</a></h3><p>Quitar el agua de los garbanzos y lavarlos.</p><p>Pelar las zanahorias y el puerro (yo dejo lo verde que me parece lo más rico).</p><p>Añadir todos los ingredientes a la olla express y cubrir con agua hasta 2/3 de la olla. Dejar
-cociendo durante 45 minutos.</p><p>Dejar que se enfrie y si lo dejamos reposar esta mejor (de un día para otro sería perfecto!)</p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1 chorizo</li>
+<li>1 espinazo</li>
+<li>300g de garbanzos</li>
+<li>1 hueso jamon</li>
+<li>1 hueso rodilla</li>
+<li>1kg de morcillo</li>
+<li>1 puerro</li>
+<li>1 zanahoria</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<h3 id="el-día-anterior">El día anterior</h3>
+<p>Poner en remojo los garbanzos con agua caliente y abundante sal.</p>
+<h3 id="preparación">Preparación</h3>
+<p>Quitar el agua de los garbanzos y lavarlos.</p>
+<p>Pelar las zanahorias y el puerro (yo dejo lo verde que me parece lo más rico).</p>
+<p>Añadir todos los ingredientes a la olla express y cubrir con agua hasta 2/3 de la olla. Dejar
+cociendo durante 45 minutos.</p>
+<p>Dejar que se enfrie y si lo dejamos reposar esta mejor (de un día para otro sería perfecto!)</p>]]></content:encoded>
             <category>plato principal</category>
             <category>cuchara</category>
         </item>
@@ -119,15 +337,37 @@ cociendo durante 45 minutos.</p><p>Dejar que se enfrie y si lo dejamos reposar e
             <guid>https://fame.grigri.cloud/Cookies de chocolate</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>125g de azúcar blanco</li><li>125g de azúcar moreno</li><li>1 cucharadita de bicarbonato</li><li>1 cucharadita de esencia de vainilla</li><li>250g de harina de repostería</li><li>1 huevo</li><li>1/2 sobre de levadura</li><li>90g de mantequilla</li><li>200 g de pepitas de chocolate</li><li>1 cucharadita de sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Empezaremos tamizando la harina en un recipiente amplio. Añadiremos la levadura, la esencia de
-vainilla, bicarbonato y la sal, removeremos bien todos los ingredientes. Reservamos.</p><p>Por otro lado vamos a mezclar el azúcar con la mantequilla, que deberemos tener a temperatura
-ambiente para que esté maleable y se pueda mezclar fácilmente.</p><p>Cuando la mantequilla y el azúcar formen una masa pastosa y amarillenta, añadimos el huevo y batimos
-hasta integrarlo en la mezcla anterior.</p><p>Y por último hay que añadir la mezcla de ingredientes secos,</p><p>Una vez tengas esta masa lista, el siguiente paso será añadirle las pepitas de chocolate y amasarlo
-a mano un buen rato, para que se vayan repartiendo bien por la masa.</p><p>Deja que la masa repose unos minutos en la nevera.</p><p>Precalentamos el horno a 180ºC con el calor tanto arriba como abajo. Coge una bandeja del horno y
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>125g de azúcar blanco</li>
+<li>125g de azúcar moreno</li>
+<li>1 cucharadita de bicarbonato</li>
+<li>1 cucharadita de esencia de vainilla</li>
+<li>250g de harina de repostería</li>
+<li>1 huevo</li>
+<li>1/2 sobre de levadura</li>
+<li>90g de mantequilla</li>
+<li>200 g de pepitas de chocolate</li>
+<li>1 cucharadita de sal</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Empezaremos tamizando la harina en un recipiente amplio. Añadiremos la levadura, la esencia de
+vainilla, bicarbonato y la sal, removeremos bien todos los ingredientes. Reservamos.</p>
+<p>Por otro lado vamos a mezclar el azúcar con la mantequilla, que deberemos tener a temperatura
+ambiente para que esté maleable y se pueda mezclar fácilmente.</p>
+<p>Cuando la mantequilla y el azúcar formen una masa pastosa y amarillenta, añadimos el huevo y batimos
+hasta integrarlo en la mezcla anterior.</p>
+<p>Y por último hay que añadir la mezcla de ingredientes secos,</p>
+<p>Una vez tengas esta masa lista, el siguiente paso será añadirle las pepitas de chocolate y amasarlo
+a mano un buen rato, para que se vayan repartiendo bien por la masa.</p>
+<p>Deja que la masa repose unos minutos en la nevera.</p>
+<p>Precalentamos el horno a 180ºC con el calor tanto arriba como abajo. Coge una bandeja del horno y
 fórrala con papel para hornear, así las cookies no se pegarán. Coge la masa de las cookies y ve
 haciendo bolas de tamaño ligeramente menor al de una pelota de golf. No hay que aplastar las
-pelotitas, las metemos al horno tal cual.</p><p>Las galletas siempre están blandas al sacarlas del horno, parecen crudas, y es al enfriarse cuando
-se endurecen, por lo que la manera de comprobar si están o no hechas es por el color.</p><p>Cuando el horno alcance los 180ºC metes la bandeja a media altura del mismo y las dejas hornear
+pelotitas, las metemos al horno tal cual.</p>
+<p>Las galletas siempre están blandas al sacarlas del horno, parecen crudas, y es al enfriarse cuando
+se endurecen, por lo que la manera de comprobar si están o no hechas es por el color.</p>
+<p>Cuando el horno alcance los 180ºC metes la bandeja a media altura del mismo y las dejas hornear
 12-15 minutos.</p>]]></content:encoded>
             <category>postre</category>
         </item>
@@ -137,7 +377,18 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <guid>https://fame.grigri.cloud/Crepes dulces</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>15g de azucar</li><li>100g de harina</li><li>1 huevo</li><li>125ml de leche</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Mezclar con una batidora todos los ingredientes.</p><p>Verter en una crepera o sartén con aceite/mantequilla y cubrir todo el fondo.</p><p>Cuando la masa pueda despegarse con facilidad, dar la vuelta para dorar por el otro lado.</p><p>Sin más dilación, servir y acompañar al gusto.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>15g de azucar</li>
+<li>100g de harina</li>
+<li>1 huevo</li>
+<li>125ml de leche</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Mezclar con una batidora todos los ingredientes.</p>
+<p>Verter en una crepera o sartén con aceite/mantequilla y cubrir todo el fondo.</p>
+<p>Cuando la masa pueda despegarse con facilidad, dar la vuelta para dorar por el otro lado.</p>
+<p>Sin más dilación, servir y acompañar al gusto.</p>]]></content:encoded>
             <category>desayuno</category>
         </item>
         <item>
@@ -146,27 +397,53 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <guid>https://fame.grigri.cloud/Fabada</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 azafran</li><li>1 cebolla</li><li>1 compango</li><li>500g de fabes</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="antes-de-cocinar-fabes-de-la-granja">Antes de cocinar. Fabes de la Granja<a href="#antes-de-cocinar-fabes-de-la-granja" class="hash-link" aria-label="Enlace directo al Antes de cocinar. Fabes de la Granja" title="Enlace directo al Antes de cocinar. Fabes de la Granja">​</a></h3><p>Uno de los pasos importantes es la elección de las fabes o fabas (en Galicia). Yo utilizo la más
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1 azafran</li>
+<li>1 cebolla</li>
+<li>1 compango</li>
+<li>500g de fabes</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<h3 id="antes-de-cocinar-fabes-de-la-granja">Antes de cocinar. Fabes de la Granja</h3>
+<p>Uno de los pasos importantes es la elección de las fabes o fabas (en Galicia). Yo utilizo la más
 típica en la fabada: las fabes "de la Granja" que se encuentran en cualquier
 supermercado. Es una variedad suave y mantecosa apropiada para esta receta. Asturias cultiva esta
 variedad a lo largo y ancho de su territorio. Se caracterizan por tener un gran sabor y una suave
-textura tras su cocción, todo un tesoro gastronómico.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-antes">El día antes<a href="#el-día-antes" class="hash-link" aria-label="Enlace directo al El día antes" title="Enlace directo al El día antes">​</a></h3><p>Extendemos las fabes sobre una superficie plana y desechamos aquellas que estén dañadas. Las lavamos
-para quitar impurezas.</p><p>Las dejamos en un bol con agua fría en remojo durante la noche, normalmente 12 horas. No es
+textura tras su cocción, todo un tesoro gastronómico.</p>
+<h3 id="el-día-antes">El día antes</h3>
+<p>Extendemos las fabes sobre una superficie plana y desechamos aquellas que estén dañadas. Las lavamos
+para quitar impurezas.</p>
+<p>Las dejamos en un bol con agua fría en remojo durante la noche, normalmente 12 horas. No es
 necesario echar sal a la hora del remojo. Al día siguiente las escurrimos y apartamos hasta el
-momento de prepararlas.</p><p>Ponemos a remojo, en agua templada, la panceta curada y el hueso de jamón desde la noche anterior a
-la preparación de las fabes.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación-de-la-fabada-asturiana">Preparación de la fabada asturiana<a href="#preparación-de-la-fabada-asturiana" class="hash-link" aria-label="Enlace directo al Preparación de la fabada asturiana" title="Enlace directo al Preparación de la fabada asturiana">​</a></h3><p>Añadimos en una cazuela, a ser posible baja y ancha (si es de barro mejor). Las fabes con el agua de
+momento de prepararlas.</p>
+<p>Ponemos a remojo, en agua templada, la panceta curada y el hueso de jamón desde la noche anterior a
+la preparación de las fabes.</p>
+<h3 id="preparación-de-la-fabada-asturiana">Preparación de la fabada asturiana</h3>
+<p>Añadimos en una cazuela, a ser posible baja y ancha (si es de barro mejor). Las fabes con el agua de
 remojo y cubrimos con ese agua hasta que quede un par de dedos por encima de las mismas. Removemos
-otra vez para que se junte todo bien. Calentamos a fuego alto hasta que rompa a hervir.</p><p>Picamos la cebolla bien finita y reservamos.</p><p>Espumeamos durante unos minutos. Es decir, retiramos la espuma que normalmente contiene impurezas.</p><p>Cuando empiece a hervir introducimos la panceta, los chorizos, el hueso de jamón, las morcillas y la
+otra vez para que se junte todo bien. Calentamos a fuego alto hasta que rompa a hervir.</p>
+<p>Picamos la cebolla bien finita y reservamos.</p>
+<p>Espumeamos durante unos minutos. Es decir, retiramos la espuma que normalmente contiene impurezas.</p>
+<p>Cuando empiece a hervir introducimos la panceta, los chorizos, el hueso de jamón, las morcillas y la
 cebolla picada. Procurad que las morcillas y los chorizos permanezcan siempre en la parte superior
-pare evitar posibles roturas que nos estropearían la fabada.</p><p>Cuando lleve 1/2 hora cociendo a fuego alto le añadimos las hebras de azafrán diluidas en un poco de
-caldo caliente de la cazuela.</p><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="cocción-de-la-fabada-y-presentación-final">Cocción de la fabada y presentación final<a href="#cocción-de-la-fabada-y-presentación-final" class="hash-link" aria-label="Enlace directo al Cocción de la fabada y presentación final" title="Enlace directo al Cocción de la fabada y presentación final">​</a></h3><p>Bajamos la temperatura de cocción. Añadimos sal al gusto, es importante probar el caldo ya que hemos
-echado el hueso de jamón y pueden quedar saladas.</p><p>Dejamos que las fabes se cocinen lentamente a temperatura baja durante 2 horas. Siempre removiendo
+pare evitar posibles roturas que nos estropearían la fabada.</p>
+<p>Cuando lleve 1/2 hora cociendo a fuego alto le añadimos las hebras de azafrán diluidas en un poco de
+caldo caliente de la cazuela.</p>
+<h3 id="cocción-de-la-fabada-y-presentación-final">Cocción de la fabada y presentación final</h3>
+<p>Bajamos la temperatura de cocción. Añadimos sal al gusto, es importante probar el caldo ya que hemos
+echado el hueso de jamón y pueden quedar saladas.</p>
+<p>Dejamos que las fabes se cocinen lentamente a temperatura baja durante 2 horas. Siempre removiendo
 de vez en cuando con una cuchara de madera sin romperlas. Durante estas dos horas, añadimos agua
 fría en dos ocasiones para "asustar" las fabes (rompe el hervor y ayuda a su perfecta
-cocción).</p><p>Probamos las fabes para ver si ya están tiernas y rectificamos de sal. Una vez probadas y tiernas
-apartamos del fuego y dejamos reposar una hora aproximadamente.</p><p>A continuación retiramos los chorizos, la morcilla, la panceta y los huesos de jamón. Preparamos la
+cocción).</p>
+<p>Probamos las fabes para ver si ya están tiernas y rectificamos de sal. Una vez probadas y tiernas
+apartamos del fuego y dejamos reposar una hora aproximadamente.</p>
+<p>A continuación retiramos los chorizos, la morcilla, la panceta y los huesos de jamón. Preparamos la
 carne, cortando los embutidos en rodajas generosas. Troceamos la panceta y aprovechamos la carne del
-hueso. Reservamos para la presentación.</p><p>Para emplatar lo mejor es un plato hondo con la fabada y la carne encima, así de fácil.</p><p>Recordad que la fabada está mejor de un día para otro. Si encima conseguís hacerla en cazuela de
+hueso. Reservamos para la presentación.</p>
+<p>Para emplatar lo mejor es un plato hondo con la fabada y la carne encima, así de fácil.</p>
+<p>Recordad que la fabada está mejor de un día para otro. Si encima conseguís hacerla en cazuela de
 barro, está de morirse.</p>]]></content:encoded>
             <category>plato principal</category>
             <category>cuchara</category>
@@ -177,16 +454,33 @@ barro, está de morirse.</p>]]></content:encoded>
             <guid>https://fame.grigri.cloud/Falafel</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>2 dientes de ajo</li><li>200g de cebolla</li><li>1 manojo de cilantro fresco</li><li>10g de Comino</li><li>500g de garbanzos</li><li>150g de Harina de garbanzo</li><li>10g de levadura química</li><li>1 manojo de perejil fresco</li><li>1 pizca de sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>¡No olvides acompañarlo con tzatziki!</p><p>Ponemos los garbanzos en remojo 24 horas antes de realizar la receta. Transcurrido este tiempo los
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>2 dientes de ajo</li>
+<li>200g de cebolla</li>
+<li>1 manojo de cilantro fresco</li>
+<li>10g de Comino</li>
+<li>500g de garbanzos</li>
+<li>150g de Harina de garbanzo</li>
+<li>10g de levadura química</li>
+<li>1 manojo de perejil fresco</li>
+<li>1 pizca de sal</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>¡No olvides acompañarlo con tzatziki!</p>
+<p>Ponemos los garbanzos en remojo 24 horas antes de realizar la receta. Transcurrido este tiempo los
 escurrimos y secamos bien para que <strong>no queden restos de agua</strong>. Introducimos los garbanzos
 hidratados en el vaso de un robot de cocina o una batidora potente junto con el diente de ajo, la
-cebolla, las hojas de cilantro y de perejil y el comino molido. Trituramos.</p><p>A continuación añadimos la harina de garbanzos, <strong>reservando un par de cucharadas</strong> para cubrir la
+cebolla, las hojas de cilantro y de perejil y el comino molido. Trituramos.</p>
+<p>A continuación añadimos la harina de garbanzos, <strong>reservando un par de cucharadas</strong> para cubrir la
 base de una fuente, la levadura química y salpimentamos al gusto. Trituramos de nuevo hasta obtener
-una mezcla homogénea. Dejamos reposar la masa, en la nevera, durante 30 minutos.</p><p>Formamos pequeñas <strong>bolitas del tamaño de una nuez</strong> y las colocamos en la fuente con la harina de
+una mezcla homogénea. Dejamos reposar la masa, en la nevera, durante 30 minutos.</p>
+<p>Formamos pequeñas <strong>bolitas del tamaño de una nuez</strong> y las colocamos en la fuente con la harina de
 garbanzos al tiempo que rebozamos ligeramente. Calentamos abundante aceite en una sartén y freímos,
 a fuego medio-alto, volteando para que se doren por igual por ambos lados. Retiramos a un plato con
-papel absorbente y dejamos escurrir un par de minutos antes de servir.</p><p>créditos:
-<a href="https://www.directoalpaladar.com/recetas-vegetarianas/como-hacer-falafel-casero-receta-facil-y-deliciosa" target="_blank" rel="noopener noreferrer">https://www.directoalpaladar.com/recetas-vegetarianas/como-hacer-falafel-casero-receta-facil-y-deliciosa</a></p>]]></content:encoded>
+papel absorbente y dejamos escurrir un par de minutos antes de servir.</p>
+<p>créditos:
+<a href="https://www.directoalpaladar.com/recetas-vegetarianas/como-hacer-falafel-casero-receta-facil-y-deliciosa">https://www.directoalpaladar.com/recetas-vegetarianas/como-hacer-falafel-casero-receta-facil-y-deliciosa</a></p>]]></content:encoded>
             <category>entrante</category>
             <category>vegetariana</category>
         </item>
@@ -196,10 +490,18 @@ papel absorbente y dejamos escurrir un par de minutos antes de servir.</p><p>cr�
             <guid>https://fame.grigri.cloud/Flan de huevo</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>6 cucharadas de azúcar</li><li>4 huevos</li><li>1/2 litro de leche</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Se mezcla todo en un bol grande (con la batidora solo tardas 1 minuto) y lo echas en la flanera.
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>6 cucharadas de azúcar</li>
+<li>4 huevos</li>
+<li>1/2 litro de leche</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Se mezcla todo en un bol grande (con la batidora solo tardas 1 minuto) y lo echas en la flanera.
 Previamente habrás vertido en el fondo caramelo líquido (que puedes hacer tu o comprado) y listo
 para el baño maría en la olla express (unos 6 minutos). Luego dejar enfriar y listo. Mejor preparalo
-el día anterior, así te quedará consistente.</p><p>No dudes en probar esta rica receta tan sencilla.</p>]]></content:encoded>
+el día anterior, así te quedará consistente.</p>
+<p>No dudes en probar esta rica receta tan sencilla.</p>]]></content:encoded>
             <category>postre</category>
         </item>
         <item>
@@ -208,9 +510,22 @@ el día anterior, así te quedará consistente.</p><p>No dudes en probar esta ri
             <guid>https://fame.grigri.cloud/Garam Masala</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1/2 cucharadita de canela</li><li>1 cucharadita de cardamomo</li><li>1/2 cucharadita de clavo</li><li>1 cucharadita de comino</li><li>1/2 cucharadita de nuez moscada</li><li>1 cucharadita de pimienta negra</li><li>1 cucharadita de semillas de cilantro</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Calienta en una sartén a fuego medio 1 cucharadita de semillas de cilantro, 1 de comino, 1 de
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1/2 cucharadita de canela</li>
+<li>1 cucharadita de cardamomo</li>
+<li>1/2 cucharadita de clavo</li>
+<li>1 cucharadita de comino</li>
+<li>1/2 cucharadita de nuez moscada</li>
+<li>1 cucharadita de pimienta negra</li>
+<li>1 cucharadita de semillas de cilantro</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Calienta en una sartén a fuego medio 1 cucharadita de semillas de cilantro, 1 de comino, 1 de
 cardamomo, 1 de pimienta negra, media cucharadita de nuez moscada , media de canela en polvo y media
-de clavo.</p><p>Déjalas tostar unos minutos sin que se lleguen a quemar. Retíralas del fuego y muélelas bien.</p><p>Listo.</p>]]></content:encoded>
+de clavo.</p>
+<p>Déjalas tostar unos minutos sin que se lleguen a quemar. Retíralas del fuego y muélelas bien.</p>
+<p>Listo.</p>]]></content:encoded>
             <category>india</category>
         </item>
         <item>
@@ -219,14 +534,32 @@ de clavo.</p><p>Déjalas tostar unos minutos sin que se lleguen a quemar. Retír
             <guid>https://fame.grigri.cloud/Lasaña</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 de ajo</li><li>1kg de carne picada ternera</li><li>1l de leche</li><li>1kg de mozarella</li><li>15 placas de lasaña cocidas</li><li>100g de queso parmesano</li><li>800ml de tomate triturado</li><li>2 de zanahorias</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Poner la carne picada a freir en una olla grande, con aceite y fuego fuerte.</p><p>Picar mucho los ajos, aplastarlos con el cuchillo como si quedara un pure para confitarlos en aceite
-hirviendo.</p><p>Pelar la zanahoria y rallarla bien. La terminamos picando todavía más con el cuchillo y luego lo
-añadimos al ajo con aceite.</p><p>Añadir la mezcla confitada a la carne, junto con el tomate triturado y especies (órgeano, sal y
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1 de ajo</li>
+<li>1kg de carne picada ternera</li>
+<li>1l de leche</li>
+<li>1kg de mozarella</li>
+<li>15 placas de lasaña cocidas</li>
+<li>100g de queso parmesano</li>
+<li>800ml de tomate triturado</li>
+<li>2 de zanahorias</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Poner la carne picada a freir en una olla grande, con aceite y fuego fuerte.</p>
+<p>Picar mucho los ajos, aplastarlos con el cuchillo como si quedara un pure para confitarlos en aceite
+hirviendo.</p>
+<p>Pelar la zanahoria y rallarla bien. La terminamos picando todavía más con el cuchillo y luego lo
+añadimos al ajo con aceite.</p>
+<p>Añadir la mezcla confitada a la carne, junto con el tomate triturado y especies (órgeano, sal y
 pimienta). En este punto podemos añadir salsa de carne. Reducirlo bien a fuego fuerte y añadir
 leche. Añadir 4 huevos a la masa y terminar de cocinar. Se puede espolvorear un poco de perejil por
-encima.</p><p>Luego poner capas de carne, pasta y mozarella alternativamente sobre la fuente del horno. En la
+encima.</p>
+<p>Luego poner capas de carne, pasta y mozarella alternativamente sobre la fuente del horno. En la
 ultima capa añadimos la carne restante y el queso parmesano rallado. Se puede añadir un poco de
-aceite de oliva por encima.</p><p>Hornear aproximadamente a 350 grados durante 30 min. Cuando la parte de arriba este dorada, retirar.</p><p>Ref: <a href="https://www.youtube.com/watch?v=VZPkIPfnzqs" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=VZPkIPfnzqs</a></p>]]></content:encoded>
+aceite de oliva por encima.</p>
+<p>Hornear aproximadamente a 350 grados durante 30 min. Cuando la parte de arriba este dorada, retirar.</p>
+<p>Ref: <a href="https://www.youtube.com/watch?v=VZPkIPfnzqs">https://www.youtube.com/watch?v=VZPkIPfnzqs</a></p>]]></content:encoded>
             <category>plato principal</category>
             <category>pasta</category>
         </item>
@@ -236,15 +569,26 @@ aceite de oliva por encima.</p><p>Hornear aproximadamente a 350 grados durante 3
             <guid>https://fame.grigri.cloud/Lechazo</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1/2 vaso de agua</li><li>1/2 lechazo</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Una de las cosas más importantes es la matería prima: un buen lechazo suele rondar los 6 Kg de peso
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1/2 vaso de agua</li>
+<li>1/2 lechazo</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Una de las cosas más importantes es la matería prima: un buen lechazo suele rondar los 6 Kg de peso
 en la carnicería, esto os debería servir como dato para que no os engañen. También influye en el
 sabor la raza y como se ha criado el animal pero esto ya solo lo podemos conseguir conociendo bien
-al proveedor.</p><p>Sacar del frigorifico 6 horas antes si es posible para atemperar la carne.</p><p>Poner el lechazo con los huesos para arriba encima de una fuente amplia. Se puede utilizar un plato
+al proveedor.</p>
+<p>Sacar del frigorifico 6 horas antes si es posible para atemperar la carne.</p>
+<p>Poner el lechazo con los huesos para arriba encima de una fuente amplia. Se puede utilizar un plato
 boca abajo para evitar que la piel toque el agua. Añadimos sal gorda en abundancia y medio vaso de
-agua.</p><p>Lo tenemos hora y media a 150 grados calentando ambos lados del horno. Al terminar, le damos la
-vuelta (dejando la piel hacia arriba) y lo ponemos otra hora y media.</p><p>Para terminar subimos el horno al máximo y si nuestro horno tiene grill lo ponemos dejando que quede
+agua.</p>
+<p>Lo tenemos hora y media a 150 grados calentando ambos lados del horno. Al terminar, le damos la
+vuelta (dejando la piel hacia arriba) y lo ponemos otra hora y media.</p>
+<p>Para terminar subimos el horno al máximo y si nuestro horno tiene grill lo ponemos dejando que quede
 la piel crujiente y dorada. Con unos 10 minutos puede valer, esta parte es la más delicada y
-aconsejo vigilar el asado cada poco tiempo.</p><p>A disfrutar de uno de los mayores manjares de la vida!</p>]]></content:encoded>
+aconsejo vigilar el asado cada poco tiempo.</p>
+<p>A disfrutar de uno de los mayores manjares de la vida!</p>]]></content:encoded>
             <category>plato principal</category>
             <category>asado</category>
         </item>
@@ -254,10 +598,23 @@ aconsejo vigilar el asado cada poco tiempo.</p><p>A disfrutar de uno de los mayo
             <guid>https://fame.grigri.cloud/Mojo Picón</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>aceite de oliva suave</li><li>1 cucharadita de comino entero</li><li>1 diente de ajo</li><li>2 pimientas (pimiento choricero)</li><li>1 pizca de sal</li><li>1 chorrito de vinagre</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Hidratamos la pimienta diez minutos sin semillas (si queremos que pique las podemos dejar) ni rabo.
-Se corta en trozos pequeños y reservamos.</p><p>Cortar el ajo en laminas y reservar.</p><p>Echar pimienta, ajo, comino y sal en el mortero. Moler hasta obtener una pasta suculenta. A
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>aceite de oliva suave</li>
+<li>1 cucharadita de comino entero</li>
+<li>1 diente de ajo</li>
+<li>2 pimientas (pimiento choricero)</li>
+<li>1 pizca de sal</li>
+<li>1 chorrito de vinagre</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>Hidratamos la pimienta diez minutos sin semillas (si queremos que pique las podemos dejar) ni rabo.
+Se corta en trozos pequeños y reservamos.</p>
+<p>Cortar el ajo en laminas y reservar.</p>
+<p>Echar pimienta, ajo, comino y sal en el mortero. Moler hasta obtener una pasta suculenta. A
 continuación, añadir el aceite y el vinagre al gusto. Probar y corregir hasta obtener el sabor
-deseado.</p><p>También en lugar de usar un mortero podemos usar una batidora para mezclar todos los ingredientes.</p>]]></content:encoded>
+deseado.</p>
+<p>También en lugar de usar un mortero podemos usar una batidora para mezclar todos los ingredientes.</p>]]></content:encoded>
             <category>salsa</category>
         </item>
         <item>
@@ -266,43 +623,84 @@ deseado.</p><p>También en lugar de usar un mortero podemos usar una batidora pa
             <guid>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>4 cucharadas de aceite de coco</li><li>125 ml de agua del grifo</li><li>20g de chía</li><li>150g de copos de avena</li><li>20g de Manzana deshidratada</li><li>6 cucharadas de Miel</li><li>40g de Nueces pecanas</li><li>20g de Polvito de quinoa</li><li>10g de Quinoa</li><li>20g de Semillas de lino</li><li>3cm de vaina de vainilla</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>He puesto el <strong>horno a precalentar a 140ºC</strong>. (Mejor pecar de lenta y que las comidas se hagan con
-amor a que se me queme -he pensado-. Ojalá no quede una pasta).</p><p>He mezclado los ingredientes secos: <strong>avena</strong>, <strong>chía</strong>, <strong>lino</strong>, semillas de <strong>quinoa </strong>y
-<strong>polvitos de quinoa</strong>.</p><p><strong>_para replicar la receta sin los errores de la mía echa ahora las </strong>pecanas<strong>_</strong></p><p>He echado el <strong>aceite de coco</strong>, poco a poco y removiendo. Se supone que el aceite es lo que le da
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>4 cucharadas de aceite de coco</li>
+<li>125 ml de agua del grifo</li>
+<li>20g de chía</li>
+<li>150g de copos de avena</li>
+<li>20g de Manzana deshidratada</li>
+<li>6 cucharadas de Miel</li>
+<li>40g de Nueces pecanas</li>
+<li>20g de Polvito de quinoa</li>
+<li>10g de Quinoa</li>
+<li>20g de Semillas de lino</li>
+<li>3cm de vaina de vainilla</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>He puesto el <strong>horno a precalentar a 140ºC</strong>. (Mejor pecar de lenta y que las comidas se hagan con
+amor a que se me queme -he pensado-. Ojalá no quede una pasta).</p>
+<p>He mezclado los ingredientes secos: <strong>avena</strong>, <strong>chía</strong>, <strong>lino</strong>, semillas de **quinoa **y
+<strong>polvitos de quinoa</strong>.</p>
+<p><strong><em>para replicar la receta sin los errores de la mía echa ahora las <strong>pecanas</strong></em></strong></p>
+<p>He echado el <strong>aceite de coco</strong>, poco a poco y removiendo. Se supone que el aceite es lo que le da
 la crugientez al muesli y he visto varios tipos usados. Es un punto a valorar si necesita mejora.
-<!-- -->¿<!-- -->Seguimos con el de coco?<!-- -->¿<!-- -->Echamos más?<!-- -->¿<!-- -->Menos, que casi me parto una muela?</p><p>He abierto el cacho de vaina de <strong>vainilla </strong>con un cuchillo como si fuera un bocata y con la misma
+¿Seguimos con el de coco?¿Echamos más?¿Menos, que casi me parto una muela?</p>
+<p>He abierto el cacho de vaina de **vainilla **con un cuchillo como si fuera un bocata y con la misma
 cuchara de remover (que aún está limpia porque los ingredientes usados hasta ahora no se pegan) he
 raspado y recogido la chicha que tiene dentro la vaina y la he incorporado al resto de ingredientes,
-mezclando.</p><p><strong>Miel</strong>: 6 cucharadas mucho me parecen, pero bueno. Ahora vemos. Se supone que la miel es lo que
+mezclando.</p>
+<p><strong>Miel</strong>: 6 cucharadas mucho me parecen, pero bueno. Ahora vemos. Se supone que la miel es lo que
 hace que se formen las pelotas de cereales -y mira, yo para hacer muesli casero y que no haya
-tronchos bien goooodos que reventar con los dientes, mejor como alpiste-.</p><p><strong>Agua</strong>: Ni idea de para qué es esto pero aparece en muchas recetas, su función tendrá. La he
+tronchos bien goooodos que reventar con los dientes, mejor como alpiste-.</p>
+<p><strong>Agua</strong>: Ni idea de para qué es esto pero aparece en muchas recetas, su función tendrá. La he
 echado y me he venido a escribir porque parece que le va a costar unos minutos al soluto absorber el
-disolvente.</p><p>Al <strong>horno</strong>. Rebañando bien con una lengua (no con la lengua; con una espátula de esas de plástico
+disolvente.</p>
+<p>Al <strong>horno</strong>. Rebañando bien con una lengua (no con la lengua; con una espátula de esas de plástico
 flexibles que no se dejan nada) echamos la pasta sobre la bandeja de horno a la que le hemos puesto
-papel vegetal. <strong>140ºC y ventilador</strong>. <strong><em>asegúrate de que poner ambas resistencias</em></strong></p><p>Temporizador para mirar y <strong>remover en 10 min</strong>.</p><p>Tras 10 minutos la pasta se ha secado bastante. Se ve que tengo yo un horno muy potente. Ahora
-pondré temporizador de 5 en <strong>5 minutos</strong>.</p><p>Tenía pensado añadir las nueces y la manzana deshidratada ahora (que hasta que dominemos Álex y yo
+papel vegetal. <strong>140ºC y ventilador</strong>. <strong><em>asegúrate de que poner ambas resistencias</em></strong></p>
+<p>Temporizador para mirar y <strong>remover en 10 min</strong>.</p>
+<p>Tras 10 minutos la pasta se ha secado bastante. Se ve que tengo yo un horno muy potente. Ahora
+pondré temporizador de 5 en <strong>5 minutos</strong>.</p>
+<p>Tenía pensado añadir las nueces y la manzana deshidratada ahora (que hasta que dominemos Álex y yo
 la técnica de deshitratación de fruta, que tiene su cálculo matemático detrás, va a ser manzana
 deshidratada de Mercadona a 0.70 cént. la bolsa). Lo planeado así porque lo he visto en la receta de
 un señor que decía que necesitaba menos tiempo de horno así que las he reservado para echarlas
-ahora.</p><p>Al sacar la bandeja del horno ten cuidado porque quema muchísimo -no es tan obvio-. Si te has
-quemado, de inmediato la zona de piel bajo el grifo y nada de pasta de dientes.</p><p>Ahora que echo la manzana y las nueces estoy viendo que igual no quedan juntas y que igual es mejor
-echarlas desde el principio... apuntado para limitaciones.</p><p>Han pasado <strong>5 minutos. A remover</strong>.</p><p>Decidido: La manzana desecada al final del todo o por separado en un bote y las nueces pecanas se
+ahora.</p>
+<p>Al sacar la bandeja del horno ten cuidado porque quema muchísimo -no es tan obvio-. Si te has
+quemado, de inmediato la zona de piel bajo el grifo y nada de pasta de dientes.</p>
+<p>Ahora que echo la manzana y las nueces estoy viendo que igual no quedan juntas y que igual es mejor
+echarlas desde el principio... apuntado para limitaciones.</p>
+<p>Han pasado <strong>5 minutos. A remover</strong>.</p>
+<p>Decidido: La manzana desecada al final del todo o por separado en un bote y las nueces pecanas se
 incorporan desde el principio. Rescato la manzana desidratada del Mercadona en un bol y dejo las
 pecanas. He hechado en su lugar manzana que tenía a medio-secar. Cero escrupulosidad en cuanto a
 metodología científica, pero esta variable extraña de las manzanas secas se va a corregir en la
-versión 1.1.</p><p>Me acabo de dar cuenta de que el horno estaba puesto solo con la resistencia de arriba. Lo cambio a
+versión 1.1.</p>
+<p>Me acabo de dar cuenta de que el horno estaba puesto solo con la resistencia de arriba. Lo cambio a
 las dos resistencias con ventilador. La próxima vez me aseguraré de poner dos resistencias desde el
-principio.</p><p>Han pasado otros <strong>5 minutos. A remover</strong> con mucho cuidado de no romper las pelotas que se han
+principio.</p>
+<p>Han pasado otros <strong>5 minutos. A remover</strong> con mucho cuidado de no romper las pelotas que se han
 formado de muesli. No están muuuy doraditas pero ya van estando hechas. Una vez más y yo creo que lo
-saco.</p><p>Últimos <strong>5 minutos</strong>:</p><p><strong><em>añadir aquí la fruta deshidratada</em></strong></p><p>Saco la bandeja y traslado el muesli con el propio papel de horno a secar sobre la rejilla metálica
-del horno en una encimera.</p><p>Han pasado más de 30 minutos desde que puse a secar el muesli y ya puedo extraer conclusiones.</p><p>En primer lugar: Estoy satisfecha con la elección de semillas. Desconozco la influencia del polvo de
-quinoa. Sería necesario replicar la receta con grupos con y sin polvo de quinoa para conocerla.</p><p>Se ha hecho un cambio imprevisto en el horneado que puede haber influido a la integridad del muesli.</p><p>La incorporación de los frutos secos debe realizarse al comienzo y la de la fruta seca al final de
+saco.</p>
+<p>Últimos <strong>5 minutos</strong>:</p>
+<p><strong><em>añadir aquí la fruta deshidratada</em></strong></p>
+<p>Saco la bandeja y traslado el muesli con el propio papel de horno a secar sobre la rejilla metálica
+del horno en una encimera.</p>
+<p>Han pasado más de 30 minutos desde que puse a secar el muesli y ya puedo extraer conclusiones.</p>
+<p>En primer lugar: Estoy satisfecha con la elección de semillas. Desconozco la influencia del polvo de
+quinoa. Sería necesario replicar la receta con grupos con y sin polvo de quinoa para conocerla.</p>
+<p>Se ha hecho un cambio imprevisto en el horneado que puede haber influido a la integridad del muesli.</p>
+<p>La incorporación de los frutos secos debe realizarse al comienzo y la de la fruta seca al final de
 la receta o incluso en el momento de comer el muesli. Incorporo esta sigerencia entre asteriscos en
-la receta.</p><p>Definitivamente le falta crujientez.debe desarrollarse una línea de investigación respecto al
-aceite: procedencia y cantidad. De forma paralela, otra sobre la temperatura de horneado.</p><p>Dulzor subjetivamente correcto, pero las pelotas son poco gordas. Como ambas cualidades dependen,
+la receta.</p>
+<p>Definitivamente le falta crujientez.debe desarrollarse una línea de investigación respecto al
+aceite: procedencia y cantidad. De forma paralela, otra sobre la temperatura de horneado.</p>
+<p>Dulzor subjetivamente correcto, pero las pelotas son poco gordas. Como ambas cualidades dependen,
 según la literatura consultada, de la cantidad de miel incorporada, se sugiere remover el muesli con
 cuidado desde un primer momento o rebajar las expectativas en cuanto a la gordura de los tronchos de
-muesli en futuras replicaciones de la receta.</p><p>Para las siguientes ediciones de la receta procuraré ser breve.</p>]]></content:encoded>
+muesli en futuras replicaciones de la receta.</p>
+<p>Para las siguientes ediciones de la receta procuraré ser breve.</p>]]></content:encoded>
             <category>desayuno</category>
         </item>
         <item>
@@ -311,124 +709,25 @@ muesli en futuras replicaciones de la receta.</p><p>Para las siguientes edicione
             <guid>https://fame.grigri.cloud/Naan</guid>
             <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>250g de harina de espelta integral</li><li>200g de masa madre</li><li>1 cucharadita de sal</li><li>120g de yogur griego</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>En Terminator, mezcla la<strong>masa madre</strong>, el<strong>yogur</strong>y la<strong>sal</strong>. Luego incorpora lentamente la
-<strong>harina </strong>mientras Terminator amasa. Le pones film transparente y a <strong>reposar 4 horas</strong>. Si la hace
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>250g de harina de espelta integral</li>
+<li>200g de masa madre</li>
+<li>1 cucharadita de sal</li>
+<li>120g de yogur griego</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<p>En Terminator, mezcla la<strong>masa madre</strong>, el<strong>yogur</strong>y la<strong>sal</strong>. Luego incorpora lentamente la
+**harina **mientras Terminator amasa. Le pones film transparente y a <strong>reposar 4 horas</strong>. Si la hace
 por la noche, vete a dormir a gusto: la pones a «fermentar en frío» en el frigo y
 «se mezclan mejor los sabores porque lo hace más lento» («si tú lo dices...
-»).</p><p>Al día siguiente, mientras el pollo tikka masala se calienta en el puchero, en una sartén mediana
+»).</p>
+<p>Al día siguiente, mientras el pollo tikka masala se calienta en el puchero, en una sartén mediana
 vas echando porciones de unos 150g previamente hechas bolitas y aplastadas. La masa se pega mucho,
 pero huye de la harina, <strong>aplánalas usando aceite</strong>. Cuidado que se queman con mirarlas. Suben un
-poco y hacen burbujitas.</p><p>Enlace a la receta original: <a href="http://chezdashita.blogspot.com/2010/02/pan-naan.html" target="_blank" rel="noopener noreferrer">http://chezdashita.blogspot.com/2010/02/pan-naan.html</a></p>]]></content:encoded>
+poco y hacen burbujitas.</p>
+<p>Enlace a la receta original: <a href="http://chezdashita.blogspot.com/2010/02/pan-naan.html">http://chezdashita.blogspot.com/2010/02/pan-naan.html</a></p>]]></content:encoded>
             <category>pan</category>
-        </item>
-        <item>
-            <title><![CDATA[Pan de hamburguesa]]></title>
-            <link>https://fame.grigri.cloud/Pan de hamburguesa</link>
-            <guid>https://fame.grigri.cloud/Pan de hamburguesa</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 pizca de azúcar</li><li>250g de harina</li><li>100ml de leche</li><li>80g de mantequilla</li><li>500g de masa madre</li><li>400g de pure de patata</li><li>16g de sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Si no tenemos masa madre la podemos hacer de la siguiente manera:</p><p>Mezclamos a partes iguales agua y harina (250g/250g) y añadimos deshidratada (25g)</p><p>Dejamos reposar 40 min y estará lista para mezclar con el resto de ingredientes.</p><p>Mezclamos todo añadiendo al final la mantequilla para que no asfixie a nuestra levadura.</p><p>Se amasa bien hasta que este todo correctamente mezclado y se hacen bolitas del tamaño de un puño.</p><p>Se hornean durante 15 minutos aproximadamente (hasta que las aprietes y recuperen) y a disfrutar!</p>]]></content:encoded>
-            <category>pan</category>
-        </item>
-        <item>
-            <title><![CDATA[Pan]]></title>
-            <link>https://fame.grigri.cloud/Pan</link>
-            <guid>https://fame.grigri.cloud/Pan</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>600g de agua</li><li>750g de harina de espelta integral</li><li>250g de harina de trigo panificable</li><li>300g de masa madre</li><li>20g de sal</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Mezclar harina y agua (cuidado con el agua) y dejar reposar durante 1 hora para que se haga
-autólisis.</p><p>Agregar masa madre y sal, intentando que no entre en contacto con la masa madre para no matar la
-levadura y para facilitar su mezcla se recomienda humedecerla.</p><p>Amasar hasta que se pueda estirar y se vea casi transparente. Dejar reposar hasta que suba (20% para
-principantes, 100% si eres un profesional). <!-- -->[Tiempo: 4h en verano con buena MM]</p><p>Plegar la masa para equiparar temperaturas y hacer la masa más uniforme.</p><p>Floreamos harina sobre la mesa y depositamos la masa para cortarla en el tamaño de pan definitivo.</p><p>Se dan forma a los panes con la espatula. Se echa harina y se deja reposar con un film 10 minutos.</p><p>Se forma plegando hacia dentro y dejamos fermentar después de que suba un poco en un recipiente
-poroso en el frigorífico.<!-- -->[3h en verano o 10/12h en el frigo]</p><p>Para cocerlo se pone el horno a máxima potencia y se calienta un recipiente metálico donde se
-cocinará el pan. Cuando este bien caliente se saca el recipiente y se añade sémola de trigo para
-evitar que se pegue el pan. Hacemos un corte para direccionar la fuga de gas.</p><p>Se hornea durante 25 minutos a 300 grados y se quita la tapa y se dejan 5 minutos más hasta que se
-caramelice.</p><p>Referencias: <a href="https://www.youtube.com/watch?v=WrtI5KXQ-F0" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=WrtI5KXQ-F0</a></p>]]></content:encoded>
-            <category>pan</category>
-        </item>
-        <item>
-            <title><![CDATA[Panceta asada]]></title>
-            <link>https://fame.grigri.cloud/Panceta asada</link>
-            <guid>https://fame.grigri.cloud/Panceta asada</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 cebolla</li><li>4 dientes de ajo</li><li>600g de panceta</li><li>romero</li><li>25 cl de vino blanco</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Se coloca en salmuera al 5% durante una noche y la dejas secar dos días en el frigo con el cuero
-hacia arriba. Después con un buen fondo de cebollas Juliana, ajos con la piel machacados, romero y
-vino blanco.</p><p>Unos cortes en la piel y una hora más o menos a 200 (depende del horno).</p>]]></content:encoded>
-            <category>plato principal</category>
-            <category>asado</category>
-        </item>
-        <item>
-            <title><![CDATA[Pollo tikka masala]]></title>
-            <link>https://fame.grigri.cloud/Pollo tikka masala</link>
-            <guid>https://fame.grigri.cloud/Pollo tikka masala</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>1 canela en rama</li><li>2 cayena</li><li>2 cebolla</li><li>1 cucharada de comino</li><li>1 cucharada de curcuma</li><li>4 dientes de ajo</li><li>1 cucharada de garam masala</li><li>1 trozo de jengibre</li><li>50 cl de leche de coco</li><li>4 pechuga de pollo</li><li>500g de tomate triturado</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Aceite en sartén, colocas un palito de canela un par de minutos para que suelte sabor, lo retiras,
-sofríes la cebolla, agregas toda las especias, incluyendo jengibre, ajo y cilantro.</p><p>Seguidamente agregas el tomate triturado y media taza de agua o caldo de pollo. A esta salsa súper
-aromática, le agregas los trozos de pollo y los dejas cocinar corrigiendo sal y cualquier especia
-que consideres.</p><p>Cuando el pollo esté listo, agregas la leche de coco, dejas hervir un par de minutos más y listo. Al
-servir, agregas cilantro fresco picado.</p><p>Al servir, se puede acompañar con arroz basmati o naan.</p><p>Nivel pro: <a href="https://www.youtube.com/watch?v=G6Qjf6IyclQ" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=G6Qjf6IyclQ</a></p>]]></content:encoded>
-            <category>plato principal</category>
-            <category>india</category>
-        </item>
-        <item>
-            <title><![CDATA[Rabo de Toro]]></title>
-            <link>https://fame.grigri.cloud/Rabo de Toro</link>
-            <guid>https://fame.grigri.cloud/Rabo de Toro</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>2 cayenas</li><li>1 cebolla</li><li>4 dientes de ajo</li><li>4 patatas</li><li>1 cucharadita de pimienta negra</li><li>1 pimiento rojo</li><li>1 pimiento verde</li><li>1 rabo de toro</li><li>1/2 botella de vino tinto</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Salpimentamos el rabo.</p><p>Preparamos una cazuela amplia y añadimos aceite. Con el aceite bien caliente añadimos el rabo para
-sellarle. Hacemos que se dore bien por todos los lados y retiramos.</p><p>Añadimos el ajo picado para dorarlo a fuego lento. Posteriormente añadimos la cebolla y el pimiento
-picado en trozos pequeños.</p><p>Dejamos pochar durante 30 minutos aproximadamente.</p><p>Añadimos el rabo que habiamos retirado previamente. Echamos media botella de vino tinto y si es
-necesario agua para que quede cubierta la carne.</p><p>Se deja cocinar a fuego lento hasta que la salsa tenga una textura un poco más pastosa.</p><p>Lo mejor es dejarlo de un día para otro.</p><p>Una hora antes de servir, poner el guiso en ebullición y añadir las patatas (arrancarlas al cortar
-para que suelten almidon y espese más la salsa), ajustamos la sal y lo dejamos al fuego como 40
-minutos.</p><p>A disfrutar!</p>]]></content:encoded>
-            <category>plato principal</category>
-            <category>guiso</category>
-        </item>
-        <item>
-            <title><![CDATA[Risotto]]></title>
-            <link>https://fame.grigri.cloud/Risotto</link>
-            <guid>https://fame.grigri.cloud/Risotto</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>3 ajetes</li><li>200g de Arroz de risotto (carnaroli, arborio...)</li><li>1 caldo de pollo</li><li>3 chalotas</li><li>4 esparragos trigueros</li><li>1 mantequilla</li><li>1 muslo de pollo</li><li>1 parmesano rallado</li><li>200g de setas</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Cocer el muslo de pollo en el caldo de pollo, y metele un laurel, la parte verde de los ajetes o
-algún recorte de verdura que tengas viejo .</p><p>Cuando este bien cocido separas la carne del hueso y la desmigas con las manos y lo reservas.</p><p>El caldo lo reservas y si lo ves muy concentrado echa un poquito de agua.</p><p>Trocea las setas, pica bien fina unas 3 chalotas y dos ajetes.</p><p>Pon a calentar una cazuela sin aceite ni nada. Cuando este bien caliente añade las setas y chorrito
-de aceite. Queremos que las setas se doren tiene que estar el fuego fuerte si no van a empezar a
-soltar agua.</p><p>Una vez doradas bajamos el fuego añadimos una nuez de mantequilla, la chalota y el ajete picado y
-sofreimos lentamente hasta que la chalota se ponga transparente/brillante.</p><p>Añadimos el arroz unos 200g para los dos estará bien pero tu verás. Sofríes el arroz con todo un
-minutito añades sal y pimienta y empiezas a mojar con el caldo caliente.</p><p>Vas poco a poco nunca tendrá que sobrepasar un centímetro el caldo por encima del arroz y tendrás
-que ir removiendo muy a menudo para que el arroz suelte todo su almidón.</p><p>El fuego al mínimo. Al loro con la sal que el caldo puede tener sal. Al final de todo pruebas y
-rectificas.</p><p>El arroz tardará 25min tranquilamente incluso algo más, cuando este al dente añade los espárragos
-cortados en rodajitas finas, la carne de pollo desmigada, un trocito de mantequilla y una cucharada
-de parmesano para mantecar y que tenga brillo. Revuélvelo bien ya fuera del fuego para que la
-mantequilla y el parmesano se funda. El risotto tiene que quedar meloso, tiene que tener caída en el
-plato no ser un mazacote.</p><p>Asi que después de añadir el parmesano y mantequilla quizás tengas que echar una gotita de caldo mas
-para que quede meloso. Si quieres un cebollino picado le iría muy bien para acabar</p>]]></content:encoded>
-            <category>plato principal</category>
-            <category>arroz</category>
-        </item>
-        <item>
-            <title><![CDATA[Salsa tzatziki]]></title>
-            <link>https://fame.grigri.cloud/Salsa tzatziki</link>
-            <guid>https://fame.grigri.cloud/Salsa tzatziki</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2><ul><li>2 cucharadas de aceite de oliva virgen extra</li><li>1 diente de ajo</li><li>5g de eneldo</li><li>1/2 limón</li><li>10g de menta</li><li>1 pepino</li><li>1 pizca de sal</li><li>2 yogures griegos</li></ul><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="#elaboración" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2><p>Preparación, cómo hacer la receta de salsa tzatziki:</p><p>Pela el <strong>pepino</strong>, ábrelo y extrae la zona central de pepitas, ya que si se añaden a la salsa
-podría quedar muy líquida. Rállalomuy finito y déjalo escurriendo en un colador, con un poquito de
-sal.</p><p>Al cabo de unos 5 minutos, presiona el pepino para que termine de <strong>escurrir</strong> su agua.</p><p>Rallamos el pepino y lo dejamos escurrir</p><p>En un bol pon el pepino con el <strong>aceite</strong> y el <strong>yogur griego</strong>, y mezcla bien.</p><p>Añade los dientes de <strong>ajo</strong> picados muy finitos, <strong>menta o perejil</strong> bien picados,<strong>eneldo</strong> y el
-<strong>zumo de limón</strong>. Mezcla todos los ingredientes para que quede una crema lo más homogénea posible.</p><p>Mezclamos los ingredientes de la salsa tzatziki</p><p>Deja el bol r<strong>eposando en la nevera</strong>, tapado con papel film, durante al menos 3o minutos (aunque
-si lo dejas un par de horas, estará más fresco y denso).</p><p>Sirve y degusta:</p><p>Conserva esta salsa en la<strong>nevera</strong>, y sácala al menos 10minutos antes de consumirla para que no
-esté excesivamente fría. Sírvela en una salsera y aprovecha para mojar crudités de verdura
-(zanahorias, endibias<!-- -->…<!-- -->), pan de pita, o<strong>para acompañar carnes y pescados</strong>(sobre todo queda
-genial con<strong>brochetas</strong>de pollo o gambas)e incluso<strong>ensaladas</strong>, te va a encantar su toque cremoso y
-fresco.</p><p>Variaciones de la receta de salsa tzatziki:</p><p>Como se trata de una receta clásica, admite pocas variaciones. Puedes añadir un poco de <strong>pimienta
-blanca molida</strong> para que tenga un sabor más potente.</p><p>Si quieres un resultado más homogéneo, puedes<strong> rallar el pepino</strong>. Así conseguirás un resultado más
-cremoso.</p><p>Puedes <strong>sustituir el yogur griego por un yogur natural</strong>, aunque deberás dejarlo sobre un colador
-muy fino para que escurra el suero y quede más cremoso.</p><p>Consejos:</p><p>Recuerda<strong>siempre probar la salsa antes de servirla</strong>, y dejarla a tu gusto, tanto en sabor como en
-textura. Incorpora más limón si te gusta con un punto ácido, y rectifícala de sal.</p><p><strong>Créditos a</strong> <a href="https://www.recetasdeescandalo.com/salsa-tzatziki-receta-griega/" target="_blank" rel="noopener noreferrer">https://www.recetasdeescandalo.com/salsa-tzatziki-receta-griega/</a></p>]]></content:encoded>
-            <category>salsa</category>
         </item>
     </channel>
 </rss>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[2883],{1495:e=>{e.exports=JSON.parse('{"permalink":"/tags/vegetariana","page":1,"postsPerPage":5,"totalPages":1,"totalCount":5,"blogDescription":"Archivo de recetas de cocina, \xf1am \xf1am.","blogTitle":"Fame"}')}}]);

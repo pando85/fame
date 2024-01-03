@@ -32,8 +32,8 @@ Para asar el pollo le ponemos en el horno a 180 grados durante una hora con todo
 
 Para los noodles, deshuesar el pollo y separar la carne. Se prepara un caldo con 2 cebollas y las carcasas del pollo durante 40 minutos cociendo. Al terminar se tiran los huesos y se sigue cociendo añadiendo el caldo con la cebolla triturada. También añadimos la zanahoria cortada en rodajas.
 
-En una sarten se sofrie el ajo, el jengibre y la cúrcuma bien picaditos. Se añaden al caldo y en la misma sartén se frien los hongos cortados en rodajas de medio centímetro de grosor.
+En una sarten se sofrie el ajo, el jengibre y la cúrcuma bien picaditos. Se añaden al caldo junto con la pasta de miso. En la misma sartén se frien los hongos cortados en rodajas de medio centímetro de grosor.
 
-Los noodles y el pak choi se cocinan en los últimos minutos con el caldo hirviendo. También se añade la pasta de miso y la salsa de soja.
+Los noodles y el pak choi se cocinan en los últimos minutos con el caldo hirviendo. Se añade la salsa de soja hasta ajustar el punto de sal.
 
 Emplatar con las setas y el pollo que habíamos retirado previamente.

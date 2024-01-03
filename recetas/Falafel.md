@@ -1,6 +1,6 @@
 ---
 image: ./img/falafel.jpg
-tags: [entrante, vegetariana]
+tags: [entrante, vegetariana, india]
 author: teresa
 ---
 

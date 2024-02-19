@@ -28,17 +28,17 @@
 </ul>
 <h2 id="carne">Carne</h2>
 <h3 id="ternera">Ternera</h3>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Costilla de ternera<a href="https://www.chefsteps.com/activities/beef-short-ribs-your-way">1</a></td><td>65℃</td><td>22h</td></tr><tr><td>Falda</td><td>65℃</td><td>24h</td></tr><tr><td>Morcillo</td><td>80℃</td><td>16h</td></tr><tr><td>Redondo</td><td>65℃</td><td>36h</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Costilla de ternera<a href="https://www.chefsteps.com/activities/beef-short-ribs-your-way">1</a></td><td>65℃</td><td>22h</td></tr><tr><td>Falda</td><td>65℃</td><td>24h</td></tr><tr><td>Morcillo</td><td>80℃</td><td>16h</td></tr><tr><td>Redondo</td><td>65℃</td><td>36h</td></tr></tbody></table></center>
 <h3 id="pollo">Pollo</h3>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>65℃</td><td>40 min</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>65℃</td><td>40 min</td></tr></tbody></table></center>
 <h3 id="pavo">Pavo</h3>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>60℃</td><td>4h</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>60℃</td><td>4h</td></tr></tbody></table></center>
 <h2 id="pescado">Pescado</h2>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Salmón</td><td>50℃</td><td>15 min</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Salmón</td><td>50℃</td><td>15 min</td></tr></tbody></table></center>
 <h2 id="verdura">Verdura</h2>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Champiñon</td><td>85℃</td><td>40 min</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Champiñon</td><td>85℃</td><td>40 min</td></tr></tbody></table></center>
 <h2 id="otros">Otros</h2>
-<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Huevos</td><td>65℃</td><td>37 min</td></tr></tbody></table>
+<center><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Huevos</td><td>65℃</td><td>37 min</td></tr></tbody></table></center>
 <p><a href="https://fame.grigri.cloud/sous-vide-table.html">Tabla completa</a></p>]]></content:encoded>
             <category>sous vide</category>
         </item>

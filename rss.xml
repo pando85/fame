@@ -4,10 +4,44 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud/</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Tue, 02 Jan 2024 16:25:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 19 Feb 2024 13:01:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
+        <item>
+            <title><![CDATA[Sous vide]]></title>
+            <link>https://fame.grigri.cloud/Sous vide</link>
+            <guid>https://fame.grigri.cloud/Sous vide</guid>
+            <pubDate>Mon, 19 Feb 2024 13:01:04 GMT</pubDate>
+            <description><![CDATA[- Carne]]></description>
+            <content:encoded><![CDATA[<ul>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#carne">Carne</a>
+<ul>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#ternera">Ternera</a></li>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#pollo">Pollo</a></li>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#pavo">Pavo</a></li>
+</ul>
+</li>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#pescado">Pescado</a></li>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#verdura">Verdura</a></li>
+<li><a href="https://fame.grigri.cloud/Sous%20vide#otros">Otros</a></li>
+</ul>
+<h2 id="carne">Carne</h2>
+<h3 id="ternera">Ternera</h3>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Costilla de ternera<a href="https://www.chefsteps.com/activities/beef-short-ribs-your-way">1</a></td><td>65℃</td><td>22h</td></tr><tr><td>Falda</td><td>65℃</td><td>24h</td></tr><tr><td>Morcillo</td><td>80℃</td><td>16h</td></tr><tr><td>Redondo</td><td>65℃</td><td>36h</td></tr></tbody></table>
+<h3 id="pollo">Pollo</h3>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>65℃</td><td>40 min</td></tr></tbody></table>
+<h3 id="pavo">Pavo</h3>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Pechuga</td><td>60℃</td><td>4h</td></tr></tbody></table>
+<h2 id="pescado">Pescado</h2>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Salmón</td><td>50℃</td><td>15 min</td></tr></tbody></table>
+<h2 id="verdura">Verdura</h2>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Champiñon</td><td>85℃</td><td>40 min</td></tr></tbody></table>
+<h2 id="otros">Otros</h2>
+<table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th></tr></thead><tbody><tr><td>Huevos</td><td>65℃</td><td>37 min</td></tr></tbody></table>
+<p><a href="https://fame.grigri.cloud/sous-vide-table.html">Tabla completa</a></p>]]></content:encoded>
+            <category>sous vide</category>
+        </item>
         <item>
             <title><![CDATA[porrusalda]]></title>
             <link>https://fame.grigri.cloud/porrusalda</link>
@@ -639,92 +673,6 @@ continuación, añadir el aceite y el vinagre al gusto. Probar y corregir hasta 
 deseado.</p>
 <p>También en lugar de usar un mortero podemos usar una batidora para mezclar todos los ingredientes.</p>]]></content:encoded>
             <category>salsa</category>
-        </item>
-        <item>
-            <title><![CDATA[Muesli -o granola- casero 1.0]]></title>
-            <link>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</link>
-            <guid>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</guid>
-            <pubDate>Sun, 20 Nov 2022 20:46:08 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
-<ul>
-<li>4 cucharadas de aceite de coco</li>
-<li>125 ml de agua del grifo</li>
-<li>20g de chía</li>
-<li>150g de copos de avena</li>
-<li>20g de Manzana deshidratada</li>
-<li>6 cucharadas de Miel</li>
-<li>40g de Nueces pecanas</li>
-<li>20g de Polvito de quinoa</li>
-<li>10g de Quinoa</li>
-<li>20g de Semillas de lino</li>
-<li>3cm de vaina de vainilla</li>
-</ul>
-<h2 id="elaboración">Elaboración</h2>
-<p>He puesto el <strong>horno a precalentar a 140ºC</strong>. (Mejor pecar de lenta y que las comidas se hagan con
-amor a que se me queme -he pensado-. Ojalá no quede una pasta).</p>
-<p>He mezclado los ingredientes secos: <strong>avena</strong>, <strong>chía</strong>, <strong>lino</strong>, semillas de **quinoa **y
-<strong>polvitos de quinoa</strong>.</p>
-<p><strong><em>para replicar la receta sin los errores de la mía echa ahora las <strong>pecanas</strong></em></strong></p>
-<p>He echado el <strong>aceite de coco</strong>, poco a poco y removiendo. Se supone que el aceite es lo que le da
-la crugientez al muesli y he visto varios tipos usados. Es un punto a valorar si necesita mejora.
-¿Seguimos con el de coco?¿Echamos más?¿Menos, que casi me parto una muela?</p>
-<p>He abierto el cacho de vaina de **vainilla **con un cuchillo como si fuera un bocata y con la misma
-cuchara de remover (que aún está limpia porque los ingredientes usados hasta ahora no se pegan) he
-raspado y recogido la chicha que tiene dentro la vaina y la he incorporado al resto de ingredientes,
-mezclando.</p>
-<p><strong>Miel</strong>: 6 cucharadas mucho me parecen, pero bueno. Ahora vemos. Se supone que la miel es lo que
-hace que se formen las pelotas de cereales -y mira, yo para hacer muesli casero y que no haya
-tronchos bien goooodos que reventar con los dientes, mejor como alpiste-.</p>
-<p><strong>Agua</strong>: Ni idea de para qué es esto pero aparece en muchas recetas, su función tendrá. La he
-echado y me he venido a escribir porque parece que le va a costar unos minutos al soluto absorber el
-disolvente.</p>
-<p>Al <strong>horno</strong>. Rebañando bien con una lengua (no con la lengua; con una espátula de esas de plástico
-flexibles que no se dejan nada) echamos la pasta sobre la bandeja de horno a la que le hemos puesto
-papel vegetal. <strong>140ºC y ventilador</strong>. <strong><em>asegúrate de que poner ambas resistencias</em></strong></p>
-<p>Temporizador para mirar y <strong>remover en 10 min</strong>.</p>
-<p>Tras 10 minutos la pasta se ha secado bastante. Se ve que tengo yo un horno muy potente. Ahora
-pondré temporizador de 5 en <strong>5 minutos</strong>.</p>
-<p>Tenía pensado añadir las nueces y la manzana deshidratada ahora (que hasta que dominemos Álex y yo
-la técnica de deshitratación de fruta, que tiene su cálculo matemático detrás, va a ser manzana
-deshidratada de Mercadona a 0.70 cént. la bolsa). Lo planeado así porque lo he visto en la receta de
-un señor que decía que necesitaba menos tiempo de horno así que las he reservado para echarlas
-ahora.</p>
-<p>Al sacar la bandeja del horno ten cuidado porque quema muchísimo -no es tan obvio-. Si te has
-quemado, de inmediato la zona de piel bajo el grifo y nada de pasta de dientes.</p>
-<p>Ahora que echo la manzana y las nueces estoy viendo que igual no quedan juntas y que igual es mejor
-echarlas desde el principio... apuntado para limitaciones.</p>
-<p>Han pasado <strong>5 minutos. A remover</strong>.</p>
-<p>Decidido: La manzana desecada al final del todo o por separado en un bote y las nueces pecanas se
-incorporan desde el principio. Rescato la manzana desidratada del Mercadona en un bol y dejo las
-pecanas. He hechado en su lugar manzana que tenía a medio-secar. Cero escrupulosidad en cuanto a
-metodología científica, pero esta variable extraña de las manzanas secas se va a corregir en la
-versión 1.1.</p>
-<p>Me acabo de dar cuenta de que el horno estaba puesto solo con la resistencia de arriba. Lo cambio a
-las dos resistencias con ventilador. La próxima vez me aseguraré de poner dos resistencias desde el
-principio.</p>
-<p>Han pasado otros <strong>5 minutos. A remover</strong> con mucho cuidado de no romper las pelotas que se han
-formado de muesli. No están muuuy doraditas pero ya van estando hechas. Una vez más y yo creo que lo
-saco.</p>
-<p>Últimos <strong>5 minutos</strong>:</p>
-<p><strong><em>añadir aquí la fruta deshidratada</em></strong></p>
-<p>Saco la bandeja y traslado el muesli con el propio papel de horno a secar sobre la rejilla metálica
-del horno en una encimera.</p>
-<p>Han pasado más de 30 minutos desde que puse a secar el muesli y ya puedo extraer conclusiones.</p>
-<p>En primer lugar: Estoy satisfecha con la elección de semillas. Desconozco la influencia del polvo de
-quinoa. Sería necesario replicar la receta con grupos con y sin polvo de quinoa para conocerla.</p>
-<p>Se ha hecho un cambio imprevisto en el horneado que puede haber influido a la integridad del muesli.</p>
-<p>La incorporación de los frutos secos debe realizarse al comienzo y la de la fruta seca al final de
-la receta o incluso en el momento de comer el muesli. Incorporo esta sigerencia entre asteriscos en
-la receta.</p>
-<p>Definitivamente le falta crujientez.debe desarrollarse una línea de investigación respecto al
-aceite: procedencia y cantidad. De forma paralela, otra sobre la temperatura de horneado.</p>
-<p>Dulzor subjetivamente correcto, pero las pelotas son poco gordas. Como ambas cualidades dependen,
-según la literatura consultada, de la cantidad de miel incorporada, se sugiere remover el muesli con
-cuidado desde un primer momento o rebajar las expectativas en cuanto a la gordura de los tronchos de
-muesli en futuras replicaciones de la receta.</p>
-<p>Para las siguientes ediciones de la receta procuraré ser breve.</p>]]></content:encoded>
-            <category>desayuno</category>
         </item>
     </channel>
 </rss>

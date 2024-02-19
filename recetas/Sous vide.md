@@ -53,3 +53,5 @@ tags: [sous vide]
 | Huevos   | 65℃         | 37 min |
 
 [1]: https://www.chefsteps.com/activities/beef-short-ribs-your-way
+
+[Tabla completa](./sous-vide-table.html)

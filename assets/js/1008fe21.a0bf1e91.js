@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[3134],{842:a=>{a.exports=JSON.parse('{"label":"asado","permalink":"/tags/asado","allTagsPath":"/tags","count":2,"unlisted":false}')}}]);

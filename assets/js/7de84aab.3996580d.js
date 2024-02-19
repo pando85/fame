@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[7901],{9832:s=>{s.exports=JSON.parse('{"label":"sous vide","permalink":"/tags/sous-vide","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

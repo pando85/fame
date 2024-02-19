@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[8221],{7503:e=>{e.exports=JSON.parse('{"permalink":"/tags/salsa","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"blogDescription":"Archivo de recetas de cocina, \xf1am \xf1am.","blogTitle":"Fame"}')}}]);

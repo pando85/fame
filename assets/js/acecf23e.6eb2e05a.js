@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/","blogTitle":"Fame"}')}}]);

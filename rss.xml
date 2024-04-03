@@ -4,7 +4,7 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Wed, 03 Apr 2024 14:10:49 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 03 Apr 2024 14:18:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Almendras garrapiñadas]]></title>
             <link>https://fame.grigri.cloud/Almendras garrapiñadas</link>
             <guid>https://fame.grigri.cloud/Almendras garrapiñadas</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -36,7 +36,7 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
             <title><![CDATA[Bizcocho de plátano y dátiles]]></title>
             <link>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</link>
             <guid>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -85,7 +85,7 @@ sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <title><![CDATA[Brilliant Bang Bang Cucumber]]></title>
             <link>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</link>
             <guid>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -112,7 +112,7 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Caldo de verduras]]></title>
             <link>https://fame.grigri.cloud/Caldo de verduras</link>
             <guid>https://fame.grigri.cloud/Caldo de verduras</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -151,10 +151,45 @@ transfiéralo a un tazón para servir.</p>
             <category>caldo</category>
         </item>
         <item>
+            <title><![CDATA[Chapata y focaccia]]></title>
+            <link>https://fame.grigri.cloud/Chapata y focaccia</link>
+            <guid>https://fame.grigri.cloud/Chapata y focaccia</guid>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
+            <description><![CDATA[Ingredientes]]></description>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>425g de harina panificable</li>
+<li>325g de agua (aprox)</li>
+<li>150g de masa madre</li>
+<li>10g de sal</li>
+</ul>
+<h2 id="preparación">Preparación</h2>
+<ol>
+<li>Se deslíe la levadura en el agua helada y se mezclan todos los ingredientes con la mano o con una cuchara, tendría que quedar una masa pegajosa, poco más que un denso puré.</li>
+<li>Se mezcla someramente y se pliega un par de veces la masa sobre sí misma y se mete a la nevera toda la noche. La idea es que la masa no coja temperatura.</li>
+<li>24 horas después, se vierte la masa sobre una superficie bien aceitada y se pliega intentando que adquiera tensión. Se deja fermentar 30-40 minutos y se vuelve a plegar (añadir aceite a la superficie de trabajo si fuera necesario).</li>
+<li>Después de otros 45 minutos, la masa se habrá relajado otra vez, se vuelve a plegar con cuidado de no desgasarla. Repetiremos esto otra vez si fuera necesario (si la masa aún no ha cogido volumen).</li>
+<li>Una vez la masa casi haya doblado su volumen, se volca con cuidado sobre una superficie muy enharinada y se corta en dos largas tiras que se transfieren con las manos bien enharinadas a una hoja de papel de hornear.</li>
+<li>Se dejan reposar media hora y se meten al horno a 250º C. Durante los primeros 10-15 minutos de la cocción se crea humedad (mediante un vaporizador y/o una bandeja metálica en la que echamos agua cuando el pan entra en el horno).</li>
+<li>Pasados esos 10-15 primeros minutos, se retira la bandeja de agua y se prosigue con la cocción a 230-240º durante otros 25 minutos. Pasado ese tiempo el pan está cocido, se puede dejar con el horno apagado otros 30 minutos para una corteza más crujiente.</li>
+</ol>
+<p>Para la focaccia:</p>
+<ul>
+<li>En vez de cortar la masa ya fermentada, se deja que ocupe una bandeja cuadrada y se frotan con aceite y el relleno, haciendo hendiduras con los dedos para que el aceite y sus aromas penetren en la masa.</li>
+<li>Se deja fermentar media hora y se hornea igual que la ciabatta.</li>
+</ul>
+<p><a href="https://youtu.be/M0XMWfmdodw">Video tutorial</a></p>]]></content:encoded>
+            <category>receta</category>
+            <category>pan</category>
+            <category>masa madre</category>
+            <category>chapata</category>
+            <category>focaccia</category>
+        </item>
+        <item>
             <title><![CDATA[Cocido]]></title>
             <link>https://fame.grigri.cloud/Cocido</link>
             <guid>https://fame.grigri.cloud/Cocido</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -183,7 +218,7 @@ cociendo durante 45 minutos.</p>
             <title><![CDATA[Cookies de chocolate]]></title>
             <link>https://fame.grigri.cloud/Cookies de chocolate</link>
             <guid>https://fame.grigri.cloud/Cookies de chocolate</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -223,7 +258,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crema de calabacín]]></title>
             <link>https://fame.grigri.cloud/Crema de calabacín</link>
             <guid>https://fame.grigri.cloud/Crema de calabacín</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -245,7 +280,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crepes dulces]]></title>
             <link>https://fame.grigri.cloud/Crepes dulces</link>
             <guid>https://fame.grigri.cloud/Crepes dulces</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -265,7 +300,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Fabada]]></title>
             <link>https://fame.grigri.cloud/Fabada</link>
             <guid>https://fame.grigri.cloud/Fabada</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -322,7 +357,7 @@ barro, está de morirse.</p>]]></content:encoded>
             <title><![CDATA[Falafel]]></title>
             <link>https://fame.grigri.cloud/Falafel</link>
             <guid>https://fame.grigri.cloud/Falafel</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -359,7 +394,7 @@ papel absorbente y dejamos escurrir un par de minutos antes de servir.</p>
             <title><![CDATA[Flan de huevo]]></title>
             <link>https://fame.grigri.cloud/Flan de huevo</link>
             <guid>https://fame.grigri.cloud/Flan de huevo</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -379,7 +414,7 @@ el día anterior, así te quedará consistente.</p>
             <title><![CDATA[Garam Masala]]></title>
             <link>https://fame.grigri.cloud/Garam Masala</link>
             <guid>https://fame.grigri.cloud/Garam Masala</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -403,7 +438,7 @@ de clavo.</p>
             <title><![CDATA[Lasaña]]></title>
             <link>https://fame.grigri.cloud/Lasaña</link>
             <guid>https://fame.grigri.cloud/Lasaña</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -438,7 +473,7 @@ aceite de oliva por encima.</p>
             <title><![CDATA[Lechazo]]></title>
             <link>https://fame.grigri.cloud/Lechazo</link>
             <guid>https://fame.grigri.cloud/Lechazo</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -467,7 +502,7 @@ aconsejo vigilar el asado cada poco tiempo.</p>
             <title><![CDATA[Mojo Picón]]></title>
             <link>https://fame.grigri.cloud/Mojo Picón</link>
             <guid>https://fame.grigri.cloud/Mojo Picón</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -492,7 +527,7 @@ deseado.</p>
             <title><![CDATA[Muesli -o granola- casero 1.0]]></title>
             <link>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</link>
             <guid>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -578,7 +613,7 @@ muesli en futuras replicaciones de la receta.</p>
             <title><![CDATA[Naan]]></title>
             <link>https://fame.grigri.cloud/Naan</link>
             <guid>https://fame.grigri.cloud/Naan</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -605,7 +640,7 @@ poco y hacen burbujitas.</p>
             <title><![CDATA[Pan de hamburguesa]]></title>
             <link>https://fame.grigri.cloud/Pan de hamburguesa</link>
             <guid>https://fame.grigri.cloud/Pan de hamburguesa</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -627,60 +662,36 @@ poco y hacen burbujitas.</p>
             <category>pan</category>
         </item>
         <item>
-            <title><![CDATA[Pan]]></title>
-            <link>https://fame.grigri.cloud/Pan</link>
-            <guid>https://fame.grigri.cloud/Pan</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
+            <title><![CDATA[Pan de pita]]></title>
+            <link>https://fame.grigri.cloud/Pan de pita</link>
+            <guid>https://fame.grigri.cloud/Pan de pita</guid>
+            <pubDate>Wed, 03 Apr 2024 14:18:16 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
-<li>600g de agua</li>
-<li>750g de harina de espelta integral</li>
-<li>250g de harina de trigo panificable</li>
-<li>300g de masa madre</li>
-<li>20g de sal</li>
+<li>340g de harina panificable</li>
+<li>215g de agua</li>
+<li>5g de sal</li>
+<li>10g de azúcar</li>
+<li>70g de masa madre activa</li>
 </ul>
-<h2 id="elaboración">Elaboración</h2>
-<p>Mezclar harina y agua (cuidado con el agua) y dejar reposar durante 1 hora para que se haga
-autólisis.</p>
-<p>Agregar masa madre y sal, intentando que no entre en contacto con la masa madre para no matar la
-levadura y para facilitar su mezcla se recomienda humedecerla.</p>
-<p>Amasar hasta que se pueda estirar y se vea casi transparente. Dejar reposar hasta que suba (20% para
-principantes, 100% si eres un profesional). [Tiempo: 4h en verano con buena MM]</p>
-<p>Plegar la masa para equiparar temperaturas y hacer la masa más uniforme.</p>
-<p>Floreamos harina sobre la mesa y depositamos la masa para cortarla en el tamaño de pan definitivo.</p>
-<p>Se dan forma a los panes con la espatula. Se echa harina y se deja reposar con un film 10 minutos.</p>
-<p>Se forma plegando hacia dentro y dejamos fermentar después de que suba un poco en un recipiente
-poroso en el frigorífico.[3h en verano o 10/12h en el frigo]</p>
-<p>Para cocerlo se pone el horno a máxima potencia y se calienta un recipiente metálico donde se
-cocinará el pan. Cuando este bien caliente se saca el recipiente y se añade sémola de trigo para
-evitar que se pegue el pan. Hacemos un corte para direccionar la fuga de gas.</p>
-<p>Se hornea durante 25 minutos a 300 grados y se quita la tapa y se dejan 5 minutos más hasta que se
-caramelice.</p>
-<p>Referencias: <a href="https://www.youtube.com/watch?v=WrtI5KXQ-F0">https://www.youtube.com/watch?v=WrtI5KXQ-F0</a></p>]]></content:encoded>
+<h2 id="preparación">Preparación</h2>
+<ol>
+<li>Mezclar todos los ingredientes en un bol. Dejar reposar unos 30 minutos y amasar sobre la mesa, plegándola sobre sí misma y haciéndola rodar, durante unos 5 minutos.</li>
+<li>Dejar reposar unos 80 minutos.</li>
+<li>Dividir la masa en porciones de unos 80 gr aproximadamente.</li>
+<li>Bolear las porciones con las dos manos, poniendo la base de la bola en una palma de la mano y haciéndola rodar sobre esta con la otra mano. Se puede usar un poquito de harina para ayudarse y que no se pegue la masa en las manos.</li>
+<li>Estirar las bolas con las manos o un rodillo y dejarlas reposar unos 15 minutos, sobre papel de hornear.</li>
+<li>Precalentar el horno durante unos 20 minutos a 250ºC, con una bandeja de horno dentro y en el centro del horno.</li>
+<li>Ayudándose de otra bandeja, hacer deslizar las pitas sobre la bandeja que se tiene calentando en el horno. Hornear unos 2-3 minutos, darles la vuelta y hornear otros 2-3 minutos más. Enseguida se empiezan a hinchar, especialmente en el primer minuto de horneado.</li>
+<li>No dejar que las pitas tuesten mucho, pues no deben quedar crujientes y muy doradas, ya que se romperían después.</li>
+<li>En el momento de sacarlas del horno, envolverlas enseguida en un paño, para que no se enfríen. Cuidado con el vapor que sueltan las pitas al sacarlas del horno.</li>
+</ol>]]></content:encoded>
+            <category>receta</category>
             <category>pan</category>
-        </item>
-        <item>
-            <title><![CDATA[Panceta asada]]></title>
-            <link>https://fame.grigri.cloud/Panceta asada</link>
-            <guid>https://fame.grigri.cloud/Panceta asada</guid>
-            <pubDate>Wed, 03 Apr 2024 14:10:49 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
-<ul>
-<li>1 cebolla</li>
-<li>4 dientes de ajo</li>
-<li>600g de panceta</li>
-<li>romero</li>
-<li>25 cl de vino blanco</li>
-</ul>
-<h2 id="elaboración">Elaboración</h2>
-<p>Se coloca en salmuera al 5% durante una noche y la dejas secar dos días en el frigo con el cuero
-hacia arriba. Después con un buen fondo de cebollas Juliana, ajos con la piel machacados, romero y
-vino blanco.</p>
-<p>Unos cortes en la piel y una hora más o menos a 200 (depende del horno).</p>]]></content:encoded>
-            <category>plato principal</category>
-            <category>asado</category>
+            <category>pita</category>
+            <category>masa madre</category>
+            <category>kebab</category>
         </item>
     </channel>
 </rss>

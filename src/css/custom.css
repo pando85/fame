@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-.markdown ul {
+.markdown ul, ol {
   list-style-position: inside;
 }
 

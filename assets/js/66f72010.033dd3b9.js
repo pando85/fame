@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[1787],{2807:e=>{e.exports=JSON.parse('{"label":"jud\xedas verdes","permalink":"/tags/judias-verdes","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

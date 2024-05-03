@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[7582],{6974:a=>{a.exports=JSON.parse('{"label":"focaccia","permalink":"/tags/focaccia","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

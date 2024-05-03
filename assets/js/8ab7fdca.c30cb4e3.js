@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[2069],{4581:a=>{a.exports=JSON.parse('{"label":"masa madre","permalink":"/tags/masa-madre","allTagsPath":"/tags","count":3,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrecetas=self.webpackChunkrecetas||[]).push([[9113],{7633:a=>{a.exports=JSON.parse('{"label":"vegetariana","permalink":"/tags/vegetariana","allTagsPath":"/tags","count":5,"unlisted":false}')}}]);

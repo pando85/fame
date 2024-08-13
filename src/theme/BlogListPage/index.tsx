@@ -16,18 +16,18 @@ import {
 } from '@docusaurus/theme-common';
 import BlogLayout from '@theme/BlogLayout';
 import SearchMetadata from '@theme/SearchMetadata';
-import type {Props} from '@theme/BlogListPage';
+import type { Props } from '@theme/BlogListPage';
 import BlogPostItems from '@theme/BlogPostItems';
 
 import styles from './styles.module.css';
 
 
 function BlogListPageMetadata(props: Props): JSX.Element {
-  const {metadata} = props;
+  const { metadata } = props;
   const {
-    siteConfig: {title: siteTitle},
+    siteConfig: { title: siteTitle },
   } = useDocusaurusContext();
-  const {blogDescription, blogTitle, permalink} = metadata;
+  const { blogDescription, blogTitle, permalink } = metadata;
   const isBlogOnlyMode = permalink === '/';
   const title = isBlogOnlyMode ? siteTitle : blogTitle;
   return (
@@ -39,7 +39,7 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 }
 
 function BlogListPageContent(props: Props): JSX.Element {
-  const {items} = props;
+  const { items } = props;
   const [searchTerm, setSearchTerm] = React.useState('');
 
   const filteredItems = items.filter((item) => {

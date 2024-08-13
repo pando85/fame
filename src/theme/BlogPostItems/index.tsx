@@ -7,8 +7,10 @@
 
 import React from 'react';
 import RecipeItem from '../../components/RecipeItem';
-import {BlogPostProvider} from '@docusaurus/theme-common/internal';
-import type {Props} from '@theme/BlogPostItems';
+import {
+  BlogPostProvider,
+} from '@docusaurus/plugin-content-blog/client';
+import type { Props } from '@theme/BlogPostItems';
 
 
 export default function BlogPostItems({
@@ -17,7 +19,7 @@ export default function BlogPostItems({
   const sorted_items = items.sort((a, b) => a.content.metadata.title > b.content.metadata.title);
   return (
     <>
-      {sorted_items.map(({content: BlogPostContent}) => (
+      {sorted_items.map(({ content: BlogPostContent }) => (
         <BlogPostProvider
           key={BlogPostContent.metadata.permalink}
           content={BlogPostContent}>

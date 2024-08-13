@@ -5,14 +5,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {type ReactNode} from 'react';
+import React, { type ReactNode } from 'react';
 import clsx from 'clsx';
-import {HtmlClassNameProvider, ThemeClassNames} from '@docusaurus/theme-common';
-import {BlogPostProvider} from '@docusaurus/theme-common/internal';
+import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
+import {
+  BlogPostProvider,
+} from '@docusaurus/plugin-content-blog/client';
 import BlogLayout from '@theme/BlogLayout';
 import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
-import type {Props} from '@theme/BlogPostPage';
+import type { Props } from '@theme/BlogPostPage';
 
 function BlogPostPageContent({
   children,

@@ -8,10 +8,10 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 
-import type {Props} from '@theme/BlogLayout';
+import type { Props } from '@theme/BlogLayout';
 
 export default function BlogLayout(props: Props): JSX.Element {
-  const {sidebar, toc, children, ...layoutProps} = props;
+  const { sidebar, toc, children, ...layoutProps } = props;
   return (
     <Layout {...layoutProps}>
       <div className="container margin-vert--lg">

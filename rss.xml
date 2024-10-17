@@ -4,7 +4,7 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Thu, 17 Oct 2024 07:10:14 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Oct 2024 08:38:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Almendras garrapiñadas]]></title>
             <link>https://fame.grigri.cloud/Almendras garrapiñadas</link>
             <guid>https://fame.grigri.cloud/Almendras garrapiñadas</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -33,10 +33,61 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
             <category>aperitivo</category>
         </item>
         <item>
+            <title><![CDATA[Arroz meloso]]></title>
+            <link>https://fame.grigri.cloud/Arroz meloso</link>
+            <guid>https://fame.grigri.cloud/Arroz meloso</guid>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
+            <description><![CDATA[Ingredientes]]></description>
+            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
+<ul>
+<li>1 cabeza de ajo</li>
+<li>2 cebollas grandes</li>
+<li>2 contramuslos de pollo</li>
+<li>Aceite de oliva</li>
+<li>Pimienta</li>
+<li>Sal</li>
+<li>1/2 litro de agua</li>
+<li>Limón</li>
+</ul>
+<h2 id="elaboración">Elaboración</h2>
+<ol>
+<li>
+<p>Picar la cabeza de ajo y ponerla en una sartén con un poco de aceite de oliva a fuego lento para que se dore y caramelice lentamente.</p>
+</li>
+<li>
+<p>Deshuesar los contramuslos de pollo, separando la piel y los huesos.</p>
+</li>
+<li>
+<p>En una olla, poner los huesos y la piel del pollo con un poco de pimienta y dos ajos aplastados. Cocinar a fuego fuerte hasta que empiecen a dorarse, luego añadir medio litro de agua para hacer el caldo del arroz. Dejar cocinar.</p>
+</li>
+<li>
+<p>Picar las cebollas.</p>
+</li>
+<li>
+<p>Cuando el ajo en la sartén esté dorado, añadir las cebollas picadas. Cocinar a fuego fuerte al principio y luego bajar a fuego lento para que se caramelicen.</p>
+</li>
+<li>
+<p>En otra sartén, poner el pollo deshuesado con sal, pimienta y un poco de aceite. Cocinar a fuego fuerte hasta que esté bien marcado.</p>
+</li>
+<li>
+<p>Añadir el arroz a la sartén con el ajo y la cebolla, y dejar que se dore un poco. Luego, añadir el pollo y el caldo. Aprovechar bien los restos que queden pegados en la sartén del pollo.</p>
+</li>
+<li>
+<p>Cocinar el arroz durante 20 minutos. Ajustar la sal y la pimienta al gusto.</p>
+</li>
+<li>
+<p>Al final, añadir un chorrito de limón antes de servir.</p>
+</li>
+</ol>
+<p>¡Disfruta de tu arroz meloso!</p>]]></content:encoded>
+            <category>plato principal</category>
+            <category>arroz</category>
+        </item>
+        <item>
             <title><![CDATA[Bizcocho de plátano y dátiles]]></title>
             <link>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</link>
             <guid>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -85,7 +136,7 @@ sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <title><![CDATA[Brilliant Bang Bang Cucumber]]></title>
             <link>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</link>
             <guid>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -112,7 +163,7 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Caldo de verduras]]></title>
             <link>https://fame.grigri.cloud/Caldo de verduras</link>
             <guid>https://fame.grigri.cloud/Caldo de verduras</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -154,7 +205,7 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Chapata y focaccia]]></title>
             <link>https://fame.grigri.cloud/Chapata y focaccia</link>
             <guid>https://fame.grigri.cloud/Chapata y focaccia</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -189,7 +240,7 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Cocido]]></title>
             <link>https://fame.grigri.cloud/Cocido</link>
             <guid>https://fame.grigri.cloud/Cocido</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -218,7 +269,7 @@ cociendo durante 45 minutos.</p>
             <title><![CDATA[Cookies de chocolate]]></title>
             <link>https://fame.grigri.cloud/Cookies de chocolate</link>
             <guid>https://fame.grigri.cloud/Cookies de chocolate</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -258,7 +309,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crema de calabacín]]></title>
             <link>https://fame.grigri.cloud/Crema de calabacín</link>
             <guid>https://fame.grigri.cloud/Crema de calabacín</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -280,7 +331,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crepes dulces]]></title>
             <link>https://fame.grigri.cloud/Crepes dulces</link>
             <guid>https://fame.grigri.cloud/Crepes dulces</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -300,7 +351,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Fabada]]></title>
             <link>https://fame.grigri.cloud/Fabada</link>
             <guid>https://fame.grigri.cloud/Fabada</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -357,7 +408,7 @@ barro, está de morirse.</p>]]></content:encoded>
             <title><![CDATA[Falafel]]></title>
             <link>https://fame.grigri.cloud/Falafel</link>
             <guid>https://fame.grigri.cloud/Falafel</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -394,7 +445,7 @@ papel absorbente y dejamos escurrir un par de minutos antes de servir.</p>
             <title><![CDATA[Flan de huevo]]></title>
             <link>https://fame.grigri.cloud/Flan de huevo</link>
             <guid>https://fame.grigri.cloud/Flan de huevo</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -414,7 +465,7 @@ el día anterior, así te quedará consistente.</p>
             <title><![CDATA[Garam Masala]]></title>
             <link>https://fame.grigri.cloud/Garam Masala</link>
             <guid>https://fame.grigri.cloud/Garam Masala</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -438,7 +489,7 @@ de clavo.</p>
             <title><![CDATA[Judias verdes]]></title>
             <link>https://fame.grigri.cloud/Judias verdes</link>
             <guid>https://fame.grigri.cloud/Judias verdes</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -465,7 +516,7 @@ de clavo.</p>
             <title><![CDATA[Lasaña]]></title>
             <link>https://fame.grigri.cloud/Lasaña</link>
             <guid>https://fame.grigri.cloud/Lasaña</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -500,7 +551,7 @@ aceite de oliva por encima.</p>
             <title><![CDATA[Lechazo]]></title>
             <link>https://fame.grigri.cloud/Lechazo</link>
             <guid>https://fame.grigri.cloud/Lechazo</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -529,7 +580,7 @@ aconsejo vigilar el asado cada poco tiempo.</p>
             <title><![CDATA[Mojo Picón]]></title>
             <link>https://fame.grigri.cloud/Mojo Picón</link>
             <guid>https://fame.grigri.cloud/Mojo Picón</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -554,7 +605,7 @@ deseado.</p>
             <title><![CDATA[Muesli -o granola- casero 1.0]]></title>
             <link>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</link>
             <guid>https://fame.grigri.cloud/Muesli -o granola- casero 1.0</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -640,7 +691,7 @@ muesli en futuras replicaciones de la receta.</p>
             <title><![CDATA[Naan]]></title>
             <link>https://fame.grigri.cloud/Naan</link>
             <guid>https://fame.grigri.cloud/Naan</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
+            <pubDate>Thu, 17 Oct 2024 08:38:21 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
 <ul>
@@ -662,31 +713,6 @@ poco y hacen burbujitas.</p>
 <p>Enlace a la receta original: <a href="http://chezdashita.blogspot.com/2010/02/pan-naan.html">http://chezdashita.blogspot.com/2010/02/pan-naan.html</a></p>]]></content:encoded>
             <category>pan</category>
             <category>india</category>
-        </item>
-        <item>
-            <title><![CDATA[Pan de hamburguesa]]></title>
-            <link>https://fame.grigri.cloud/Pan de hamburguesa</link>
-            <guid>https://fame.grigri.cloud/Pan de hamburguesa</guid>
-            <pubDate>Thu, 17 Oct 2024 07:10:14 GMT</pubDate>
-            <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 id="ingredientes">Ingredientes</h2>
-<ul>
-<li>1 pizca de azúcar</li>
-<li>250g de harina</li>
-<li>100ml de leche</li>
-<li>80g de mantequilla</li>
-<li>500g de masa madre</li>
-<li>400g de pure de patata</li>
-<li>16g de sal</li>
-</ul>
-<h2 id="elaboración">Elaboración</h2>
-<p>Si no tenemos masa madre la podemos hacer de la siguiente manera:</p>
-<p>Mezclamos a partes iguales agua y harina (250g/250g) y añadimos deshidratada (25g)</p>
-<p>Dejamos reposar 40 min y estará lista para mezclar con el resto de ingredientes.</p>
-<p>Mezclamos todo añadiendo al final la mantequilla para que no asfixie a nuestra levadura.</p>
-<p>Se amasa bien hasta que este todo correctamente mezclado y se hacen bolitas del tamaño de un puño.</p>
-<p>Se hornean durante 15 minutos aproximadamente (hasta que las aprietes y recuperen) y a disfrutar!</p>]]></content:encoded>
-            <category>pan</category>
         </item>
     </channel>
 </rss>

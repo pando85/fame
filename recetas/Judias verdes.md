@@ -16,6 +16,6 @@ tags: [receta, judías verdes, verduras]
 2. Pelar y cortar la patata en trozos.
 3. Colocar las judías verdes y la patata en la olla express.
 4. Añadir medio vaso de agua y un chorrito de aceite de oliva.
-5. Cocinar en la olla express durante 8 minutos.
+5. Cocinar en la olla express durante 10 minutos.
 6. Liberar la presión de la olla express antes de abrir.
 7. Servir caliente y disfrutar.

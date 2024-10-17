@@ -66,4 +66,4 @@ tags: [sous vide]
 
 [1]: https://www.chefsteps.com/activities/beef-short-ribs-your-way
 
-[Tabla completa](./sous-vide-table.html)
+<a href="/sous-vide-table.html">Tabla completa</a>

@@ -22,14 +22,13 @@ tags: [plato principal, cuchara, vegetariana]
 
 ### El día antes
 
-Ponemos a remojo las verdinas con abundante agua durante 12h. Es importante no tenerlas demasiado tiempo (p.e. 24h) ni demasiado poco porque si no nos quedarán duras.
+Ponemos a remojo las verdinas con abundante agua durante 6-10 horas. Es importante no tenerlas demasiado tiempo ni demasiado poco porque si no nos quedarán duras.
 
 ### Preparación
 
 - Cortamos las verduras en brunoise y las pochamos a fuego lento durante unos 30 minutos. La única verdura que agregaremos al final será la espinaca.
 
 - Mientras están pochándose las verduras, cocemos las verdinas. En una olla express ponemos las verdinas desde agua fría con una cebolla, una zanahoria, unos ajos y la hoja de laurel. Las cocemos durante unos 25 minutos. Si cuando abramos la olla están un poco duras, las pondremos un poco más. Eso puede también deberse al tipo de agua que tengamos en nuestra provincia. Si el agua está considerada «dura» tendremos que tenerlas más tiempo.
-Te puede interesar  Merluza a la gallega
 
 - Con las verduras pochadas, agregamos una cucharada de pimentón dulce y rehogamos un poco. Cubrimos con caldo de verduras e incorporamos las verdinas cocidas. Las verdinas previamente las habremos colado del agua de cocerlas.
 

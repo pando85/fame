@@ -7,6 +7,7 @@
 
 import React from 'react';
 import clsx from 'clsx';
+import Fuse from 'fuse.js';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {
@@ -42,13 +43,25 @@ function BlogListPageContent(props: Props): JSX.Element {
   const { items } = props;
   const [searchTerm, setSearchTerm] = React.useState('');
 
-  const filteredItems = items.filter((item) => {
-    const titleMatch = item.content.metadata.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const tagsMatch = item.content.metadata.tags?.some(tag =>
-      tag.label.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    return titleMatch || tagsMatch;
-  });
+  const fuseOptions = {
+    ignoreDiacritics: true,
+    threshold: 0.4,
+    keys: [
+      'content.metadata.title',
+    ],
+  };
+
+  const fuse = React.useMemo(() => new Fuse(items, fuseOptions), [items]);
+
+  const filteredItems = React.useMemo(() => {
+    if (!searchTerm) {
+      return [...items].sort((a, b) =>
+        a.content.metadata.title.localeCompare(b.content.metadata.title)
+      );
+    }
+
+    return fuse.search(searchTerm).map(result => result.item);
+  }, [fuse, items, searchTerm]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -65,6 +78,7 @@ function BlogListPageContent(props: Props): JSX.Element {
           <input
             type="text"
             id="searchInput"
+            placeholder="Search posts..."
             value={searchTerm}
             onChange={handleSearchChange}
           />
@@ -94,13 +108,15 @@ function BlogListPageContent(props: Props): JSX.Element {
         </div>
       </div>
       <div className={styles.container}>
-        <BlogPostItems items={filteredItems} />
+        <BlogPostItems
+          items={filteredItems.map(item => ({
+            ...item,
+          }))}
+        />
       </div>
     </BlogLayout>
   );
 }
-
-// Export the modified component...
 
 export default function BlogListPage(props: Props): JSX.Element {
   return (

@@ -16,10 +16,9 @@ import type { Props } from '@theme/BlogPostItems';
 export default function BlogPostItems({
   items,
 }: Props): JSX.Element {
-  const sorted_items = items.sort((a, b) => a.content.metadata.title > b.content.metadata.title);
   return (
     <>
-      {sorted_items.map(({ content: BlogPostContent }) => (
+      {items.map(({ content: BlogPostContent }) => (
         <BlogPostProvider
           key={BlogPostContent.metadata.permalink}
           content={BlogPostContent}>

@@ -4,7 +4,7 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Thu, 25 Sep 2025 17:36:10 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 25 Sep 2025 18:16:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
@@ -12,9 +12,9 @@
             <title><![CDATA[Albódingas]]></title>
             <link>https://fame.grigri.cloud/Albódingas</link>
             <guid>https://fame.grigri.cloud/Albódingas</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alb%C3%B3dingas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alb%C3%B3dingas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1,5 kg de carne picada de ternera</li>
 <li>1 manojo de perejil</li>
@@ -25,7 +25,7 @@
 <li>Aceite de oliva virgen extra (para freír)</li>
 <li>Sal al gusto</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Alb%C3%B3dingas#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Alb%C3%B3dingas#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <ol>
 <li>Pica el perejil, las 3 cebollas y los ajos.</li>
 <li>Mezcla la carne picada con el perejil, y añade aproximadamente un tercio del ajo y un tercio de la cebolla picados.</li>
@@ -43,16 +43,16 @@
             <title><![CDATA[Alioli]]></title>
             <link>https://fame.grigri.cloud/Alioli</link>
             <guid>https://fame.grigri.cloud/Alioli</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alioli#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alioli#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>10 g de ajo (1 o 2 dientes)</li>
 <li>200 ml de aceite de oliva virgen extra</li>
 <li>1 cucharadita de vinagre de Jerez</li>
 <li>Sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Alioli#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Alioli#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <ol>
 <li>Pela el ajo y retira el germen.</li>
 <li>Machaca el ajo con una pizca de sal en un mortero hasta obtener una pasta homogénea; añade el vinagre.</li>
@@ -61,7 +61,7 @@
 <li>Da forma al alioli en el propio mortero y sirve.</li>
 </ol>
 <p>Ref: <a href="https://youtu.be/L6ftftM_lVg?si=1C-TOpMZylrvnM1y&amp;t=201" target="_blank" rel="noopener noreferrer">https://youtu.be/L6ftftM_lVg?si=1C-TOpMZylrvnM1y&amp;t=201</a></p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="nota">Nota<a href="https://fame.grigri.cloud/Alioli#nota" class="hash-link" aria-label="Enlace directo al Nota" title="Enlace directo al Nota">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="nota">Nota<a href="https://fame.grigri.cloud/Alioli#nota" class="hash-link" aria-label="Enlace directo al Nota" title="Enlace directo al Nota" translate="no">​</a></h2>
 <ul>
 <li>Si se corta o no emulsiona, añade un poco de agua fría y sigue moviendo. Si esto no funciona, puedes empezar de nuevo con un poco de leche y añadir la mezcla cortada poco a poco.</li>
 </ul>]]></content:encoded>
@@ -72,15 +72,15 @@
             <title><![CDATA[Almendras garrapiñadas]]></title>
             <link>https://fame.grigri.cloud/Almendras garrapiñadas</link>
             <guid>https://fame.grigri.cloud/Almendras garrapiñadas</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Almendras%20garrapi%C3%B1adas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Almendras%20garrapi%C3%B1adas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>2 cucharadas de agua</li>
 <li>4 cucharadas de almendras crudas</li>
 <li>3 cucharadas de azúcar</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Almendras%20garrapi%C3%B1adas#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Almendras%20garrapi%C3%B1adas#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>En esta receta utilizaremos almendras crudas con piel y sin cascara. Utilizaremos un bol para todos
 los ingredientes. Si queremos hacer 4 boles de almendras, usaremos también 3 de azúcar y 2 de agua.</p>
 <p>En primer lugar, añadimos en una cazuela de acero inoxidable todos los ingredientes. La ponemos a
@@ -96,9 +96,9 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
             <title><![CDATA[Arroz meloso]]></title>
             <link>https://fame.grigri.cloud/Arroz meloso</link>
             <guid>https://fame.grigri.cloud/Arroz meloso</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Arroz%20meloso#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Arroz%20meloso#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1 cabeza de ajo</li>
 <li>2 cebollas grandes</li>
@@ -109,7 +109,7 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
 <li>1/2 litro de agua</li>
 <li>Limón</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Arroz%20meloso#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Arroz%20meloso#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <ol>
 <li>
 <p>Picar la cabeza de ajo y ponerla en una sartén con un poco de aceite de oliva a fuego lento para que se dore y caramelice lentamente.</p>
@@ -147,9 +147,9 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
             <title><![CDATA[Bizcocho de plátano y dátiles]]></title>
             <link>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</link>
             <guid>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>100ml de aceite de coco</li>
 <li>100ml de agua</li>
@@ -163,13 +163,13 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
 <li>4 o 2 plátanos</li>
 <li>1 pizca de sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="toffe-de-dátiles">Toffe de dátiles<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#toffe-de-d%C3%A1tiles" class="hash-link" aria-label="Enlace directo al Toffe de dátiles" title="Enlace directo al Toffe de dátiles">​</a></h3>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="toffe-de-dátiles">Toffe de dátiles<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#toffe-de-d%C3%A1tiles" class="hash-link" aria-label="Enlace directo al Toffe de dátiles" title="Enlace directo al Toffe de dátiles" translate="no">​</a></h3>
 <p>La noche anterior, en un vaso ponemos al remojo los dátiles deshuesados con la leche y el agua.</p>
 <p>A la mañana o la tarde siguiente ponemos en un cacito a fuego lento el contenido. Añadimos una
 cucharadita de canela. Removemos para que no se pegue. Cuando se ha consumido el líquido por
 completo y el conjunto adquiere un aspecto deleznable, lo tenemos. Sabe mejor que luce.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="bizcocho">Bizcocho<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#bizcocho" class="hash-link" aria-label="Enlace directo al Bizcocho" title="Enlace directo al Bizcocho">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="bizcocho">Bizcocho<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#bizcocho" class="hash-link" aria-label="Enlace directo al Bizcocho" title="Enlace directo al Bizcocho" translate="no">​</a></h3>
 <p>Si acabamos de hacer el tofe debemos enfriarlo antes de mezclarlo con más ingredientes. El cacito,
 se puede poner en contacto con agua fría en un cuenco, cambiando el agua un par de veces ya se pone
 a tono.</p>
@@ -196,14 +196,14 @@ sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <title><![CDATA[Brilliant Bang Bang Cucumber]]></title>
             <link>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</link>
             <guid>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Brilliant%20Bang%20Bang%20Cucumber#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Brilliant%20Bang%20Bang%20Cucumber#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1 chile</li>
 <li>1 pepino</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Brilliant%20Bang%20Bang%20Cucumber#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Brilliant%20Bang%20Bang%20Cucumber#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Rasca el exterior del pepino con un tenedor para crear surcos.</p>
 <p>Con el puño, golpea el pepino plano, luego córtalo en rodajas y colócalo en un tazón con una pizca
 de sal marina realmente buena. Arrugue agresivamente y déjelo por 5 minutos.</p>
@@ -223,9 +223,9 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Caldo de verduras]]></title>
             <link>https://fame.grigri.cloud/Caldo de verduras</link>
             <guid>https://fame.grigri.cloud/Caldo de verduras</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Caldo%20de%20verduras#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Caldo%20de%20verduras#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>3 puerros</li>
 <li>2 tomates</li>
@@ -242,7 +242,7 @@ transfiéralo a un tazón para servir.</p>
 <li>5 litros de agua</li>
 <li>Sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Caldo%20de%20verduras#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Caldo%20de%20verduras#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <ul>
 <li>
 <p>Si queremos un poco de color en el caldo, ponemos una gotita de aceite y tostamos la cebolleta hasta que se dore, simplemente cortada por la mitad.</p>
@@ -265,16 +265,16 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Chapata y focaccia]]></title>
             <link>https://fame.grigri.cloud/Chapata y focaccia</link>
             <guid>https://fame.grigri.cloud/Chapata y focaccia</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Chapata%20y%20focaccia#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Chapata%20y%20focaccia#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>425g de harina panificable</li>
 <li>325g de agua (aprox)</li>
 <li>150g de masa madre</li>
 <li>10g de sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Chapata%20y%20focaccia#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Chapata%20y%20focaccia#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación" translate="no">​</a></h2>
 <ol>
 <li>Se deslíe la levadura en el agua helada y se mezclan todos los ingredientes con la mano o con una cuchara, tendría que quedar una masa pegajosa, poco más que un denso puré.</li>
 <li>Se mezcla someramente y se pliega un par de veces la masa sobre sí misma y se mete a la nevera toda la noche. La idea es que la masa no coja temperatura.</li>
@@ -300,9 +300,9 @@ transfiéralo a un tazón para servir.</p>
             <title><![CDATA[Cocido]]></title>
             <link>https://fame.grigri.cloud/Cocido</link>
             <guid>https://fame.grigri.cloud/Cocido</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cocido#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cocido#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1 chorizo</li>
 <li>1 espinazo</li>
@@ -313,10 +313,10 @@ transfiéralo a un tazón para servir.</p>
 <li>1 puerro</li>
 <li>1 zanahoria</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cocido#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-anterior">El día anterior<a href="https://fame.grigri.cloud/Cocido#el-d%C3%ADa-anterior" class="hash-link" aria-label="Enlace directo al El día anterior" title="Enlace directo al El día anterior">​</a></h3>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cocido#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-anterior">El día anterior<a href="https://fame.grigri.cloud/Cocido#el-d%C3%ADa-anterior" class="hash-link" aria-label="Enlace directo al El día anterior" title="Enlace directo al El día anterior" translate="no">​</a></h3>
 <p>Poner en remojo los garbanzos con agua caliente y abundante sal.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Cocido#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Cocido#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación" translate="no">​</a></h3>
 <p>Quitar el agua de los garbanzos y lavarlos.</p>
 <p>Pelar las zanahorias y el puerro (yo dejo lo verde que me parece lo más rico).</p>
 <p>Añadir todos los ingredientes a la olla express y cubrir con agua hasta 2/3 de la olla. Dejar
@@ -329,9 +329,9 @@ cociendo durante 45 minutos.</p>
             <title><![CDATA[Cookies de chocolate]]></title>
             <link>https://fame.grigri.cloud/Cookies de chocolate</link>
             <guid>https://fame.grigri.cloud/Cookies de chocolate</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cookies%20de%20chocolate#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cookies%20de%20chocolate#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>125g de azúcar blanco</li>
 <li>125g de azúcar moreno</li>
@@ -344,7 +344,7 @@ cociendo durante 45 minutos.</p>
 <li>200 g de pepitas de chocolate</li>
 <li>1 cucharadita de sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cookies%20de%20chocolate#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cookies%20de%20chocolate#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Empezaremos tamizando la harina en un recipiente amplio. Añadiremos la levadura, la esencia de
 vainilla, bicarbonato y la sal, removeremos bien todos los ingredientes. Reservamos.</p>
 <p>Por otro lado vamos a mezclar el azúcar con la mantequilla, que deberemos tener a temperatura
@@ -369,15 +369,15 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crema de calabacín]]></title>
             <link>https://fame.grigri.cloud/Crema de calabacín</link>
             <guid>https://fame.grigri.cloud/Crema de calabacín</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crema%20de%20calabac%C3%ADn#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crema%20de%20calabac%C3%ADn#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>0.5 kg de calabacín</li>
 <li>media cebolla / lo blanco de un puerro</li>
 <li>leche</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Crema%20de%20calabac%C3%ADn#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Crema%20de%20calabac%C3%ADn#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Picar la parte blanca del puerro o la cebolla y sofreír ligeramente.</p>
 <p>Mientras tanto lavamos bien el calabacín y pelamos la mitad, para que no quede demasiado verde.
 Podemos pelarlo una sí una no, como una camisa de rayas. Se añade al puerro o cebolla y se sofríe
@@ -393,16 +393,16 @@ tierno). Si lo queremos más líquido añadimos un poco más luego.</p>
             <title><![CDATA[Crepes dulces]]></title>
             <link>https://fame.grigri.cloud/Crepes dulces</link>
             <guid>https://fame.grigri.cloud/Crepes dulces</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crepes%20dulces#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crepes%20dulces#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>15g de azucar</li>
 <li>100g de harina</li>
 <li>1 huevo</li>
 <li>125ml de leche</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Crepes%20dulces#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Crepes%20dulces#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Mezclar con una batidora todos los ingredientes.</p>
 <p>Verter en una crepera o sartén con aceite/mantequilla y cubrir todo el fondo.</p>
 <p>Cuando la masa pueda despegarse con facilidad, dar la vuelta para dorar por el otro lado.</p>
@@ -413,16 +413,16 @@ tierno). Si lo queremos más líquido añadimos un poco más luego.</p>
             <title><![CDATA[Crème brûlée]]></title>
             <link>https://fame.grigri.cloud/Crème brûlée</link>
             <guid>https://fame.grigri.cloud/Crème brûlée</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cr%C3%A8me%20br%C3%BBl%C3%A9e#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cr%C3%A8me%20br%C3%BBl%C3%A9e#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>480ml de nata (+36% de grasa)</li>
 <li>5 yemas de huevo</li>
 <li>50-100g de azúcar</li>
 <li>1 vaina de vainilla</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cr%C3%A8me%20br%C3%BBl%C3%A9e#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Cr%C3%A8me%20br%C3%BBl%C3%A9e#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Mezclar el azúcar con las yemas de los huevos hasta obtener una mezcla homogénea.</p>
 <p>Añadir la nata y la vaina de vainilla (abierta y raspada para extraer las semillas) y mezclar bien
 todos los ingredientes.</p>
@@ -437,23 +437,23 @@ crear la característica capa crujiente.</p>]]></content:encoded>
             <title><![CDATA[Fabada]]></title>
             <link>https://fame.grigri.cloud/Fabada</link>
             <guid>https://fame.grigri.cloud/Fabada</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Fabada#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Fabada#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1 azafran</li>
 <li>1 cebolla</li>
 <li>1 compango</li>
 <li>500g de fabes</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Fabada#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="antes-de-cocinar-fabes-de-la-granja">Antes de cocinar. Fabes de la Granja<a href="https://fame.grigri.cloud/Fabada#antes-de-cocinar-fabes-de-la-granja" class="hash-link" aria-label="Enlace directo al Antes de cocinar. Fabes de la Granja" title="Enlace directo al Antes de cocinar. Fabes de la Granja">​</a></h3>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Fabada#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="antes-de-cocinar-fabes-de-la-granja">Antes de cocinar. Fabes de la Granja<a href="https://fame.grigri.cloud/Fabada#antes-de-cocinar-fabes-de-la-granja" class="hash-link" aria-label="Enlace directo al Antes de cocinar. Fabes de la Granja" title="Enlace directo al Antes de cocinar. Fabes de la Granja" translate="no">​</a></h3>
 <p>Uno de los pasos importantes es la elección de las fabes o fabas (en Galicia). Yo utilizo la más
 típica en la fabada: las fabes "de la Granja" que se encuentran en cualquier
 supermercado. Es una variedad suave y mantecosa apropiada para esta receta. Asturias cultiva esta
 variedad a lo largo y ancho de su territorio. Se caracterizan por tener un gran sabor y una suave
 textura tras su cocción, todo un tesoro gastronómico.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-antes">El día antes<a href="https://fame.grigri.cloud/Fabada#el-d%C3%ADa-antes" class="hash-link" aria-label="Enlace directo al El día antes" title="Enlace directo al El día antes">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="el-día-antes">El día antes<a href="https://fame.grigri.cloud/Fabada#el-d%C3%ADa-antes" class="hash-link" aria-label="Enlace directo al El día antes" title="Enlace directo al El día antes" translate="no">​</a></h3>
 <p>Extendemos las fabes sobre una superficie plana y desechamos aquellas que estén dañadas. Las lavamos
 para quitar impurezas.</p>
 <p>Las dejamos en un bol con agua fría en remojo durante la noche, normalmente 12 horas. No es
@@ -461,7 +461,7 @@ necesario echar sal a la hora del remojo. Al día siguiente las escurrimos y apa
 momento de prepararlas.</p>
 <p>Ponemos a remojo, en agua templada, la panceta curada y el hueso de jamón desde la noche anterior a
 la preparación de las fabes.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación-de-la-fabada-asturiana">Preparación de la fabada asturiana<a href="https://fame.grigri.cloud/Fabada#preparaci%C3%B3n-de-la-fabada-asturiana" class="hash-link" aria-label="Enlace directo al Preparación de la fabada asturiana" title="Enlace directo al Preparación de la fabada asturiana">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación-de-la-fabada-asturiana">Preparación de la fabada asturiana<a href="https://fame.grigri.cloud/Fabada#preparaci%C3%B3n-de-la-fabada-asturiana" class="hash-link" aria-label="Enlace directo al Preparación de la fabada asturiana" title="Enlace directo al Preparación de la fabada asturiana" translate="no">​</a></h3>
 <p>Añadimos en una cazuela, a ser posible baja y ancha (si es de barro mejor). Las fabes con el agua de
 remojo y cubrimos con ese agua hasta que quede un par de dedos por encima de las mismas. Removemos
 otra vez para que se junte todo bien. Calentamos a fuego alto hasta que rompa a hervir.</p>
@@ -472,7 +472,7 @@ cebolla picada. Procurad que las morcillas y los chorizos permanezcan siempre en
 pare evitar posibles roturas que nos estropearían la fabada.</p>
 <p>Cuando lleve 1/2 hora cociendo a fuego alto le añadimos las hebras de azafrán diluidas en un poco de
 caldo caliente de la cazuela.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="cocción-de-la-fabada-y-presentación-final">Cocción de la fabada y presentación final<a href="https://fame.grigri.cloud/Fabada#cocci%C3%B3n-de-la-fabada-y-presentaci%C3%B3n-final" class="hash-link" aria-label="Enlace directo al Cocción de la fabada y presentación final" title="Enlace directo al Cocción de la fabada y presentación final">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="cocción-de-la-fabada-y-presentación-final">Cocción de la fabada y presentación final<a href="https://fame.grigri.cloud/Fabada#cocci%C3%B3n-de-la-fabada-y-presentaci%C3%B3n-final" class="hash-link" aria-label="Enlace directo al Cocción de la fabada y presentación final" title="Enlace directo al Cocción de la fabada y presentación final" translate="no">​</a></h3>
 <p>Bajamos la temperatura de cocción. Añadimos sal al gusto, es importante probar el caldo ya que hemos
 echado el hueso de jamón y pueden quedar saladas.</p>
 <p>Dejamos que las fabes se cocinen lentamente a temperatura baja durante 2 horas. Siempre removiendo
@@ -494,9 +494,9 @@ barro, está de morirse.</p>]]></content:encoded>
             <title><![CDATA[Falafel]]></title>
             <link>https://fame.grigri.cloud/Falafel</link>
             <guid>https://fame.grigri.cloud/Falafel</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Falafel#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Falafel#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>2 dientes de ajo</li>
 <li>200g de cebolla</li>
@@ -508,7 +508,7 @@ barro, está de morirse.</p>]]></content:encoded>
 <li>1 manojo de perejil fresco</li>
 <li>1 pizca de sal</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Falafel#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Falafel#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>¡No olvides acompañarlo con tzatziki!</p>
 <p>Ponemos los garbanzos en remojo 24 horas antes de realizar la receta. Transcurrido este tiempo los
 escurrimos y secamos bien para que <strong>no queden restos de agua</strong>. Introducimos los garbanzos
@@ -531,15 +531,15 @@ papel absorbente y dejamos escurrir un par de minutos antes de servir.</p>
             <title><![CDATA[Flan de huevo]]></title>
             <link>https://fame.grigri.cloud/Flan de huevo</link>
             <guid>https://fame.grigri.cloud/Flan de huevo</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Flan%20de%20huevo#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Flan%20de%20huevo#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>6 cucharadas de azúcar</li>
 <li>4 huevos</li>
 <li>1/2 litro de leche</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Flan%20de%20huevo#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Flan%20de%20huevo#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Se mezcla todo en un bol grande (con la batidora solo tardas 1 minuto) y lo echas en la flanera.
 Previamente habrás vertido en el fondo caramelo líquido (que puedes hacer tu o comprado) y listo
 para el baño maría en la olla express (unos 6 minutos). Luego dejar enfriar y listo. Mejor preparalo
@@ -551,9 +551,9 @@ el día anterior, así te quedará consistente.</p>
             <title><![CDATA[Garam Masala]]></title>
             <link>https://fame.grigri.cloud/Garam Masala</link>
             <guid>https://fame.grigri.cloud/Garam Masala</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Garam%20Masala#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Garam%20Masala#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1/2 cucharadita de canela</li>
 <li>1 cucharadita de cardamomo</li>
@@ -563,7 +563,7 @@ el día anterior, así te quedará consistente.</p>
 <li>1 cucharadita de pimienta negra</li>
 <li>1 cucharadita de semillas de cilantro</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Garam%20Masala#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Garam%20Masala#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Calienta en una sartén a fuego medio 1 cucharadita de semillas de cilantro, 1 de comino, 1 de
 cardamomo, 1 de pimienta negra, media cucharadita de nuez moscada , media de canela en polvo y media
 de clavo.</p>
@@ -575,16 +575,16 @@ de clavo.</p>
             <title><![CDATA[Judias verdes]]></title>
             <link>https://fame.grigri.cloud/Judias verdes</link>
             <guid>https://fame.grigri.cloud/Judias verdes</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Judias%20verdes#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Judias%20verdes#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>750g judías verdes</li>
 <li>1 patata mediana</li>
 <li>Medio vaso de agua</li>
 <li>1 chorrito de aceite de oliva</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Judias%20verdes#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="preparación">Preparación<a href="https://fame.grigri.cloud/Judias%20verdes#preparaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Preparación" title="Enlace directo al Preparación" translate="no">​</a></h2>
 <ol>
 <li>Lavar y cortar las judías verdes.</li>
 <li>Pelar y cortar la patata en trozos.</li>
@@ -602,9 +602,9 @@ de clavo.</p>
             <title><![CDATA[Lasaña]]></title>
             <link>https://fame.grigri.cloud/Lasaña</link>
             <guid>https://fame.grigri.cloud/Lasaña</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Lasa%C3%B1a#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Lasa%C3%B1a#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1 de ajo</li>
 <li>1kg de carne picada ternera</li>
@@ -615,7 +615,7 @@ de clavo.</p>
 <li>800ml de tomate triturado</li>
 <li>2 de zanahorias</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Lasa%C3%B1a#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Lasa%C3%B1a#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Poner la carne picada a freir en una olla grande, con aceite y fuego fuerte.</p>
 <p>Picar mucho los ajos, aplastarlos con el cuchillo como si quedara un pure para confitarlos en aceite
 hirviendo.</p>
@@ -637,14 +637,14 @@ aceite de oliva por encima.</p>
             <title><![CDATA[Lechazo]]></title>
             <link>https://fame.grigri.cloud/Lechazo</link>
             <guid>https://fame.grigri.cloud/Lechazo</guid>
-            <pubDate>Thu, 25 Sep 2025 17:36:10 GMT</pubDate>
+            <pubDate>Thu, 25 Sep 2025 18:16:47 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Lechazo#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Lechazo#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
 <li>1/2 vaso de agua</li>
 <li>1/2 lechazo</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Lechazo#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Lechazo#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <p>Una de las cosas más importantes es la matería prima: un buen lechazo suele rondar los 6 Kg de peso
 en la carnicería, esto os debería servir como dato para que no os engañen. También influye en el
 sabor la raza y como se ha criado el animal pero esto ya solo lo podemos conseguir conociendo bien

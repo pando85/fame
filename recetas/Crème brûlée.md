@@ -19,7 +19,7 @@ Mezclar el azúcar con las yemas de los huevos hasta obtener una mezcla homogén
 Añadir la nata y la vaina de vainilla (abierta y raspada para extraer las semillas) y mezclar bien
 todos los ingredientes.
 
-Verter la mezcla en tarros individuales y cocinar al sous vide a 82°C durante una hora.
+Verter la mezcla en tarros individuales y cocinar al sous vide a 82°C durante una hora y media.
 
 Una vez terminada la cocción, dejar enfriar y refrigerar hasta el momento de servir.
 

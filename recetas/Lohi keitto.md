@@ -1,9 +1,9 @@
 ---
-image: ./img/lohi_keitto.jpg
+image: ./img/lohikeitto.jpg
 tags: [plato principal, sopa, finlandia, pescado, sopa de salmón]
 ---
 
-# Lohi keitto
+# Lohikeitto (sopa de salmón)
 
 ## Ingredientes
 

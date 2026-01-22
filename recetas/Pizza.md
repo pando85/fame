@@ -18,7 +18,7 @@ tags: [receta, pan, masa madre, pizza]
 2. Dejar fermentar varios días haciendo un plegado cada 8-24h.
 
 Dependiendo del proceso de fermentación se pueden hacer las pizzas en diferentes periodos. Yo
-generalmente a partir del tercer día y hasta el quinto día las hago.
+generalmente las hago a partir del tercer día y hasta el quinto día .
 
 Si se te pasa un poco de masa puedes refrescarla, añadiendo los mismos ingredientes y repitiendo el
 proceso, o almacenarla dividida en el congelador.

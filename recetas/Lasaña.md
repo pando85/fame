@@ -5,21 +5,22 @@ tags: [plato principal, pasta]
 
 ## Ingredientes
 
-- 1 de ajo
+- 1 cabeza de ajo
 - 1kg de carne picada ternera
 - 1l de leche
+- 4 huevos
 - 1kg de mozarella
 - 15 placas de lasaña cocidas
 - 100g de queso parmesano
 - 800ml de tomate triturado
-- 2 de zanahorias
+- 2 zanahorias
 
 ## Elaboración
 
 Poner la carne picada a freir en una olla grande, con aceite y fuego fuerte.
 
 Picar mucho los ajos, aplastarlos con el cuchillo como si quedara un pure para confitarlos en aceite
-hirviendo.
+a unos 80°C.
 
 Pelar la zanahoria y rallarla bien. La terminamos picando todavía más con el cuchillo y luego lo
 añadimos al ajo con aceite.
@@ -33,6 +34,6 @@ Luego poner capas de carne, pasta y mozarella alternativamente sobre la fuente d
 ultima capa añadimos la carne restante y el queso parmesano rallado. Se puede añadir un poco de
 aceite de oliva por encima.
 
-Hornear aproximadamente a 350 grados durante 30 min. Cuando la parte de arriba este dorada, retirar.
+Hornear aproximadamente a 200°C durante 30 min. Cuando la parte de arriba este dorada, retirar.
 
 Ref: https://www.youtube.com/watch?v=VZPkIPfnzqs

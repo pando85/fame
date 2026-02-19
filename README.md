@@ -1,6 +1,8 @@
-# Website
+# Fame
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Recipe collection website built with [Docusaurus](https://docusaurus.io/).
+
+## Web App
 
 ### Installation
 
@@ -39,3 +41,42 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Android App
+
+The project includes an Android app built with [Capacitor](https://capacitorjs.com/).
+
+### Requirements
+
+- Node.js 16+
+- Android Studio with Android SDK
+- Java 17+
+
+### Build Android App
+
+```bash
+# Build the web app
+yarn build
+
+# Sync with Capacitor
+yarn cap:sync
+
+# Open in Android Studio (for development)
+yarn cap:android
+
+# Or build APK directly
+cd android && ./gradlew assembleDebug
+```
+
+The APK will be available at `android/app/build/outputs/apk/debug/app-debug.apk`.
+
+### Automated Builds
+
+Android APKs are automatically built via GitHub Actions when a new version tag is pushed:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow creates a GitHub Release with the APK attached.

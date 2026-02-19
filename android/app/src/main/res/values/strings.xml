@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fame</string>
+    <string name="title_activity_main">Fame</string>
+    <string name="package_name">cloud.grigri.fame</string>
+    <string name="custom_url_scheme">cloud.grigri.fame</string>
+</resources>

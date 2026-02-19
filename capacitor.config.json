@@ -1,0 +1,8 @@
+{
+  "appId": "cloud.grigri.fame",
+  "appName": "Fame",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https"
+  }
+}

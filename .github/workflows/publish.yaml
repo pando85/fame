@@ -54,3 +54,47 @@ jobs:
             npm i
           fi
           npm run deploy
+
+  android-release:
+    if: github.event_name != 'pull_request'
+    needs: gh-release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install dependencies
+        run: |
+          if [ -e yarn.lock ]; then
+            yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+            npm ci
+          else
+            npm i
+          fi
+      - name: Build web app
+        run: npm run build
+      - name: Sync Capacitor
+        run: npx cap sync android
+      - name: Build release APK
+        working-directory: android
+        run: ./gradlew assembleRelease
+      - name: Get version
+        id: version
+        run: echo "VERSION=$(date +%Y.%m.%d)-${GITHUB_SHA:0:7}" >> $GITHUB_OUTPUT
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: android-${{ steps.version.outputs.VERSION }}
+          name: Fame Android ${{ steps.version.outputs.VERSION }}
+          files: android/app/build/outputs/apk/release/app-release-unsigned.apk
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

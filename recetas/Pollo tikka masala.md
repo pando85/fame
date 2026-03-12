@@ -1,6 +1,6 @@
 ---
 image: ./img/pollo_tikka_masala.jpg
-tags: [plato principal, india]
+tags: [plato principal, india, carne]
 ---
 
 ## Ingredientes

@@ -1,6 +1,6 @@
 ---
 image: ./img/lechazo.jpg
-tags: [plato principal, asado]
+tags: [plato principal, asado, carne]
 ---
 
 ## Ingredientes

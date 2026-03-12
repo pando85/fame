@@ -1,5 +1,8 @@
 {
   "appId": "com.fame.recipes",
   "appName": "Fame",
-  "webDir": "build"
+  "webDir": "build",
+  "android": {
+    "backgroundColor": "#ffffff"
+  }
 }

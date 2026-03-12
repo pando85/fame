@@ -102,17 +102,9 @@ function BlogListPageContent(props: Props): JSX.Element {
     setSearchTerm('');
   };
 
-  const handleTagClick = (tag: string) => {
-    setSelectedTag(selectedTag === tag ? null : tag);
-  };
-
-  const handleClearTag = () => {
-    setSelectedTag(null);
-  };
-
   return (
     <BlogLayout>
-      <div className={styles['search-container']}>
+      <div className={styles['filters-container']}>
         <div className={styles['search-input-container']}>
           <input
             type="text"
@@ -145,28 +137,22 @@ function BlogListPageContent(props: Props): JSX.Element {
             </button>
           )}
         </div>
+        {allTags.length > 0 && (
+          <div className={styles['tag-select-container']}>
+            <select
+              id="tagSelect"
+              value={selectedTag || ''}
+              onChange={(e) => setSelectedTag(e.target.value || null)}
+              className={styles['tag-select']}
+            >
+              <option value="">Todas las etiquetas</option>
+              {allTags.map(tag => (
+                <option key={tag} value={tag}>{tag}</option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
-      {allTags.length > 0 && (
-        <div className={styles['tags-container']}>
-          {allTags.map(tag => (
-            <button
-              key={tag}
-              className={`${styles['tag-button']} ${selectedTag === tag ? styles['tag-button-active'] : ''}`}
-              onClick={() => handleTagClick(tag)}
-            >
-              {tag}
-            </button>
-          ))}
-          {selectedTag && (
-            <button
-              className={styles['clear-tag-button']}
-              onClick={handleClearTag}
-            >
-              ✕
-            </button>
-          )}
-        </div>
-      )}
       <div className={styles.container}>
         <BlogPostItems
           items={filteredItems.map(item => ({

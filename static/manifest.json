@@ -1,0 +1,23 @@
+{
+  "name": "Fame",
+  "short_name": "Fame",
+  "description": "Archivo de recetas de cocina, ñam ñam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1b1b1b",
+  "theme_color": "rgb(37, 194, 160)",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "lifestyle"]
+}

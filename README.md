@@ -80,3 +80,18 @@ git push origin v1.0.0
 ```
 
 The workflow creates a GitHub Release with the APK attached.
+
+### Offline Support
+
+The Android app includes offline support via a service worker:
+
+- **Automatic caching**: All recipes and assets are cached on first load
+- **Offline access**: View cached recipes when offline
+- **Pull-to-refresh**: Pull down on the recipe list to check for updates
+- **Update notification**: Get notified when new content is available
+
+The service worker caches:
+- Navigation pages (with network-first strategy)
+- Images (cached for 30 days)
+- Static resources (CSS, JS - stale-while-revalidate)
+- Fonts (cached for 1 year)

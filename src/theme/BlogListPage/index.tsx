@@ -42,6 +42,18 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 function BlogListPageContent(props: Props): JSX.Element {
   const { items } = props;
   const [searchTerm, setSearchTerm] = React.useState('');
+  const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
+
+  const allTags = React.useMemo(() => {
+    const tagSet = new Set<string>();
+    items.forEach(item => {
+      const tags = item.content.metadata.frontMatter.tags as string[] | undefined;
+      if (tags) {
+        tags.forEach(tag => tagSet.add(tag));
+      }
+    });
+    return Array.from(tagSet).sort();
+  }, [items]);
 
   const fuseOptions = {
     ignoreDiacritics: true,
@@ -54,14 +66,33 @@ function BlogListPageContent(props: Props): JSX.Element {
   const fuse = React.useMemo(() => new Fuse(items, fuseOptions), [items]);
 
   const filteredItems = React.useMemo(() => {
-    if (!searchTerm) {
-      return [...items].sort((a, b) =>
+    let result = items;
+
+    if (selectedTag) {
+      result = result.filter(item => {
+        const tags = item.content.metadata.frontMatter.tags as string[] | undefined;
+        return tags?.includes(selectedTag);
+      });
+    }
+
+    if (searchTerm) {
+      const searchResults = fuse.search(searchTerm).map(result => result.item);
+      if (selectedTag) {
+        const searchSet = new Set(searchResults);
+        result = result.filter(item => searchSet.has(item));
+      } else {
+        result = searchResults;
+      }
+    }
+
+    if (!searchTerm && !selectedTag) {
+      result = [...items].sort((a, b) =>
         a.content.metadata.title.localeCompare(b.content.metadata.title)
       );
     }
 
-    return fuse.search(searchTerm).map(result => result.item);
-  }, [fuse, items, searchTerm]);
+    return result;
+  }, [fuse, items, searchTerm, selectedTag]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -71,6 +102,14 @@ function BlogListPageContent(props: Props): JSX.Element {
     setSearchTerm('');
   };
 
+  const handleTagClick = (tag: string) => {
+    setSelectedTag(selectedTag === tag ? null : tag);
+  };
+
+  const handleClearTag = () => {
+    setSelectedTag(null);
+  };
+
   return (
     <BlogLayout>
       <div className={styles['search-container']}>
@@ -78,7 +117,7 @@ function BlogListPageContent(props: Props): JSX.Element {
           <input
             type="text"
             id="searchInput"
-            placeholder="Search posts..."
+            placeholder="Buscar recetas..."
             value={searchTerm}
             onChange={handleSearchChange}
           />
@@ -107,6 +146,27 @@ function BlogListPageContent(props: Props): JSX.Element {
           )}
         </div>
       </div>
+      {allTags.length > 0 && (
+        <div className={styles['tags-container']}>
+          {allTags.map(tag => (
+            <button
+              key={tag}
+              className={`${styles['tag-button']} ${selectedTag === tag ? styles['tag-button-active'] : ''}`}
+              onClick={() => handleTagClick(tag)}
+            >
+              {tag}
+            </button>
+          ))}
+          {selectedTag && (
+            <button
+              className={styles['clear-tag-button']}
+              onClick={handleClearTag}
+            >
+              ✕
+            </button>
+          )}
+        </div>
+      )}
       <div className={styles.container}>
         <BlogPostItems
           items={filteredItems.map(item => ({

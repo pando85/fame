@@ -100,9 +100,11 @@ jobs:
         if: steps.android-changes.outputs.changed == 'true'
         run: npx cap sync android
       - name: Decode keystore
-        if: ${{ steps.android-changes.outputs.changed == 'true' && secrets.KEYSTORE_BASE64 != '' }}
+        if: steps.android-changes.outputs.changed == 'true'
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/keystore.jks
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/keystore.jks
+          fi
       - name: Build release APK
         if: steps.android-changes.outputs.changed == 'true'
         working-directory: android

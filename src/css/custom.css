@@ -28,6 +28,16 @@ body {
   min-height: 100%;
 }
 
+.theme-doc-sidebar-container,
+nav.menu,
+aside.theme-doc-sidebar-container {
+  padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) !important;
+}
+
+.navbar {
+  padding-top: calc(var(--ifm-navbar-padding-vertical) + var(--safe-area-inset-top, 0px)) !important;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   --ifm-color-primary: #a021b1;

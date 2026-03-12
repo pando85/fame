@@ -105,7 +105,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        { name: 'keywords', content: 'fame, comida' }
+        { name: 'keywords', content: 'fame, comida' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' }
       ],
       navbar: {
         hideOnScroll: true,

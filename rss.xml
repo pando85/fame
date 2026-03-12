@@ -4,7 +4,7 @@
         <title>Fame Blog</title>
         <link>https://fame.grigri.cloud</link>
         <description>Fame Blog</description>
-        <lastBuildDate>Thu, 12 Mar 2026 03:06:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Mar 2026 03:09:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Albódingas]]></title>
             <link>https://fame.grigri.cloud/Albódingas</link>
             <guid>https://fame.grigri.cloud/Albódingas</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alb%C3%B3dingas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -37,13 +37,12 @@
 <li class="">Sirve y disfruta.</li>
 </ol>]]></content:encoded>
             <category>plato principal</category>
-            <category>carne</category>
         </item>
         <item>
             <title><![CDATA[Alioli]]></title>
             <link>https://fame.grigri.cloud/Alioli</link>
             <guid>https://fame.grigri.cloud/Alioli</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Alioli#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -66,13 +65,12 @@
 <li class="">Si se corta o no emulsiona, añade un poco de agua fría y sigue moviendo. Si esto no funciona, puedes empezar de nuevo con un poco de leche y añadir la mezcla cortada poco a poco.</li>
 </ul>]]></content:encoded>
             <category>salsa</category>
-            <category>acompañamiento</category>
         </item>
         <item>
             <title><![CDATA[Almendras garrapiñadas]]></title>
             <link>https://fame.grigri.cloud/Almendras garrapiñadas</link>
             <guid>https://fame.grigri.cloud/Almendras garrapiñadas</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Almendras%20garrapi%C3%B1adas#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -90,13 +88,13 @@ agua.</p>
 caramelice. Cuando veamos un tono tostado, volcamos en un mármol limpio y untado con aceite y con la
 ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
 <p>Dejamos enfriar y guardamos en tarros de cristal para conservar.</p>]]></content:encoded>
-            <category>aperitivo</category>
+            <category>entrante</category>
         </item>
         <item>
             <title><![CDATA[Arroz meloso]]></title>
             <link>https://fame.grigri.cloud/Arroz meloso</link>
             <guid>https://fame.grigri.cloud/Arroz meloso</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Arroz%20meloso#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -147,7 +145,7 @@ ayuda de un tenedor, separaremos las almendras unas de las otras.</p>
             <title><![CDATA[Bacalao a bras]]></title>
             <link>https://fame.grigri.cloud/Bacalao a bras</link>
             <guid>https://fame.grigri.cloud/Bacalao a bras</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Bacalao%20a%20bras#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -198,16 +196,14 @@ cuajar con el calor residual. Añadir el perejil picado y remover.</p>
 <p>Servir en una fuente decorado con aceitunas negras y más perejil fresco.</p>
 </li>
 </ol>]]></content:encoded>
-            <category>receta</category>
+            <category>plato principal</category>
             <category>pescado</category>
-            <category>portuguesa</category>
-            <category>bacalao</category>
         </item>
         <item>
             <title><![CDATA[Bizcocho de plátano y dátiles]]></title>
             <link>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</link>
             <guid>https://fame.grigri.cloud/Bizcocho de plátano y dátiles</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Bizcocho%20de%20pl%C3%A1tano%20y%20d%C3%A1tiles#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -256,7 +252,7 @@ sólo con la resistencia de abajo y más de 40minutos.</p>]]></content:encoded>
             <title><![CDATA[Brilliant Bang Bang Cucumber]]></title>
             <link>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</link>
             <guid>https://fame.grigri.cloud/Brilliant Bang Bang Cucumber</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Brilliant%20Bang%20Bang%20Cucumber#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -276,14 +272,13 @@ transfiéralo a un tazón para servir.</p>
 <p>Aliña con la soja, el vinagre y el aceite, luego junta y espolvorea las semillas calientes.</p>
 <p>¡Tadaa!</p>]]></content:encoded>
             <category>entrante</category>
-            <category>ensalada</category>
             <category>vegetariana</category>
         </item>
         <item>
             <title><![CDATA[Caldo de verduras]]></title>
             <link>https://fame.grigri.cloud/Caldo de verduras</link>
             <guid>https://fame.grigri.cloud/Caldo de verduras</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Caldo%20de%20verduras#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -319,13 +314,13 @@ transfiéralo a un tazón para servir.</p>
 </ul>
 <p>Ref: <a href="https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html" target="_blank" rel="noopener noreferrer" class="">https://recetasdecocina.elmundo.es/2013/05/caldo-casero-verduras-receta-facil.html</a></p>]]></content:encoded>
             <category>entrante</category>
-            <category>caldo</category>
+            <category>cuchara</category>
         </item>
         <item>
             <title><![CDATA[Chapata y focaccia]]></title>
             <link>https://fame.grigri.cloud/Chapata y focaccia</link>
             <guid>https://fame.grigri.cloud/Chapata y focaccia</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Chapata%20y%20focaccia#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -350,17 +345,14 @@ transfiéralo a un tazón para servir.</p>
 <li class="">Se deja fermentar media hora y se hornea igual que la ciabatta.</li>
 </ul>
 <p><a href="https://youtu.be/M0XMWfmdodw" target="_blank" rel="noopener noreferrer" class="">Video tutorial</a></p>]]></content:encoded>
-            <category>receta</category>
             <category>pan</category>
             <category>masa madre</category>
-            <category>chapata</category>
-            <category>focaccia</category>
         </item>
         <item>
             <title><![CDATA[Cocido]]></title>
             <link>https://fame.grigri.cloud/Cocido</link>
             <guid>https://fame.grigri.cloud/Cocido</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cocido#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -389,7 +381,7 @@ cociendo durante 45 minutos.</p>
             <title><![CDATA[Cookies de chocolate]]></title>
             <link>https://fame.grigri.cloud/Cookies de chocolate</link>
             <guid>https://fame.grigri.cloud/Cookies de chocolate</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cookies%20de%20chocolate#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -429,7 +421,7 @@ se endurecen, por lo que la manera de comprobar si están o no hechas es por el 
             <title><![CDATA[Crema de calabacín]]></title>
             <link>https://fame.grigri.cloud/Crema de calabacín</link>
             <guid>https://fame.grigri.cloud/Crema de calabacín</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crema%20de%20calabac%C3%ADn#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -446,14 +438,14 @@ todo junto durante unos minutos. Añadimos sal y pimienta al gusto.</p>
 tierno). Si lo queremos más líquido añadimos un poco más luego.</p>
 <p>Lo trituramos todo, ajustamos la sal y la pimienta y a disfrutar!</p>]]></content:encoded>
             <category>entrante</category>
-            <category>crema</category>
             <category>vegetariana</category>
+            <category>cuchara</category>
         </item>
         <item>
             <title><![CDATA[Crepes dulces]]></title>
             <link>https://fame.grigri.cloud/Crepes dulces</link>
             <guid>https://fame.grigri.cloud/Crepes dulces</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Crepes%20dulces#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -473,7 +465,7 @@ tierno). Si lo queremos más líquido añadimos un poco más luego.</p>
             <title><![CDATA[Crème brûlée]]></title>
             <link>https://fame.grigri.cloud/Crème brûlée</link>
             <guid>https://fame.grigri.cloud/Crème brûlée</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Cr%C3%A8me%20br%C3%BBl%C3%A9e#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -497,7 +489,7 @@ crear la característica capa crujiente.</p>]]></content:encoded>
             <title><![CDATA[Fabada]]></title>
             <link>https://fame.grigri.cloud/Fabada</link>
             <guid>https://fame.grigri.cloud/Fabada</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Fabada#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -554,7 +546,7 @@ barro, está de morirse.</p>]]></content:encoded>
             <title><![CDATA[Falafel]]></title>
             <link>https://fame.grigri.cloud/Falafel</link>
             <guid>https://fame.grigri.cloud/Falafel</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Falafel#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -591,7 +583,7 @@ papel absorbente y dejamos escurrir un par de minutos antes de servir.</p>
             <title><![CDATA[Flan de huevo]]></title>
             <link>https://fame.grigri.cloud/Flan de huevo</link>
             <guid>https://fame.grigri.cloud/Flan de huevo</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Flan%20de%20huevo#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -611,7 +603,7 @@ el día anterior, así te quedará consistente.</p>
             <title><![CDATA[Garam Masala]]></title>
             <link>https://fame.grigri.cloud/Garam Masala</link>
             <guid>https://fame.grigri.cloud/Garam Masala</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Garam%20Masala#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -635,7 +627,7 @@ de clavo.</p>
             <title><![CDATA[Judias verdes]]></title>
             <link>https://fame.grigri.cloud/Judias verdes</link>
             <guid>https://fame.grigri.cloud/Judias verdes</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Judias%20verdes#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -654,15 +646,14 @@ de clavo.</p>
 <li class="">Liberar la presión de la olla express antes de abrir.</li>
 <li class="">Servir caliente y disfrutar.</li>
 </ol>]]></content:encoded>
-            <category>receta</category>
-            <category>judías verdes</category>
-            <category>verduras</category>
+            <category>entrante</category>
+            <category>vegetariana</category>
         </item>
         <item>
             <title><![CDATA[Lasaña]]></title>
             <link>https://fame.grigri.cloud/Lasaña</link>
             <guid>https://fame.grigri.cloud/Lasaña</guid>
-            <pubDate>Thu, 12 Mar 2026 03:06:04 GMT</pubDate>
+            <pubDate>Thu, 12 Mar 2026 03:09:11 GMT</pubDate>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Lasa%C3%B1a#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
@@ -692,7 +683,6 @@ aceite de oliva por encima.</p>
 <p>Hornear aproximadamente a 200°C durante 30 min. Cuando la parte de arriba este dorada, retirar.</p>
 <p>Ref: <a href="https://www.youtube.com/watch?v=VZPkIPfnzqs" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/watch?v=VZPkIPfnzqs</a></p>]]></content:encoded>
             <category>plato principal</category>
-            <category>pasta</category>
         </item>
     </channel>
 </rss>

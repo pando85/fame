@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
+import { Capacitor } from '@capacitor/core';
+import { StatusBar, Style } from '@capacitor/status-bar';
 import styles from './styles.module.css';
 
 export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
@@ -20,6 +22,19 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     updateServiceWorker();
     window.location.reload();
   }, [updateServiceWorker]);
+
+  useEffect(() => {
+    if (!isBrowser) return;
+
+    const setupNativeUi = async () => {
+      if (Capacitor.getPlatform() === 'android') {
+        await StatusBar.setStyle({ style: Style.Dark });
+        await StatusBar.setOverlaysWebView({ overlay: false });
+      }
+    };
+
+    setupNativeUi();
+  }, [isBrowser]);
 
   useEffect(() => {
     if (!isBrowser || !('serviceWorker' in navigator)) {

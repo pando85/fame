@@ -1626,6 +1626,11 @@
   resolved "https://registry.yarnpkg.com/@capacitor/network/-/network-8.0.1.tgz#463b2639db2a5a0837f3ae0c0e2ed3f46ce1bb0e"
   integrity sha512-9xK/FHFmzKGanB6BdoSZOzXk8vF0OFVQSQ4PAsIrzAzLuXHryO317qy8dcHVpgxYeuZq2noI0My9z1DvVDi/9w==
 
+"@capacitor/status-bar@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-8.0.1.tgz#a20642b4563c827e8b0f520468ec44b077af6fea"
+  integrity sha512-OR59dlbwvmrV5dKsC9lvwv48QaGbqcbSTBpk+9/WXWxXYSdXXdzJZU9p8oyNPAkuJhCdnSa3XmU43fZRPBJJ5w==
+
 "@colors/colors@1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"

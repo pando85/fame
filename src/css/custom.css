@@ -17,25 +17,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-html {
-  padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
-  padding-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
-  padding-left: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
-  padding-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
-}
-
 body {
   min-height: 100%;
-}
-
-.theme-doc-sidebar-container,
-nav.menu,
-aside.theme-doc-sidebar-container {
-  padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) !important;
-}
-
-.navbar {
-  padding-top: calc(var(--ifm-navbar-padding-vertical) + var(--safe-area-inset-top, 0px)) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

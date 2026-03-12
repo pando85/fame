@@ -4,5 +4,11 @@
   "webDir": "build",
   "android": {
     "backgroundColor": "#ffffff"
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DARK"
+    }
   }
 }

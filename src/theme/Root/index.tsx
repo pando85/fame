@@ -139,19 +139,19 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
             opacity: Math.min(pullDistance / 80, 1),
           }}
         >
-          {pullDistance >= 80 ? 'Release to refresh' : 'Pull to refresh'}
+          {pullDistance >= 80 ? 'Soltar para actualizar' : 'Desliza para actualizar'}
         </div>
       )}
       {offline && (
         <div className={styles['offline-banner']}>
-          You are offline - showing cached content
+          Sin conexión - mostrando contenido en caché
         </div>
       )}
-      {needRefresh && (
+{needRefresh && (
         <div className={styles['reload-prompt']}>
-          <span>New content available!</span>
-          <button onClick={handleReload}>Reload</button>
-          <button onClick={handleDismiss}>Later</button>
+          <span>¡Nuevo contenido disponible!</span>
+          <button onClick={handleReload}>Actualizar</button>
+          <button onClick={handleDismiss}>Después</button>
         </div>
       )}
       {children}

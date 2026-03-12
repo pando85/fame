@@ -1,6 +1,6 @@
 ---
 image: ./img/cocido.jpg
-tags: [plato principal, cuchara]
+tags: [plato principal, cuchara, carne]
 ---
 
 ## Ingredientes

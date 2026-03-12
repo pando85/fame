@@ -1,6 +1,6 @@
 ---
 image: ./img/pollo_asado_y_noodles.jpg
-tags: [plato principal, cuchara]
+tags: [plato principal, cuchara, carne]
 ---
 
 ## Ingredientes

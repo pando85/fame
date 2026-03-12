@@ -1,6 +1,6 @@
 ---
 image: ./img/almendras_garrapinadas.jpg
-tags: [aperitivo]
+tags: [entrante]
 ---
 
 ## Ingredientes

@@ -1,6 +1,6 @@
 ---
 image: ./img/caldo_de_verduras.jpg
-tags: [entrante, caldo]
+tags: [entrante, cuchara]
 ---
 
 ## Ingredientes

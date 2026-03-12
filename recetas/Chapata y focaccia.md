@@ -1,6 +1,6 @@
 ---
 image: ./img/chapata_focaccia.jpg
-tags: [receta, pan, masa madre, chapata, focaccia]
+tags: [pan, masa madre]
 ---
 
 ## Ingredientes

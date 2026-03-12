@@ -1,6 +1,6 @@
 ---
 image: ./img/lasana.jpg
-tags: [plato principal, pasta]
+tags: [plato principal]
 ---
 
 ## Ingredientes

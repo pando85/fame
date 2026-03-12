@@ -1,6 +1,6 @@
 ---
 image: ./img/alioli.jpg
-tags: [salsa, acompañamiento]
+tags: [salsa]
 ---
 
 ## Ingredientes

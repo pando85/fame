@@ -1,6 +1,6 @@
 ---
 image: ./img/judias_verdes.jpg
-tags: [receta, judías verdes, verduras]
+tags: [entrante, vegetariana]
 ---
 
 ## Ingredientes

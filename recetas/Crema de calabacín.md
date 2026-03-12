@@ -1,6 +1,6 @@
 ---
 image: ./img/crema_de_calabacin.jpg
-tags: [entrante, crema, vegetariana]
+tags: [entrante, vegetariana, cuchara]
 ---
 
 ## Ingredientes

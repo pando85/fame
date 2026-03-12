@@ -1,6 +1,6 @@
 ---
 image: ./img/brilliant_bang_bang_cumcumber.jpg
-tags: [entrante, ensalada, vegetariana]
+tags: [entrante, vegetariana]
 author: teresa
 ---
 

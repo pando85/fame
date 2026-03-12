@@ -1,6 +1,6 @@
 ---
 image: ./img/rabo_de_toro.jpg
-tags: [plato principal, guiso]
+tags: [plato principal, cuchara]
 ---
 
 ## Ingredientes

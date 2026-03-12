@@ -1,6 +1,6 @@
 ---
 image: ./img/pan_pita.jpg
-tags: [receta, pan, pita, masa madre, kebab]
+tags: [pan, masa madre]
 ---
 
 ## Ingredientes

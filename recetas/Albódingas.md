@@ -1,6 +1,6 @@
 ---
 image: ./img/albondigas.jpg
-tags: [plato principal, carne]
+tags: [plato principal]
 ---
 
 ## Ingredientes

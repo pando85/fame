@@ -1,6 +1,6 @@
 ---
 image: ./img/pan_de_hamburguesa.jpg
-tags: [pan]
+tags: [pan, masa madre]
 ---
 
 ## Ingredientes

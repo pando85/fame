@@ -1,6 +1,6 @@
 ---
 image: ./img/patatas_riojana.jpg
-tags: [plato principal, cuchara, guiso]
+tags: [plato principal, cuchara]
 ---
 
 ## Ingredientes

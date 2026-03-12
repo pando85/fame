@@ -1,6 +1,6 @@
 ---
 image: ./img/pan.jpg
-tags: [pan]
+tags: [pan, masa madre]
 ---
 
 ## Ingredientes

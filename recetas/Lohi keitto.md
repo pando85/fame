@@ -1,6 +1,6 @@
 ---
 image: ./img/lohikeitto.jpg
-tags: [plato principal, sopa, finlandia, pescado, sopa de salmón]
+tags: [plato principal, pescado, cuchara]
 ---
 
 # Lohikeitto (sopa de salmón)

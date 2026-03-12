@@ -1,6 +1,6 @@
 ---
 image: ./img/pizza.jpg
-tags: [receta, pan, masa madre, pizza]
+tags: [pan, masa madre]
 ---
 
 ## Ingredientes

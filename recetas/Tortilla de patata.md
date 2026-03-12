@@ -1,6 +1,6 @@
 ---
 image: ./img/tortilla_de_patata.jpg
-tags: [plato principal, tortilla]
+tags: [plato principal]
 ---
 
 ## Ingredientes

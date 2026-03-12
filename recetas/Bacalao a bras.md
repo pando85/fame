@@ -1,6 +1,6 @@
 ---
 image: ./img/bacalao-a-bras.jpg
-tags: [receta, pescado, portuguesa, bacalao]
+tags: [plato principal, pescado]
 ---
 
 # Bacalao a bras

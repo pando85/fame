@@ -1593,7 +1593,7 @@
     webpack "^5.95.0"
     webpackbar "^6.0.1"
 
-"@docusaurus/core@3.10.0", "@docusaurus/core@^3.5.2":
+"@docusaurus/core@3.10.0", "@docusaurus/core@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.10.0.tgz#642e71a0209d62c3f5ef275ed9d74a881f40df39"
   integrity sha512-mgLdQsO8xppnQZc3LPi+Mf+PkPeyxJeIx11AXAq/14fsaMefInQiMEZUUmrc7J+956G/f7MwE7tn8KZgi3iRcA==
@@ -1689,7 +1689,7 @@
     vfile "^6.0.1"
     webpack "^5.88.1"
 
-"@docusaurus/module-type-aliases@3.10.0", "@docusaurus/module-type-aliases@^3.5.2":
+"@docusaurus/module-type-aliases@3.10.0", "@docusaurus/module-type-aliases@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.10.0.tgz#749928f104d563f11f046bf0c9ab6489a470c7c8"
   integrity sha512-/1O0Zg8w3DFrYX/I6Fbss7OJrtZw1QoyjDhegiFNHVi9A9Y0gQ3jUAytVxF6ywpAWpLyLxch8nN8H/V3XfzdJQ==
@@ -1819,7 +1819,7 @@
     "@docusaurus/utils-validation" "3.10.0"
     tslib "^2.6.0"
 
-"@docusaurus/plugin-pwa@^3.9.2":
+"@docusaurus/plugin-pwa@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-pwa/-/plugin-pwa-3.10.0.tgz#9d02589c489859a181c828af254e87d86e4a05e5"
   integrity sha512-kJr50iyQcE7qRBbYJol9IKREHny4nvodvJkz88lQl7LvOIE6SIgDMl2gG+nhkHqQvuO15i+WnPNlnPVSRLZUdg==
@@ -1873,7 +1873,7 @@
     tslib "^2.6.0"
     webpack "^5.88.1"
 
-"@docusaurus/preset-classic@^3.5.2":
+"@docusaurus/preset-classic@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-3.10.0.tgz#74b6facdaf568bcd41ec90cae9aebb7ca0ac8619"
   integrity sha512-kw/Ye02Hc6xP1OdTswy8yxQEHg0fdPpyWAQRxr5b2x3h7LlG2Zgbb5BDFROnXDDMpUxB7YejlocJIE5HIEfpNA==

@@ -120,7 +120,7 @@ jobs:
         run: echo "VERSION=$(date +%Y.%m.%d)-${GITHUB_SHA:0:7}" >> $GITHUB_OUTPUT
       - name: Create GitHub Release
         if: steps.android-changes.outputs.changed == 'true'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: android-${{ steps.version.outputs.VERSION }}
           name: Fame Android ${{ steps.version.outputs.VERSION }}

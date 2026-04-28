@@ -5663,9 +5663,9 @@ functions-have-names@^1.2.3:
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
 fuse.js@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-7.1.0.tgz#306228b4befeee11e05b027087c2744158527d09"
-  integrity sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ==
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-7.3.0.tgz#68e1ea1c6c0ff262f1801a949a78edbe05b0bc13"
+  integrity sha512-plz8RVjfcDedTGfVngWH1jmJvBvAwi1v2jecfDerbEnMcmOYUEEwKFTHbNoCiYyzaK2Ws8lABkTCcRSqCY1q4w==
 
 generator-function@^2.0.0:
   version "2.0.1"

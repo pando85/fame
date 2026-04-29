@@ -23,9 +23,9 @@
     "@capacitor/core": "^8.1.0",
     "@capacitor/network": "^8.0.1",
     "@capacitor/status-bar": "^8.0.1",
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/plugin-pwa": "^3.9.2",
-    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/core": "^3.10.0",
+    "@docusaurus/plugin-pwa": "^3.10.0",
+    "@docusaurus/preset-classic": "^3.10.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.1.1",
     "fuse.js": "^7.1.0",
@@ -34,7 +34,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.5.2"
+    "@docusaurus/module-type-aliases": "^3.10.0"
   },
   "browserslist": {
     "production": [
@@ -50,5 +50,8 @@
   },
   "engines": {
     "node": ">=16.14"
+  },
+  "resolutions": {
+    "webpackbar": "^7.0.0"
   }
 }

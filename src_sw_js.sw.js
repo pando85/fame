@@ -1,327 +1,83 @@
 "use strict";
 (self["webpackChunkrecetas"] = self["webpackChunkrecetas"] || []).push([["src_sw_js"],{
 
-/***/ "./node_modules/idb/build/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/idb/build/index.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/sw.js"
+/*!*******************!*\
+  !*** ./src/sw.js ***!
+  \*******************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   deleteDB: () => (/* binding */ deleteDB),
-/* harmony export */   openDB: () => (/* binding */ openDB),
-/* harmony export */   unwrap: () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.u),
-/* harmony export */   wrap: () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)
-/* harmony export */ });
-/* harmony import */ var _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrap-idb-value.js */ "./node_modules/idb/build/wrap-idb-value.js");
+/* harmony import */ var workbox_routing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-routing */ "./node_modules/workbox-routing/index.mjs");
+/* harmony import */ var workbox_strategies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-strategies */ "./node_modules/workbox-strategies/index.mjs");
+/* harmony import */ var workbox_expiration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! workbox-expiration */ "./node_modules/workbox-expiration/index.mjs");
+/* harmony import */ var workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! workbox-cacheable-response */ "./node_modules/workbox-cacheable-response/index.mjs");
+/* harmony import */ var workbox_precaching__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! workbox-precaching */ "./node_modules/workbox-precaching/index.mjs");
 
 
 
-/**
- * Open a database.
- *
- * @param name Name of the database.
- * @param version Schema version.
- * @param callbacks Additional callbacks.
- */
-function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
-    const request = indexedDB.open(name, version);
-    const openPromise = (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request);
-    if (upgrade) {
-        request.addEventListener('upgradeneeded', (event) => {
-            upgrade((0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request.result), event.oldVersion, event.newVersion, (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request.transaction), event);
-        });
-    }
-    if (blocked) {
-        request.addEventListener('blocked', (event) => blocked(
-        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
-        event.oldVersion, event.newVersion, event));
-    }
-    openPromise
-        .then((db) => {
-        if (terminated)
-            db.addEventListener('close', () => terminated());
-        if (blocking) {
-            db.addEventListener('versionchange', (event) => blocking(event.oldVersion, event.newVersion, event));
-        }
-    })
-        .catch(() => { });
-    return openPromise;
-}
-/**
- * Delete a database.
- *
- * @param name Name of the database.
- */
-function deleteDB(name, { blocked } = {}) {
-    const request = indexedDB.deleteDatabase(name);
-    if (blocked) {
-        request.addEventListener('blocked', (event) => blocked(
-        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
-        event.oldVersion, event));
-    }
-    return (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request).then(() => undefined);
-}
 
-const readMethods = ['get', 'getKey', 'getAll', 'getAllKeys', 'count'];
-const writeMethods = ['put', 'add', 'delete', 'clear'];
-const cachedMethods = new Map();
-function getMethod(target, prop) {
-    if (!(target instanceof IDBDatabase &&
-        !(prop in target) &&
-        typeof prop === 'string')) {
-        return;
-    }
-    if (cachedMethods.get(prop))
-        return cachedMethods.get(prop);
-    const targetFuncName = prop.replace(/FromIndex$/, '');
-    const useIndex = prop !== targetFuncName;
-    const isWrite = writeMethods.includes(targetFuncName);
-    if (
-    // Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
-    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) ||
-        !(isWrite || readMethods.includes(targetFuncName))) {
-        return;
-    }
-    const method = async function (storeName, ...args) {
-        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
-        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
-        let target = tx.store;
-        if (useIndex)
-            target = target.index(args.shift());
-        // Must reject if op rejects.
-        // If it's a write operation, must reject if tx.done rejects.
-        // Must reject with op rejection first.
-        // Must resolve with op value.
-        // Must handle both promises (no unhandled rejections)
-        return (await Promise.all([
-            target[targetFuncName](...args),
-            isWrite && tx.done,
-        ]))[0];
-    };
-    cachedMethods.set(prop, method);
-    return method;
-}
-(0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.r)((oldTraps) => ({
-    ...oldTraps,
-    get: (target, prop, receiver) => getMethod(target, prop) || oldTraps.get(target, prop, receiver),
-    has: (target, prop) => !!getMethod(target, prop) || oldTraps.has(target, prop),
+
+(0,workbox_precaching__WEBPACK_IMPORTED_MODULE_4__.precacheAndRoute)(self.__WB_MANIFEST);
+const navigationRoute = new workbox_routing__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute(new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.NetworkFirst({
+  cacheName: 'navigation-cache',
+  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
+    statuses: [200]
+  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
+    maxEntries: 50,
+    maxAgeSeconds: 7 * 24 * 60 * 60
+  })]
 }));
+(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(navigationRoute);
+(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
+  request
+}) => request.destination === 'image', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.CacheFirst({
+  cacheName: 'image-cache',
+  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
+    statuses: [200]
+  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
+    maxEntries: 100,
+    maxAgeSeconds: 30 * 24 * 60 * 60
+  })]
+}));
+(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
+  request
+}) => request.destination === 'style' || request.destination === 'script' || request.destination === 'worker', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.StaleWhileRevalidate({
+  cacheName: 'static-resources',
+  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
+    statuses: [200]
+  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
+    maxEntries: 100,
+    maxAgeSeconds: 30 * 24 * 60 * 60
+  })]
+}));
+(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
+  request
+}) => request.destination === 'font', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.CacheFirst({
+  cacheName: 'font-cache',
+  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
+    statuses: [200]
+  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
+    maxEntries: 20,
+    maxAgeSeconds: 365 * 24 * 60 * 60
+  })]
+}));
+self.addEventListener('message', event => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
+/***/ },
 
-
-
-/***/ }),
-
-/***/ "./node_modules/idb/build/wrap-idb-value.js":
-/*!**************************************************!*\
-  !*** ./node_modules/idb/build/wrap-idb-value.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   a: () => (/* binding */ reverseTransformCache),
-/* harmony export */   i: () => (/* binding */ instanceOfAny),
-/* harmony export */   r: () => (/* binding */ replaceTraps),
-/* harmony export */   u: () => (/* binding */ unwrap),
-/* harmony export */   w: () => (/* binding */ wrap)
-/* harmony export */ });
-const instanceOfAny = (object, constructors) => constructors.some((c) => object instanceof c);
-
-let idbProxyableTypes;
-let cursorAdvanceMethods;
-// This is a function to prevent it throwing up in node environments.
-function getIdbProxyableTypes() {
-    return (idbProxyableTypes ||
-        (idbProxyableTypes = [
-            IDBDatabase,
-            IDBObjectStore,
-            IDBIndex,
-            IDBCursor,
-            IDBTransaction,
-        ]));
-}
-// This is a function to prevent it throwing up in node environments.
-function getCursorAdvanceMethods() {
-    return (cursorAdvanceMethods ||
-        (cursorAdvanceMethods = [
-            IDBCursor.prototype.advance,
-            IDBCursor.prototype.continue,
-            IDBCursor.prototype.continuePrimaryKey,
-        ]));
-}
-const cursorRequestMap = new WeakMap();
-const transactionDoneMap = new WeakMap();
-const transactionStoreNamesMap = new WeakMap();
-const transformCache = new WeakMap();
-const reverseTransformCache = new WeakMap();
-function promisifyRequest(request) {
-    const promise = new Promise((resolve, reject) => {
-        const unlisten = () => {
-            request.removeEventListener('success', success);
-            request.removeEventListener('error', error);
-        };
-        const success = () => {
-            resolve(wrap(request.result));
-            unlisten();
-        };
-        const error = () => {
-            reject(request.error);
-            unlisten();
-        };
-        request.addEventListener('success', success);
-        request.addEventListener('error', error);
-    });
-    promise
-        .then((value) => {
-        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
-        // (see wrapFunction).
-        if (value instanceof IDBCursor) {
-            cursorRequestMap.set(value, request);
-        }
-        // Catching to avoid "Uncaught Promise exceptions"
-    })
-        .catch(() => { });
-    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
-    // is because we create many promises from a single IDBRequest.
-    reverseTransformCache.set(promise, request);
-    return promise;
-}
-function cacheDonePromiseForTransaction(tx) {
-    // Early bail if we've already created a done promise for this transaction.
-    if (transactionDoneMap.has(tx))
-        return;
-    const done = new Promise((resolve, reject) => {
-        const unlisten = () => {
-            tx.removeEventListener('complete', complete);
-            tx.removeEventListener('error', error);
-            tx.removeEventListener('abort', error);
-        };
-        const complete = () => {
-            resolve();
-            unlisten();
-        };
-        const error = () => {
-            reject(tx.error || new DOMException('AbortError', 'AbortError'));
-            unlisten();
-        };
-        tx.addEventListener('complete', complete);
-        tx.addEventListener('error', error);
-        tx.addEventListener('abort', error);
-    });
-    // Cache it for later retrieval.
-    transactionDoneMap.set(tx, done);
-}
-let idbProxyTraps = {
-    get(target, prop, receiver) {
-        if (target instanceof IDBTransaction) {
-            // Special handling for transaction.done.
-            if (prop === 'done')
-                return transactionDoneMap.get(target);
-            // Polyfill for objectStoreNames because of Edge.
-            if (prop === 'objectStoreNames') {
-                return target.objectStoreNames || transactionStoreNamesMap.get(target);
-            }
-            // Make tx.store return the only store in the transaction, or undefined if there are many.
-            if (prop === 'store') {
-                return receiver.objectStoreNames[1]
-                    ? undefined
-                    : receiver.objectStore(receiver.objectStoreNames[0]);
-            }
-        }
-        // Else transform whatever we get back.
-        return wrap(target[prop]);
-    },
-    set(target, prop, value) {
-        target[prop] = value;
-        return true;
-    },
-    has(target, prop) {
-        if (target instanceof IDBTransaction &&
-            (prop === 'done' || prop === 'store')) {
-            return true;
-        }
-        return prop in target;
-    },
-};
-function replaceTraps(callback) {
-    idbProxyTraps = callback(idbProxyTraps);
-}
-function wrapFunction(func) {
-    // Due to expected object equality (which is enforced by the caching in `wrap`), we
-    // only create one new func per func.
-    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
-    if (func === IDBDatabase.prototype.transaction &&
-        !('objectStoreNames' in IDBTransaction.prototype)) {
-        return function (storeNames, ...args) {
-            const tx = func.call(unwrap(this), storeNames, ...args);
-            transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [storeNames]);
-            return wrap(tx);
-        };
-    }
-    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
-    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
-    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
-    // with real promises, so each advance methods returns a new promise for the cursor object, or
-    // undefined if the end of the cursor has been reached.
-    if (getCursorAdvanceMethods().includes(func)) {
-        return function (...args) {
-            // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
-            // the original object.
-            func.apply(unwrap(this), args);
-            return wrap(cursorRequestMap.get(this));
-        };
-    }
-    return function (...args) {
-        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
-        // the original object.
-        return wrap(func.apply(unwrap(this), args));
-    };
-}
-function transformCachableValue(value) {
-    if (typeof value === 'function')
-        return wrapFunction(value);
-    // This doesn't return, it just creates a 'done' promise for the transaction,
-    // which is later returned for transaction.done (see idbObjectHandler).
-    if (value instanceof IDBTransaction)
-        cacheDonePromiseForTransaction(value);
-    if (instanceOfAny(value, getIdbProxyableTypes()))
-        return new Proxy(value, idbProxyTraps);
-    // Return the same value back if we're not going to transform it.
-    return value;
-}
-function wrap(value) {
-    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
-    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
-    if (value instanceof IDBRequest)
-        return promisifyRequest(value);
-    // If we've already transformed this value before, reuse the transformed value.
-    // This is faster, but it also provides object equality.
-    if (transformCache.has(value))
-        return transformCache.get(value);
-    const newValue = transformCachableValue(value);
-    // Not all types are transformed.
-    // These may be primitive types, so they can't be WeakMap keys.
-    if (newValue !== value) {
-        transformCache.set(value, newValue);
-        reverseTransformCache.set(newValue, value);
-    }
-    return newValue;
-}
-const unwrap = (value) => reverseTransformCache.get(value);
-
-
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-cacheable-response/CacheableResponse.js":
+/***/ "./node_modules/workbox-cacheable-response/CacheableResponse.js"
 /*!**********************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/CacheableResponse.js ***!
   \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -454,13 +210,13 @@ class CacheableResponse {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-cacheable-response/CacheableResponsePlugin.js":
+/***/ "./node_modules/workbox-cacheable-response/CacheableResponsePlugin.js"
 /*!****************************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/CacheableResponsePlugin.js ***!
   \****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -519,29 +275,29 @@ class CacheableResponsePlugin {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-cacheable-response/_version.js":
+/***/ "./node_modules/workbox-cacheable-response/_version.js"
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/_version.js ***!
   \*************************************************************/
-/***/ (() => {
+() {
 
 
 // @ts-ignore
 try {
-    self['workbox:cacheable-response:7.3.0'] && _();
+    self['workbox:cacheable-response:7.4.0'] && _();
 }
 catch (e) { }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-cacheable-response/index.js":
+/***/ "./node_modules/workbox-cacheable-response/index.js"
 /*!**********************************************************!*\
   !*** ./node_modules/workbox-cacheable-response/index.js ***!
   \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -568,29 +324,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-cacheable-response/index.mjs":
-/*!***********************************************************!*\
-  !*** ./node_modules/workbox-cacheable-response/index.mjs ***!
-  \***********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CacheableResponse: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse),
-/* harmony export */   CacheableResponsePlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponsePlugin)
-/* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-cacheable-response/index.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-core/_private/dontWaitFor.js":
+/***/ "./node_modules/workbox-core/_private/dontWaitFor.js"
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-core/_private/dontWaitFor.js ***!
   \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -616,13 +356,13 @@ function dontWaitFor(promise) {
 }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-core/registerQuotaErrorCallback.js":
+/***/ "./node_modules/workbox-core/registerQuotaErrorCallback.js"
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-core/registerQuotaErrorCallback.js ***!
   \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -669,13 +409,13 @@ function registerQuotaErrorCallback(callback) {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-expiration/CacheExpiration.js":
+/***/ "./node_modules/workbox-expiration/CacheExpiration.js"
 /*!************************************************************!*\
   !*** ./node_modules/workbox-expiration/CacheExpiration.js ***!
   \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -860,13 +600,13 @@ class CacheExpiration {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-expiration/ExpirationPlugin.js":
+/***/ "./node_modules/workbox-expiration/ExpirationPlugin.js"
 /*!*************************************************************!*\
   !*** ./node_modules/workbox-expiration/ExpirationPlugin.js ***!
   \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1138,29 +878,29 @@ class ExpirationPlugin {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-expiration/_version.js":
+/***/ "./node_modules/workbox-expiration/_version.js"
 /*!*****************************************************!*\
   !*** ./node_modules/workbox-expiration/_version.js ***!
   \*****************************************************/
-/***/ (() => {
+() {
 
 
 // @ts-ignore
 try {
-    self['workbox:expiration:7.3.0'] && _();
+    self['workbox:expiration:7.4.0'] && _();
 }
 catch (e) { }
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-expiration/index.js":
+/***/ "./node_modules/workbox-expiration/index.js"
 /*!**************************************************!*\
   !*** ./node_modules/workbox-expiration/index.js ***!
   \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1187,29 +927,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-expiration/index.mjs":
-/*!***************************************************!*\
-  !*** ./node_modules/workbox-expiration/index.mjs ***!
-  \***************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CacheExpiration: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration),
-/* harmony export */   ExpirationPlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.ExpirationPlugin)
-/* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-expiration/index.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-expiration/models/CacheTimestampsModel.js":
+/***/ "./node_modules/workbox-expiration/models/CacheTimestampsModel.js"
 /*!************************************************************************!*\
   !*** ./node_modules/workbox-expiration/models/CacheTimestampsModel.js ***!
   \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1405,13 +1129,13 @@ class CacheTimestampsModel {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-routing/NavigationRoute.js":
+/***/ "./node_modules/workbox-routing/NavigationRoute.js"
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-routing/NavigationRoute.js ***!
   \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1534,13 +1258,13 @@ class NavigationRoute extends _Route_js__WEBPACK_IMPORTED_MODULE_2__.Route {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-routing/index.js":
+/***/ "./node_modules/workbox-routing/index.js"
 /*!***********************************************!*\
   !*** ./node_modules/workbox-routing/index.js ***!
   \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1582,34 +1306,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-routing/index.mjs":
-/*!************************************************!*\
-  !*** ./node_modules/workbox-routing/index.mjs ***!
-  \************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   NavigationRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute),
-/* harmony export */   RegExpRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.RegExpRoute),
-/* harmony export */   Route: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Route),
-/* harmony export */   Router: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Router),
-/* harmony export */   registerRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.registerRoute),
-/* harmony export */   setCatchHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setCatchHandler),
-/* harmony export */   setDefaultHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setDefaultHandler)
-/* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-routing/index.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-routing/setCatchHandler.js":
+/***/ "./node_modules/workbox-routing/setCatchHandler.js"
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-routing/setCatchHandler.js ***!
   \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1643,13 +1346,13 @@ function setCatchHandler(handler) {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-routing/setDefaultHandler.js":
+/***/ "./node_modules/workbox-routing/setDefaultHandler.js"
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-routing/setDefaultHandler.js ***!
   \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1686,13 +1389,13 @@ function setDefaultHandler(handler) {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/CacheFirst.js":
+/***/ "./node_modules/workbox-strategies/CacheFirst.js"
 /*!*******************************************************!*\
   !*** ./node_modules/workbox-strategies/CacheFirst.js ***!
   \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1796,13 +1499,13 @@ class CacheFirst extends _Strategy_js__WEBPACK_IMPORTED_MODULE_3__.Strategy {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/CacheOnly.js":
+/***/ "./node_modules/workbox-strategies/CacheOnly.js"
 /*!******************************************************!*\
   !*** ./node_modules/workbox-strategies/CacheOnly.js ***!
   \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1878,13 +1581,13 @@ class CacheOnly extends _Strategy_js__WEBPACK_IMPORTED_MODULE_3__.Strategy {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/NetworkFirst.js":
+/***/ "./node_modules/workbox-strategies/NetworkFirst.js"
 /*!*********************************************************!*\
   !*** ./node_modules/workbox-strategies/NetworkFirst.js ***!
   \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2097,13 +1800,13 @@ class NetworkFirst extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Strategy {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/NetworkOnly.js":
+/***/ "./node_modules/workbox-strategies/NetworkOnly.js"
 /*!********************************************************!*\
   !*** ./node_modules/workbox-strategies/NetworkOnly.js ***!
   \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2217,13 +1920,13 @@ class NetworkOnly extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Strategy {
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/StaleWhileRevalidate.js":
+/***/ "./node_modules/workbox-strategies/StaleWhileRevalidate.js"
 /*!*****************************************************************!*\
   !*** ./node_modules/workbox-strategies/StaleWhileRevalidate.js ***!
   \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2357,13 +2060,13 @@ class StaleWhileRevalidate extends _Strategy_js__WEBPACK_IMPORTED_MODULE_4__.Str
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/index.js":
+/***/ "./node_modules/workbox-strategies/index.js"
 /*!**************************************************!*\
   !*** ./node_modules/workbox-strategies/index.js ***!
   \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2408,34 +2111,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/index.mjs":
-/*!***************************************************!*\
-  !*** ./node_modules/workbox-strategies/index.mjs ***!
-  \***************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   CacheFirst: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst),
-/* harmony export */   CacheOnly: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheOnly),
-/* harmony export */   NetworkFirst: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkFirst),
-/* harmony export */   NetworkOnly: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkOnly),
-/* harmony export */   StaleWhileRevalidate: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StaleWhileRevalidate),
-/* harmony export */   Strategy: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Strategy),
-/* harmony export */   StrategyHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StrategyHandler)
-/* harmony export */ });
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-strategies/index.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/workbox-strategies/plugins/cacheOkAndOpaquePlugin.js":
+/***/ "./node_modules/workbox-strategies/plugins/cacheOkAndOpaquePlugin.js"
 /*!***************************************************************************!*\
   !*** ./node_modules/workbox-strategies/plugins/cacheOkAndOpaquePlugin.js ***!
   \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2471,13 +2153,13 @@ const cacheOkAndOpaquePlugin = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./node_modules/workbox-strategies/utils/messages.js":
+/***/ "./node_modules/workbox-strategies/utils/messages.js"
 /*!***********************************************************!*\
   !*** ./node_modules/workbox-strategies/utils/messages.js ***!
   \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2509,79 +2191,397 @@ const messages = {
 };
 
 
-/***/ }),
+/***/ },
 
-/***/ "./src/sw.js":
-/*!*******************!*\
-  !*** ./src/sw.js ***!
-  \*******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./node_modules/idb/build/index.js"
+/*!*****************************************!*\
+  !*** ./node_modules/idb/build/index.js ***!
+  \*****************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var workbox_routing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! workbox-routing */ "./node_modules/workbox-routing/index.mjs");
-/* harmony import */ var workbox_strategies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! workbox-strategies */ "./node_modules/workbox-strategies/index.mjs");
-/* harmony import */ var workbox_expiration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! workbox-expiration */ "./node_modules/workbox-expiration/index.mjs");
-/* harmony import */ var workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! workbox-cacheable-response */ "./node_modules/workbox-cacheable-response/index.mjs");
-/* harmony import */ var workbox_precaching__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! workbox-precaching */ "./node_modules/workbox-precaching/index.mjs");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   deleteDB: () => (/* binding */ deleteDB),
+/* harmony export */   openDB: () => (/* binding */ openDB),
+/* harmony export */   unwrap: () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.u),
+/* harmony export */   wrap: () => (/* reexport safe */ _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)
+/* harmony export */ });
+/* harmony import */ var _wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrap-idb-value.js */ "./node_modules/idb/build/wrap-idb-value.js");
 
 
 
+/**
+ * Open a database.
+ *
+ * @param name Name of the database.
+ * @param version Schema version.
+ * @param callbacks Additional callbacks.
+ */
+function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
+    const request = indexedDB.open(name, version);
+    const openPromise = (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request);
+    if (upgrade) {
+        request.addEventListener('upgradeneeded', (event) => {
+            upgrade((0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request.result), event.oldVersion, event.newVersion, (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request.transaction), event);
+        });
+    }
+    if (blocked) {
+        request.addEventListener('blocked', (event) => blocked(
+        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event.newVersion, event));
+    }
+    openPromise
+        .then((db) => {
+        if (terminated)
+            db.addEventListener('close', () => terminated());
+        if (blocking) {
+            db.addEventListener('versionchange', (event) => blocking(event.oldVersion, event.newVersion, event));
+        }
+    })
+        .catch(() => { });
+    return openPromise;
+}
+/**
+ * Delete a database.
+ *
+ * @param name Name of the database.
+ */
+function deleteDB(name, { blocked } = {}) {
+    const request = indexedDB.deleteDatabase(name);
+    if (blocked) {
+        request.addEventListener('blocked', (event) => blocked(
+        // Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event));
+    }
+    return (0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.w)(request).then(() => undefined);
+}
 
-
-(0,workbox_precaching__WEBPACK_IMPORTED_MODULE_4__.precacheAndRoute)(self.__WB_MANIFEST);
-const navigationRoute = new workbox_routing__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute(new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.NetworkFirst({
-  cacheName: 'navigation-cache',
-  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
-    statuses: [200]
-  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
-    maxEntries: 50,
-    maxAgeSeconds: 7 * 24 * 60 * 60
-  })]
+const readMethods = ['get', 'getKey', 'getAll', 'getAllKeys', 'count'];
+const writeMethods = ['put', 'add', 'delete', 'clear'];
+const cachedMethods = new Map();
+function getMethod(target, prop) {
+    if (!(target instanceof IDBDatabase &&
+        !(prop in target) &&
+        typeof prop === 'string')) {
+        return;
+    }
+    if (cachedMethods.get(prop))
+        return cachedMethods.get(prop);
+    const targetFuncName = prop.replace(/FromIndex$/, '');
+    const useIndex = prop !== targetFuncName;
+    const isWrite = writeMethods.includes(targetFuncName);
+    if (
+    // Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
+    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) ||
+        !(isWrite || readMethods.includes(targetFuncName))) {
+        return;
+    }
+    const method = async function (storeName, ...args) {
+        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
+        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
+        let target = tx.store;
+        if (useIndex)
+            target = target.index(args.shift());
+        // Must reject if op rejects.
+        // If it's a write operation, must reject if tx.done rejects.
+        // Must reject with op rejection first.
+        // Must resolve with op value.
+        // Must handle both promises (no unhandled rejections)
+        return (await Promise.all([
+            target[targetFuncName](...args),
+            isWrite && tx.done,
+        ]))[0];
+    };
+    cachedMethods.set(prop, method);
+    return method;
+}
+(0,_wrap_idb_value_js__WEBPACK_IMPORTED_MODULE_0__.r)((oldTraps) => ({
+    ...oldTraps,
+    get: (target, prop, receiver) => getMethod(target, prop) || oldTraps.get(target, prop, receiver),
+    has: (target, prop) => !!getMethod(target, prop) || oldTraps.has(target, prop),
 }));
-(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(navigationRoute);
-(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
-  request
-}) => request.destination === 'image', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.CacheFirst({
-  cacheName: 'image-cache',
-  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
-    statuses: [200]
-  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
-    maxEntries: 100,
-    maxAgeSeconds: 30 * 24 * 60 * 60
-  })]
-}));
-(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
-  request
-}) => request.destination === 'style' || request.destination === 'script' || request.destination === 'worker', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.StaleWhileRevalidate({
-  cacheName: 'static-resources',
-  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
-    statuses: [200]
-  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
-    maxEntries: 100,
-    maxAgeSeconds: 30 * 24 * 60 * 60
-  })]
-}));
-(0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(({
-  request
-}) => request.destination === 'font', new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.CacheFirst({
-  cacheName: 'font-cache',
-  plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
-    statuses: [200]
-  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
-    maxEntries: 20,
-    maxAgeSeconds: 365 * 24 * 60 * 60
-  })]
-}));
-self.addEventListener('message', event => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
-self.addEventListener('activate', event => {
-  event.waitUntil(self.clients.claim());
-});
 
-/***/ })
+
+
+
+/***/ },
+
+/***/ "./node_modules/idb/build/wrap-idb-value.js"
+/*!**************************************************!*\
+  !*** ./node_modules/idb/build/wrap-idb-value.js ***!
+  \**************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   a: () => (/* binding */ reverseTransformCache),
+/* harmony export */   i: () => (/* binding */ instanceOfAny),
+/* harmony export */   r: () => (/* binding */ replaceTraps),
+/* harmony export */   u: () => (/* binding */ unwrap),
+/* harmony export */   w: () => (/* binding */ wrap)
+/* harmony export */ });
+const instanceOfAny = (object, constructors) => constructors.some((c) => object instanceof c);
+
+let idbProxyableTypes;
+let cursorAdvanceMethods;
+// This is a function to prevent it throwing up in node environments.
+function getIdbProxyableTypes() {
+    return (idbProxyableTypes ||
+        (idbProxyableTypes = [
+            IDBDatabase,
+            IDBObjectStore,
+            IDBIndex,
+            IDBCursor,
+            IDBTransaction,
+        ]));
+}
+// This is a function to prevent it throwing up in node environments.
+function getCursorAdvanceMethods() {
+    return (cursorAdvanceMethods ||
+        (cursorAdvanceMethods = [
+            IDBCursor.prototype.advance,
+            IDBCursor.prototype.continue,
+            IDBCursor.prototype.continuePrimaryKey,
+        ]));
+}
+const cursorRequestMap = new WeakMap();
+const transactionDoneMap = new WeakMap();
+const transactionStoreNamesMap = new WeakMap();
+const transformCache = new WeakMap();
+const reverseTransformCache = new WeakMap();
+function promisifyRequest(request) {
+    const promise = new Promise((resolve, reject) => {
+        const unlisten = () => {
+            request.removeEventListener('success', success);
+            request.removeEventListener('error', error);
+        };
+        const success = () => {
+            resolve(wrap(request.result));
+            unlisten();
+        };
+        const error = () => {
+            reject(request.error);
+            unlisten();
+        };
+        request.addEventListener('success', success);
+        request.addEventListener('error', error);
+    });
+    promise
+        .then((value) => {
+        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
+        // (see wrapFunction).
+        if (value instanceof IDBCursor) {
+            cursorRequestMap.set(value, request);
+        }
+        // Catching to avoid "Uncaught Promise exceptions"
+    })
+        .catch(() => { });
+    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
+    // is because we create many promises from a single IDBRequest.
+    reverseTransformCache.set(promise, request);
+    return promise;
+}
+function cacheDonePromiseForTransaction(tx) {
+    // Early bail if we've already created a done promise for this transaction.
+    if (transactionDoneMap.has(tx))
+        return;
+    const done = new Promise((resolve, reject) => {
+        const unlisten = () => {
+            tx.removeEventListener('complete', complete);
+            tx.removeEventListener('error', error);
+            tx.removeEventListener('abort', error);
+        };
+        const complete = () => {
+            resolve();
+            unlisten();
+        };
+        const error = () => {
+            reject(tx.error || new DOMException('AbortError', 'AbortError'));
+            unlisten();
+        };
+        tx.addEventListener('complete', complete);
+        tx.addEventListener('error', error);
+        tx.addEventListener('abort', error);
+    });
+    // Cache it for later retrieval.
+    transactionDoneMap.set(tx, done);
+}
+let idbProxyTraps = {
+    get(target, prop, receiver) {
+        if (target instanceof IDBTransaction) {
+            // Special handling for transaction.done.
+            if (prop === 'done')
+                return transactionDoneMap.get(target);
+            // Polyfill for objectStoreNames because of Edge.
+            if (prop === 'objectStoreNames') {
+                return target.objectStoreNames || transactionStoreNamesMap.get(target);
+            }
+            // Make tx.store return the only store in the transaction, or undefined if there are many.
+            if (prop === 'store') {
+                return receiver.objectStoreNames[1]
+                    ? undefined
+                    : receiver.objectStore(receiver.objectStoreNames[0]);
+            }
+        }
+        // Else transform whatever we get back.
+        return wrap(target[prop]);
+    },
+    set(target, prop, value) {
+        target[prop] = value;
+        return true;
+    },
+    has(target, prop) {
+        if (target instanceof IDBTransaction &&
+            (prop === 'done' || prop === 'store')) {
+            return true;
+        }
+        return prop in target;
+    },
+};
+function replaceTraps(callback) {
+    idbProxyTraps = callback(idbProxyTraps);
+}
+function wrapFunction(func) {
+    // Due to expected object equality (which is enforced by the caching in `wrap`), we
+    // only create one new func per func.
+    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
+    if (func === IDBDatabase.prototype.transaction &&
+        !('objectStoreNames' in IDBTransaction.prototype)) {
+        return function (storeNames, ...args) {
+            const tx = func.call(unwrap(this), storeNames, ...args);
+            transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [storeNames]);
+            return wrap(tx);
+        };
+    }
+    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
+    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
+    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
+    // with real promises, so each advance methods returns a new promise for the cursor object, or
+    // undefined if the end of the cursor has been reached.
+    if (getCursorAdvanceMethods().includes(func)) {
+        return function (...args) {
+            // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+            // the original object.
+            func.apply(unwrap(this), args);
+            return wrap(cursorRequestMap.get(this));
+        };
+    }
+    return function (...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        return wrap(func.apply(unwrap(this), args));
+    };
+}
+function transformCachableValue(value) {
+    if (typeof value === 'function')
+        return wrapFunction(value);
+    // This doesn't return, it just creates a 'done' promise for the transaction,
+    // which is later returned for transaction.done (see idbObjectHandler).
+    if (value instanceof IDBTransaction)
+        cacheDonePromiseForTransaction(value);
+    if (instanceOfAny(value, getIdbProxyableTypes()))
+        return new Proxy(value, idbProxyTraps);
+    // Return the same value back if we're not going to transform it.
+    return value;
+}
+function wrap(value) {
+    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
+    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
+    if (value instanceof IDBRequest)
+        return promisifyRequest(value);
+    // If we've already transformed this value before, reuse the transformed value.
+    // This is faster, but it also provides object equality.
+    if (transformCache.has(value))
+        return transformCache.get(value);
+    const newValue = transformCachableValue(value);
+    // Not all types are transformed.
+    // These may be primitive types, so they can't be WeakMap keys.
+    if (newValue !== value) {
+        transformCache.set(value, newValue);
+        reverseTransformCache.set(newValue, value);
+    }
+    return newValue;
+}
+const unwrap = (value) => reverseTransformCache.get(value);
+
+
+
+
+/***/ },
+
+/***/ "./node_modules/workbox-cacheable-response/index.mjs"
+/*!***********************************************************!*\
+  !*** ./node_modules/workbox-cacheable-response/index.mjs ***!
+  \***********************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CacheableResponse: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponse),
+/* harmony export */   CacheableResponsePlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheableResponsePlugin)
+/* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-cacheable-response/index.js");
+
+
+/***/ },
+
+/***/ "./node_modules/workbox-expiration/index.mjs"
+/*!***************************************************!*\
+  !*** ./node_modules/workbox-expiration/index.mjs ***!
+  \***************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CacheExpiration: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheExpiration),
+/* harmony export */   ExpirationPlugin: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.ExpirationPlugin)
+/* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-expiration/index.js");
+
+
+/***/ },
+
+/***/ "./node_modules/workbox-routing/index.mjs"
+/*!************************************************!*\
+  !*** ./node_modules/workbox-routing/index.mjs ***!
+  \************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NavigationRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute),
+/* harmony export */   RegExpRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.RegExpRoute),
+/* harmony export */   Route: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Route),
+/* harmony export */   Router: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Router),
+/* harmony export */   registerRoute: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.registerRoute),
+/* harmony export */   setCatchHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setCatchHandler),
+/* harmony export */   setDefaultHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.setDefaultHandler)
+/* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-routing/index.js");
+
+
+/***/ },
+
+/***/ "./node_modules/workbox-strategies/index.mjs"
+/*!***************************************************!*\
+  !*** ./node_modules/workbox-strategies/index.mjs ***!
+  \***************************************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CacheFirst: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheFirst),
+/* harmony export */   CacheOnly: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.CacheOnly),
+/* harmony export */   NetworkFirst: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkFirst),
+/* harmony export */   NetworkOnly: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.NetworkOnly),
+/* harmony export */   StaleWhileRevalidate: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StaleWhileRevalidate),
+/* harmony export */   Strategy: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.Strategy),
+/* harmony export */   StrategyHandler: () => (/* reexport safe */ _index_js__WEBPACK_IMPORTED_MODULE_0__.StrategyHandler)
+/* harmony export */ });
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ "./node_modules/workbox-strategies/index.js");
+
+
+/***/ }
 
 }]);
 //# sourceMappingURL=src_sw_js.sw.js.map

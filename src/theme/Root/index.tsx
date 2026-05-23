@@ -6,22 +6,13 @@ import styles from './styles.module.css';
 
 export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
   const isBrowser = useIsBrowser();
-  const [needRefresh, setNeedRefresh] = useState(false);
   const [offline, setOffline] = useState(false);
-  const [registration, setRegistration] = useState<ServiceWorkerRegistration | null>(null);
   const [isPulling, setIsPulling] = useState(false);
   const [pullDistance, setPullDistance] = useState(0);
 
-  const updateServiceWorker = useCallback(() => {
-    if (registration?.waiting) {
-      registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-    }
-  }, [registration]);
-
-  const handleRefresh = useCallback(async () => {
-    updateServiceWorker();
+  const handleRefresh = useCallback(() => {
     window.location.reload();
-  }, [updateServiceWorker]);
+  }, []);
 
   useEffect(() => {
     if (!isBrowser) return;
@@ -49,40 +40,35 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
 
     setOffline(!navigator.onLine);
 
-    navigator.serviceWorker.ready.then((reg) => {
-      setRegistration(reg);
-      reg.update();
-    });
-
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       window.location.reload();
     });
 
-    return () => {
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
-    };
-  }, [isBrowser]);
+    navigator.serviceWorker.ready.then((reg) => {
+      if (!navigator.onLine) return;
 
-  useEffect(() => {
-    if (!isBrowser || !('serviceWorker' in navigator)) {
-      return;
-    }
-
-    navigator.serviceWorker.getRegistration().then((reg) => {
-      if (!reg) return;
+      reg.update();
 
       reg.addEventListener('updatefound', () => {
         const newWorker = reg.installing;
         if (newWorker) {
           newWorker.addEventListener('statechange', () => {
             if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              setNeedRefresh(true);
+              newWorker.postMessage({ type: 'SKIP_WAITING' });
             }
           });
         }
       });
+
+      if (reg.waiting) {
+        reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+      }
     });
+
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
   }, [isBrowser]);
 
   useEffect(() => {
@@ -134,17 +120,6 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     };
   }, [isBrowser, pullDistance, handleRefresh]);
 
-  const handleReload = useCallback(() => {
-    if (registration?.waiting) {
-      registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-    }
-    window.location.reload();
-  }, [registration]);
-
-  const handleDismiss = useCallback(() => {
-    setNeedRefresh(false);
-  }, []);
-
   return (
     <>
       {isPulling && pullDistance > 0 && (
@@ -161,13 +136,6 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       {offline && (
         <div className={styles['offline-banner']}>
           Sin conexión - mostrando contenido en caché
-        </div>
-      )}
-{needRefresh && (
-        <div className={styles['reload-prompt']}>
-          <span>¡Nuevo contenido disponible!</span>
-          <button onClick={handleReload}>Actualizar</button>
-          <button onClick={handleDismiss}>Después</button>
         </div>
       )}
       {children}

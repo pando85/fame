@@ -51,6 +51,7 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
 
     navigator.serviceWorker.ready.then((reg) => {
       setRegistration(reg);
+      reg.update();
     });
 
     navigator.serviceWorker.addEventListener('controllerchange', () => {

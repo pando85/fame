@@ -9,6 +9,7 @@ tags: [salsa]
 - 25 g de albahaca
 - 1 puñado de anacardos
 - Aceite de oliva virgen extra
+- Parmesano
 - Sal al gusto
 
 ## Elaboración
@@ -17,7 +18,8 @@ tags: [salsa]
 2. Incorpora la albahaca poco a poco, añadiendo otra pizca de sal, y ve machacando hasta deshacer todas las hojas.
 3. Añade los anacardos y sigue machacando para integrarlos.
 4. Riega con el aceite poco a poco mientras mezclas hasta lograr una salsa cremosa.
-5. Prueba y rectifica con cuidado: la sal cunde mucho.
+5. Ralla el parmesano e incorpóralo a la salsa mezclando bien.
+6. Prueba y rectifica con cuidado: la sal cunde mucho.
 
 ## Nota
 

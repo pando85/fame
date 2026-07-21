@@ -1095,14 +1095,14 @@
     "@babel/helper-validator-identifier" "^7.29.7"
 
 "@capacitor/android@^8.1.0":
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-8.4.1.tgz#d2a42c051c3a8127510bae62875aaf4237c33719"
-  integrity sha512-igtDCJ7QQn0P2qHFD9p4KXaa6V1b2PRNt+MxjVwtjTm/BJvqmiazOJq6rPjwFSZnfHm6iFoZk8TfzHd44pyBGw==
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-8.4.2.tgz#d36b1aa6f13940d25c1240b89c4bd7f8047d739e"
+  integrity sha512-bzf8XZ9C+ePgOQ+e+T0fnhHGH4aCNY494vvSQIF5w4AY07RwEmkFqZs1678DDSMH0hLSQpxEwXGFNUVcXO6bBA==
 
 "@capacitor/cli@^8.1.0":
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-8.4.1.tgz#2e340118cb6d380a6484e5375a9fe99a39a25021"
-  integrity sha512-t7F2s7fFHCq113xgrggrmK6ctV0/8E5YfLNVLfPHp4GCTDO+tly9fZvWPf2/sOI8lMm18dLT43qbXLRTz/OZgw==
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-8.4.2.tgz#3f5febe67e3d726c07a8b12f8fcd8172e3a6c0bf"
+  integrity sha512-hE4HmpMdr5T8eQ++kGa1BKkdG2JLEvo1y1cj1kmFK78VB9dBp538oe1EZvzwupNGOl0ZueALotzL5wcXRD9w1Q==
   dependencies:
     "@ionic/cli-framework-output" "^2.2.8"
     "@ionic/utils-subprocess" "^3.0.1"
@@ -1123,9 +1123,9 @@
     xml2js "^0.6.2"
 
 "@capacitor/core@^8.1.0":
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-8.4.1.tgz#6e9af34642b1722327da6123ce70cb14a68d3f9d"
-  integrity sha512-xqhOGLbTAYeOWK+IDUNSjQJAPapQjRHrIcgk9PYp52or9zFTaaMko31uNi16N6W+CRJ8VrRram6fOYILkBG2Hg==
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-8.4.2.tgz#d28e25e719a9272d2734d1a7358127c93940d2cd"
+  integrity sha512-fQPRb3JXRaU2pnufDUvqOjhsrYxDQeFRZyaj/sHydIUxD2NxOGHKMpmKUdI+U4OOmKuGZyvRpi7TSJU+7Bjbmg==
   dependencies:
     tslib "^2.1.0"
 
@@ -9299,15 +9299,10 @@ semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.5, semver@^7.3.7, semver@^7.5.4:
+semver@^7.3.5, semver@^7.3.7, semver@^7.5.4, semver@^7.6.3:
   version "7.8.5"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.8.5.tgz#39b646037dd50c14fb451e7e4cac58ed8b863f69"
   integrity sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==
-
-semver@^7.6.3:
-  version "7.8.4"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.8.4.tgz#c73eceebae0616934be8dff28a7fd70757c8e696"
-  integrity sha512-rUCObTnP32Q08R2uuIrt7r9PlEonuTmtuXYcW6s5kjdlj3xbnwe+21yXptAUYcMAABLkYYTtnmzb3w3EDZfueA==
 
 send@~0.19.0, send@~0.19.1:
   version "0.19.2"
@@ -9864,9 +9859,9 @@ tapable@^2.0.0, tapable@^2.2.1, tapable@^2.3.0, tapable@^2.3.3:
   integrity sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==
 
 tar@^7.5.3:
-  version "7.5.16"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.16.tgz#f11e063afed4554f758049d082909e37d6b53ced"
-  integrity sha512-56adEpPMouktRlBLXiaYFFzZ/3+JXa8P9n7WbR+ibIjtviN55mEaOkiysCnPnWm+7kkui1Dn8J9l+g6zV8731w==
+  version "7.5.20"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.20.tgz#37a65aa911cbd69864002e14bf8a926a5551e240"
+  integrity sha512-9FcyK4PA6+WbzlTM9WhQm6vB5W7cP7dUiPsv1g7YDwEQnQ1CGpK3MGlKk/ITVWMk05kHZuBhmVhiv8LZoy/PFQ==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"

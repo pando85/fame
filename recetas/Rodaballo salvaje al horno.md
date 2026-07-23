@@ -116,13 +116,3 @@ No echar el ajo crudo sobre el pescado antes de hornearlo, ya que puede quemarse
 - Incorporar el ajo mediante una ajada al final.
 - Elegir entre ajada o mantequilla; no es necesario utilizar ambas.
 
-## Diferencias respecto a la receta original
-
-- Las patatas se precocinan durante 30-35 minutos en lugar de 15-20 minutos.
-- Se elimina el medio vaso de agua para concentrar los jugos y evitar que el pescado se cueza al vapor.
-- El ajo no se introduce en cortes ni se hornea crudo; se añade al final en forma de ajada.
-- Se evitan los cortes transversales profundos para que el rodaballo conserve mejor la humedad.
-- Se utiliza una temperatura estable de 185-190 °C y el grill únicamente como acabado breve.
-- El punto se comprueba por la textura y, preferiblemente, por la temperatura interior.
-- Se sustituye el orégano por perejil fresco, que tapa menos el sabor del pescado.
-- La mantequilla queda como alternativa a la ajada, no como añadido simultáneo.

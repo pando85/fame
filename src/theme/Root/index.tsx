@@ -4,6 +4,8 @@ import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import styles from './styles.module.css';
 
+const REMOTE_APP_ORIGIN = 'https://fame.grigri.cloud';
+
 export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
   const isBrowser = useIsBrowser();
   const [offline, setOffline] = useState(false);
@@ -28,26 +30,66 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
   }, [isBrowser]);
 
   useEffect(() => {
-    if (!isBrowser || !('serviceWorker' in navigator)) {
+    if (!isBrowser) {
       return;
     }
 
-    const handleOnline = () => setOffline(false);
+    const isAndroidFallback = () =>
+      Capacitor.getPlatform() === 'android' && window.location.origin !== REMOTE_APP_ORIGIN;
+
+    const switchToRemote = () => {
+      if (navigator.onLine && isAndroidFallback()) {
+        window.location.replace(`${REMOTE_APP_ORIGIN}/`);
+        return true;
+      }
+      return false;
+    };
+
+    const handleOnline = () => {
+      setOffline(false);
+      switchToRemote();
+    };
     const handleOffline = () => setOffline(true);
 
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
-
     setOffline(!navigator.onLine);
 
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
+    // capacitor.config.json points Android at the canonical web origin. If that
+    // initial navigation fails, Capacitor serves the bundled index.html as an
+    // error fallback. Return to the canonical origin as soon as the network is
+    // available so updates are again managed by the website's service worker.
+    if (switchToRemote()) {
+      return () => {
+        window.removeEventListener('online', handleOnline);
+        window.removeEventListener('offline', handleOffline);
+      };
+    }
+
+    // The bundled fallback is deliberately self-contained. Its service worker
+    // can only see Capacitor's local origin and therefore cannot update content
+    // from fame.grigri.cloud.
+    if (isAndroidFallback() || !('serviceWorker' in navigator)) {
+      return () => {
+        window.removeEventListener('online', handleOnline);
+        window.removeEventListener('offline', handleOffline);
+      };
+    }
+
+    const handleControllerChange = () => {
       window.location.reload();
-    });
+    };
+    navigator.serviceWorker.addEventListener('controllerchange', handleControllerChange);
 
     navigator.serviceWorker.ready.then((reg) => {
       if (!navigator.onLine) return;
 
-      reg.update();
+      // Check the canonical site's generated service worker immediately. A new
+      // Docusaurus build changes its precache manifest, so installing it also
+      // downloads the latest recipe pages and versioned assets before activation.
+      void reg.update().catch(() => {
+        // A transient update failure must never make the already-cached app unusable.
+      });
 
       reg.addEventListener('updatefound', () => {
         const newWorker = reg.installing;
@@ -68,6 +110,7 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     return () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
+      navigator.serviceWorker.removeEventListener('controllerchange', handleControllerChange);
     };
   }, [isBrowser]);
 

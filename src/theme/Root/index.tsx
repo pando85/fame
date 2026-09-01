@@ -1,19 +1,92 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import styles from './styles.module.css';
 
 const REMOTE_APP_ORIGIN = 'https://fame.grigri.cloud';
+const LAZY_UPDATE_DELAY_MS = 1500;
+const REMOTE_PROBE_TIMEOUT_MS = 5000;
+const WORKER_ACTIVATION_TIMEOUT_MS = 3000;
+
+const isAndroidFallback = () =>
+  Capacitor.getPlatform() === 'android' && window.location.origin !== REMOTE_APP_ORIGIN;
+
+const waitForWorkerInstallation = (worker: ServiceWorker): Promise<void> => {
+  if (worker.state === 'installed' || worker.state === 'activated' || worker.state === 'redundant') {
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve) => {
+    const handleStateChange = () => {
+      if (
+        worker.state === 'installed' ||
+        worker.state === 'activated' ||
+        worker.state === 'redundant'
+      ) {
+        worker.removeEventListener('statechange', handleStateChange);
+        resolve();
+      }
+    };
+
+    worker.addEventListener('statechange', handleStateChange);
+  });
+};
 
 export default function Root({ children }: { children: React.ReactNode }): JSX.Element {
   const isBrowser = useIsBrowser();
   const [offline, setOffline] = useState(false);
   const [isPulling, setIsPulling] = useState(false);
   const [pullDistance, setPullDistance] = useState(0);
+  const pullDistanceRef = useRef(0);
 
-  const handleRefresh = useCallback(() => {
-    window.location.reload();
+  const handleRefresh = useCallback(async () => {
+    // The bundled Capacitor fallback has no access to the production origin's
+    // service-worker registration. Reloading it is still useful while offline.
+    if (
+      !('serviceWorker' in navigator) ||
+      window.location.origin !== REMOTE_APP_ORIGIN
+    ) {
+      window.location.reload();
+      return;
+    }
+
+    try {
+      const registration = await navigator.serviceWorker.ready;
+
+      // Pull-to-refresh is the explicit "apply now" path. Check production for
+      // a newer service worker, but keep the existing cached snapshot if that
+      // check fails.
+      if (navigator.onLine) {
+        try {
+          await registration.update();
+        } catch {
+          // Network/update failure must not prevent the cached app from reloading.
+        }
+      }
+
+      let worker = registration.waiting ?? registration.installing;
+      if (worker) {
+        await waitForWorkerInstallation(worker);
+        worker = registration.waiting ?? worker;
+      }
+
+      if (worker && worker.state !== 'redundant') {
+        const controllerChanged = new Promise<void>((resolve) => {
+          navigator.serviceWorker.addEventListener('controllerchange', () => resolve(), {
+            once: true,
+          });
+        });
+        const activationTimeout = new Promise<void>((resolve) => {
+          window.setTimeout(resolve, WORKER_ACTIVATION_TIMEOUT_MS);
+        });
+
+        worker.postMessage({ type: 'SKIP_WAITING' });
+        await Promise.race([controllerChanged, activationTimeout]);
+      }
+    } finally {
+      window.location.reload();
+    }
   }, []);
 
   useEffect(() => {
@@ -26,7 +99,7 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       }
     };
 
-    setupNativeUi();
+    void setupNativeUi();
   }, [isBrowser]);
 
   useEffect(() => {
@@ -34,83 +107,107 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       return;
     }
 
-    const isAndroidFallback = () =>
-      Capacitor.getPlatform() === 'android' && window.location.origin !== REMOTE_APP_ORIGIN;
+    let updateTimer: number | undefined;
+    let remoteProbe: AbortController | undefined;
+    let disposed = false;
 
-    const switchToRemote = () => {
-      if (navigator.onLine && isAndroidFallback()) {
-        window.location.replace(`${REMOTE_APP_ORIGIN}/`);
-        return true;
+    const clearScheduledWork = () => {
+      if (updateTimer !== undefined) {
+        window.clearTimeout(updateTimer);
+        updateTimer = undefined;
       }
-      return false;
+      remoteProbe?.abort();
+      remoteProbe = undefined;
+    };
+
+    const updateProductionSnapshot = async () => {
+      if (disposed || !navigator.onLine) {
+        return;
+      }
+
+      if (isAndroidFallback()) {
+        // errorPath is a bundled, always-available bootstrap. Do not trust
+        // navigator.onLine alone: Android can report "online" while DNS, the
+        // route, or the server is unavailable, which would otherwise create a
+        // redirect/fallback loop. Probe the canonical origin first and only
+        // leave the visible local recipes after an actual request succeeds.
+        remoteProbe = new AbortController();
+        const timeout = window.setTimeout(
+          () => remoteProbe?.abort(),
+          REMOTE_PROBE_TIMEOUT_MS,
+        );
+
+        try {
+          await fetch(`${REMOTE_APP_ORIGIN}/`, {
+            cache: 'no-store',
+            mode: 'no-cors',
+            signal: remoteProbe.signal,
+          });
+          if (!disposed) {
+            window.location.replace(`${REMOTE_APP_ORIGIN}/`);
+          }
+        } catch {
+          // Keep rendering the local fallback. Another check is scheduled when
+          // Android reports that connectivity has returned.
+        } finally {
+          window.clearTimeout(timeout);
+          remoteProbe = undefined;
+        }
+        return;
+      }
+
+      if (!('serviceWorker' in navigator)) {
+        return;
+      }
+
+      try {
+        const registration = await navigator.serviceWorker.ready;
+        await registration.update();
+
+        // Deliberately do not call SKIP_WAITING here. Docusaurus/Workbox has
+        // already downloaded the complete new precache atomically while the
+        // currently rendered recipes remain untouched. The new snapshot becomes
+        // active naturally after this app client ends, so the next launch starts
+        // immediately on the new local version. Pull-to-refresh is the opt-in
+        // path for activating it during the current session.
+      } catch {
+        // The current precached production snapshot remains authoritative.
+      }
+    };
+
+    const scheduleLazyUpdate = () => {
+      if (updateTimer !== undefined) {
+        window.clearTimeout(updateTimer);
+      }
+      updateTimer = window.setTimeout(() => {
+        updateTimer = undefined;
+        void updateProductionSnapshot();
+      }, LAZY_UPDATE_DELAY_MS);
     };
 
     const handleOnline = () => {
       setOffline(false);
-      switchToRemote();
+      scheduleLazyUpdate();
     };
-    const handleOffline = () => setOffline(true);
+    const handleOffline = () => {
+      setOffline(true);
+      remoteProbe?.abort();
+    };
 
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
     setOffline(!navigator.onLine);
 
-    // capacitor.config.json points Android at the canonical web origin. If that
-    // initial navigation fails, Capacitor serves the bundled index.html as an
-    // error fallback. Return to the canonical origin as soon as the network is
-    // available so updates are again managed by the website's service worker.
-    if (switchToRemote()) {
-      return () => {
-        window.removeEventListener('online', handleOnline);
-        window.removeEventListener('offline', handleOffline);
-      };
-    }
-
-    // The bundled fallback is deliberately self-contained. Its service worker
-    // can only see Capacitor's local origin and therefore cannot update content
-    // from fame.grigri.cloud.
-    if (isAndroidFallback() || !('serviceWorker' in navigator)) {
-      return () => {
-        window.removeEventListener('online', handleOnline);
-        window.removeEventListener('offline', handleOffline);
-      };
-    }
-
-    const handleControllerChange = () => {
-      window.location.reload();
-    };
-    navigator.serviceWorker.addEventListener('controllerchange', handleControllerChange);
-
-    navigator.serviceWorker.ready.then((reg) => {
-      if (!navigator.onLine) return;
-
-      // Check the canonical site's generated service worker immediately. A new
-      // Docusaurus build changes its precache manifest, so installing it also
-      // downloads the latest recipe pages and versioned assets before activation.
-      void reg.update().catch(() => {
-        // A transient update failure must never make the already-cached app unusable.
-      });
-
-      reg.addEventListener('updatefound', () => {
-        const newWorker = reg.installing;
-        if (newWorker) {
-          newWorker.addEventListener('statechange', () => {
-            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              newWorker.postMessage({ type: 'SKIP_WAITING' });
-            }
-          });
-        }
-      });
-
-      if (reg.waiting) {
-        reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-      }
-    });
+    // Rendering has already happened by the time this effect runs. Delay all
+    // update I/O a little further so startup is local-first: recipes first,
+    // production synchronization second.
+    scheduleLazyUpdate();
 
     return () => {
+      disposed = true;
+      clearScheduledWork();
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
-      navigator.serviceWorker.removeEventListener('controllerchange', handleControllerChange);
     };
   }, [isBrowser]);
 
@@ -134,8 +231,10 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       const diff = currentY - startY;
 
       if (diff > 0 && window.scrollY === 0) {
+        const distance = Math.min(diff, 120);
+        pullDistanceRef.current = distance;
         setIsPulling(true);
-        setPullDistance(Math.min(diff, 120));
+        setPullDistance(distance);
       }
     };
 
@@ -145,10 +244,11 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       isPullingActive = false;
       setIsPulling(false);
 
-      if (pullDistance >= 80) {
-        handleRefresh();
+      if (pullDistanceRef.current >= 80) {
+        void handleRefresh();
       }
 
+      pullDistanceRef.current = 0;
       setPullDistance(0);
     };
 
@@ -161,7 +261,7 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
       document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [isBrowser, pullDistance, handleRefresh]);
+  }, [isBrowser, handleRefresh]);
 
   return (
     <>

@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Docusaurus derives blog creation dates from Git history when recipes
+          # do not declare an explicit date. A shallow checkout makes every
+          # recipe look newly created on each build, invalidating the entire
+          # Workbox precache instead of only changed recipes.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -33,6 +39,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Keep recipe metadata deterministic between deployments so Workbox
+          # can reuse unchanged precache entries.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -62,7 +72,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          # The APK contains the same Docusaurus fallback build; make it use the
+          # same stable recipe dates as the deployed site.
+          fetch-depth: 0
       - name: Check for Android changes
         id: android-changes
         run: |

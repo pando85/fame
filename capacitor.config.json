@@ -2,6 +2,10 @@
   "appId": "com.fame.recipes",
   "appName": "Fame",
   "webDir": "build",
+  "server": {
+    "url": "https://fame.grigri.cloud",
+    "errorPath": "index.html"
+  },
   "android": {
     "backgroundColor": "#ffffff"
   },

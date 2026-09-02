@@ -18,14 +18,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// Docusaurus injects the complete production build into this manifest. Keep that
+// versioned snapshot as the authoritative local copy: startup must never depend
+// on the network once a production build has been installed successfully.
 (0,workbox_precaching__WEBPACK_IMPORTED_MODULE_4__.precacheAndRoute)(self.__WB_MANIFEST);
-const navigationRoute = new workbox_routing__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute(new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.NetworkFirst({
+
+// The precache route handles normal Docusaurus pages first. This runtime route
+// covers navigations that are not an exact precache key (for example URLs with
+// query parameters). Serve the last successful response immediately and refresh
+// it in the background instead of blocking startup on a slow/broken network.
+const navigationRoute = new workbox_routing__WEBPACK_IMPORTED_MODULE_0__.NavigationRoute(new workbox_strategies__WEBPACK_IMPORTED_MODULE_1__.StaleWhileRevalidate({
   cacheName: 'navigation-cache',
   plugins: [new workbox_cacheable_response__WEBPACK_IMPORTED_MODULE_3__.CacheableResponsePlugin({
     statuses: [200]
-  }), new workbox_expiration__WEBPACK_IMPORTED_MODULE_2__.ExpirationPlugin({
-    maxEntries: 50,
-    maxAgeSeconds: 7 * 24 * 60 * 60
   })]
 }));
 (0,workbox_routing__WEBPACK_IMPORTED_MODULE_0__.registerRoute)(navigationRoute);
@@ -62,6 +68,11 @@ const navigationRoute = new workbox_routing__WEBPACK_IMPORTED_MODULE_0__.Navigat
     maxAgeSeconds: 365 * 24 * 60 * 60
   })]
 }));
+
+// Background update checks deliberately leave a newly installed worker waiting.
+// That keeps the currently rendered snapshot internally consistent. An explicit
+// pull-to-refresh sends this message to apply the waiting snapshot immediately;
+// otherwise the browser activates it naturally once the current app client ends.
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();

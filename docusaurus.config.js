@@ -58,12 +58,10 @@ const config = {
       '@docusaurus/plugin-pwa',
       {
         debug: true,
-        offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
-          'mobile',
-        ],
+        // Fame owns registration/update timing in Root so production updates do
+        // not start before recipes render and Docusaurus does not show a second
+        // waiting-worker UI. The generated worker still owns the full precache.
+        swRegister: false,
         pwaHead: [
           {
             tagName: 'link',

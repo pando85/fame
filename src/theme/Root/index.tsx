@@ -5,29 +5,85 @@ import { StatusBar, Style } from '@capacitor/status-bar';
 import styles from './styles.module.css';
 
 const REMOTE_APP_ORIGIN = 'https://fame.grigri.cloud';
+const CAPACITOR_FALLBACK_ORIGIN = 'https://localhost';
 const LAZY_UPDATE_DELAY_MS = 1500;
 const REMOTE_PROBE_TIMEOUT_MS = 5000;
+const WORKER_INSTALLATION_TIMEOUT_MS = 15000;
 const WORKER_ACTIVATION_TIMEOUT_MS = 3000;
+const SERVICE_WORKER_URL = `/sw.js?params=${encodeURIComponent(
+  JSON.stringify({ offlineMode: true, debug: false }),
+)}`;
 
-const isAndroidFallback = () =>
-  Capacitor.getPlatform() === 'android' && window.location.origin !== REMOTE_APP_ORIGIN;
+const isBundledFallback = () =>
+  window.location.origin === CAPACITOR_FALLBACK_ORIGIN &&
+  window.location.pathname === '/index.html';
+
+const probeRemoteOrigin = (): Promise<void> =>
+  new Promise((resolve, reject) => {
+    const image = new Image();
+    let settled = false;
+
+    const cleanup = () => {
+      image.onload = null;
+      image.onerror = null;
+      window.clearTimeout(timeout);
+    };
+    const succeed = () => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      resolve();
+    };
+    const fail = () => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      reject(new Error('Production origin is unavailable'));
+    };
+
+    const timeout = window.setTimeout(fail, REMOTE_PROBE_TIMEOUT_MS);
+    image.onload = succeed;
+    image.onerror = fail;
+    image.src = `${REMOTE_APP_ORIGIN}/img/logo.png?probe=${Date.now()}`;
+  });
+
+const ensureProductionServiceWorker = async (): Promise<{
+  registration: ServiceWorkerRegistration;
+  newlyRegistered: boolean;
+}> => {
+  const existing = await navigator.serviceWorker.getRegistration();
+  if (existing) {
+    return { registration: existing, newlyRegistered: false };
+  }
+
+  const registration = await navigator.serviceWorker.register(SERVICE_WORKER_URL);
+  return { registration, newlyRegistered: true };
+};
 
 const waitForWorkerInstallation = (worker: ServiceWorker): Promise<void> => {
   if (worker.state === 'installed' || worker.state === 'activated' || worker.state === 'redundant') {
     return Promise.resolve();
   }
 
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      window.clearTimeout(timeout);
+      worker.removeEventListener('statechange', handleStateChange);
+    };
     const handleStateChange = () => {
       if (
         worker.state === 'installed' ||
         worker.state === 'activated' ||
         worker.state === 'redundant'
       ) {
-        worker.removeEventListener('statechange', handleStateChange);
+        cleanup();
         resolve();
       }
     };
+    const timeout = window.setTimeout(() => {
+      cleanup();
+      reject(new Error('Timed out waiting for service worker installation'));
+    }, WORKER_INSTALLATION_TIMEOUT_MS);
 
     worker.addEventListener('statechange', handleStateChange);
   });
@@ -41,8 +97,9 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
   const pullDistanceRef = useRef(0);
 
   const handleRefresh = useCallback(async () => {
-    // The bundled Capacitor fallback has no access to the production origin's
-    // service-worker registration. Reloading it is still useful while offline.
+    // The bundled Capacitor fallback cannot register a worker for the production
+    // origin. Reload the local snapshot there and only manage workers on the
+    // canonical origin.
     if (
       !('serviceWorker' in navigator) ||
       window.location.origin !== REMOTE_APP_ORIGIN
@@ -52,12 +109,12 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     }
 
     try {
-      const registration = await navigator.serviceWorker.ready;
+      const { registration, newlyRegistered } = await ensureProductionServiceWorker();
 
-      // Pull-to-refresh is the explicit "apply now" path. Check production for
-      // a newer service worker, but keep the existing cached snapshot if that
-      // check fails.
-      if (navigator.onLine) {
+      // Pull-to-refresh is the explicit "apply now" path. A fresh registration
+      // already performs its initial install, while an existing one must check
+      // production for a newer worker.
+      if (navigator.onLine && !newlyRegistered) {
         try {
           await registration.update();
         } catch {
@@ -67,11 +124,17 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
 
       let worker = registration.waiting ?? registration.installing;
       if (worker) {
-        await waitForWorkerInstallation(worker);
+        try {
+          await waitForWorkerInstallation(worker);
+        } catch {
+          return;
+        }
         worker = registration.waiting ?? worker;
       }
 
-      if (worker && worker.state !== 'redundant') {
+      // Only a newly installed/waiting worker needs activation. An already
+      // activated first worker can be used directly after the reload.
+      if (worker?.state === 'installed') {
         const controllerChanged = new Promise<void>((resolve) => {
           navigator.serviceWorker.addEventListener('controllerchange', () => resolve(), {
             once: true,
@@ -84,6 +147,8 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
         worker.postMessage({ type: 'SKIP_WAITING' });
         await Promise.race([controllerChanged, activationTimeout]);
       }
+    } catch {
+      // Keep/reload the previous known-good snapshot on any registration error.
     } finally {
       window.location.reload();
     }
@@ -108,7 +173,6 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     }
 
     let updateTimer: number | undefined;
-    let remoteProbe: AbortController | undefined;
     let disposed = false;
 
     const clearScheduledWork = () => {
@@ -116,8 +180,6 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
         window.clearTimeout(updateTimer);
         updateTimer = undefined;
       }
-      remoteProbe?.abort();
-      remoteProbe = undefined;
     };
 
     const updateProductionSnapshot = async () => {
@@ -125,51 +187,40 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
         return;
       }
 
-      if (isAndroidFallback()) {
-        // errorPath is a bundled, always-available bootstrap. Do not trust
-        // navigator.onLine alone: Android can report "online" while DNS, the
-        // route, or the server is unavailable, which would otherwise create a
-        // redirect/fallback loop. Probe the canonical origin first and only
-        // leave the visible local recipes after an actual request succeeds.
-        remoteProbe = new AbortController();
-        const timeout = window.setTimeout(
-          () => remoteProbe?.abort(),
-          REMOTE_PROBE_TIMEOUT_MS,
-        );
-
+      if (isBundledFallback()) {
+        // Capacitor's Android errorPath intentionally has no native bridge, so
+        // detect this bootstrap by its local origin instead of getPlatform().
+        // Probe a known image with a unique URL: unlike no-cors fetch(), onload
+        // proves the server returned an actually usable production asset.
         try {
-          await fetch(`${REMOTE_APP_ORIGIN}/`, {
-            cache: 'no-store',
-            mode: 'no-cors',
-            signal: remoteProbe.signal,
-          });
+          await probeRemoteOrigin();
           if (!disposed) {
             window.location.replace(`${REMOTE_APP_ORIGIN}/`);
           }
         } catch {
-          // Keep rendering the local fallback. Another check is scheduled when
-          // Android reports that connectivity has returned.
-        } finally {
-          window.clearTimeout(timeout);
-          remoteProbe = undefined;
+          // Keep rendering the bundled recipes. Another check is scheduled when
+          // connectivity changes or on the next launch.
         }
         return;
       }
 
-      if (!('serviceWorker' in navigator)) {
+      if (
+        window.location.origin !== REMOTE_APP_ORIGIN ||
+        !('serviceWorker' in navigator)
+      ) {
         return;
       }
 
       try {
-        const registration = await navigator.serviceWorker.ready;
-        await registration.update();
+        const { registration, newlyRegistered } = await ensureProductionServiceWorker();
+        if (!newlyRegistered) {
+          await registration.update();
+        }
 
-        // Deliberately do not call SKIP_WAITING here. Docusaurus/Workbox has
-        // already downloaded the complete new precache atomically while the
-        // currently rendered recipes remain untouched. The new snapshot becomes
-        // active naturally after this app client ends, so the next launch starts
-        // immediately on the new local version. Pull-to-refresh is the opt-in
-        // path for activating it during the current session.
+        // Deliberately do not call SKIP_WAITING here. Docusaurus/Workbox installs
+        // the complete revisioned precache while the current worker keeps serving
+        // the previous coherent snapshot. The waiting snapshot becomes active on
+        // the next launch; pull-to-refresh is the opt-in apply-now path.
       } catch {
         // The current precached production snapshot remains authoritative.
       }
@@ -191,16 +242,14 @@ export default function Root({ children }: { children: React.ReactNode }): JSX.E
     };
     const handleOffline = () => {
       setOffline(true);
-      remoteProbe?.abort();
     };
 
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
     setOffline(!navigator.onLine);
 
-    // Rendering has already happened by the time this effect runs. Delay all
-    // update I/O a little further so startup is local-first: recipes first,
-    // production synchronization second.
+    // Docusaurus automatic registration is disabled. Rendering happens first;
+    // only then do we register/update the production worker and start precaching.
     scheduleLazyUpdate();
 
     return () => {

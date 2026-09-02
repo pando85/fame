@@ -21,7 +21,7 @@ jobs:
           # recipe look newly created on each build, invalidating the entire
           # Workbox precache instead of only changed recipes.
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Test Build
@@ -47,7 +47,7 @@ jobs:
           # Keep recipe metadata deterministic between deployments so Workbox
           # can reuse unchanged precache entries.
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
       - uses: webfactory/ssh-agent@v0.10.0
@@ -91,7 +91,7 @@ jobs:
           else
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.android-changes.outputs.changed == 'true'
         with:
           node-version: ${{ env.NODE_VERSION }}

@@ -14,7 +14,7 @@ jobs:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # Docusaurus derives blog creation dates from Git history when recipes
           # do not declare an explicit date. A shallow checkout makes every
@@ -38,7 +38,7 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # Keep recipe metadata deterministic between deployments so Workbox
           # can reuse unchanged precache entries.
@@ -70,7 +70,7 @@ jobs:
     needs: gh-release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # The APK contains the same Docusaurus fallback build; make it use the
           # same stable recipe dates as the deployed site.

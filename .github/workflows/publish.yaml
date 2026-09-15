@@ -99,7 +99,7 @@ jobs:
         if: steps.android-changes.outputs.changed == 'true'
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '21.0.12+101.0.LTS'
       - name: Setup Android SDK
         if: steps.android-changes.outputs.changed == 'true'
         uses: android-actions/setup-android@v4

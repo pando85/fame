@@ -1136,9 +1136,9 @@
   integrity sha512-9xK/FHFmzKGanB6BdoSZOzXk8vF0OFVQSQ4PAsIrzAzLuXHryO317qy8dcHVpgxYeuZq2noI0My9z1DvVDi/9w==
 
 "@capacitor/status-bar@^8.0.1":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-8.0.3.tgz#b638524f021cb3147e6f36ad55e7e5171aee4fd6"
-  integrity sha512-csSpfNeN49Hx9JaQBSJEIiEbOLtXg3kcc2IpScq2fu5L520h3AWEvsxoH8Srk1jxfRKepaJ4S4sqSC3foI4AgA==
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-8.0.4.tgz#ce93e52c2feba9ef218c7bd3e839aa447c183269"
+  integrity sha512-ZMzBUyHBzwDUxcHadEhvOvmoPmMQGMZgaMRJu8ohELeI6IaxoVH9ZhdF/OHnY3/yykv3Glev8Tnbh4aZY/0B0w==
 
 "@colors/colors@1.5.0":
   version "1.5.0"

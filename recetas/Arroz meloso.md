@@ -8,6 +8,7 @@ tags: [plato principal, arroz]
 - 1 cabeza de ajo
 - 2 cebollas grandes
 - 2 contramuslos de pollo
+- Arroz (cantidad según las raciones; ajustar al caldo disponible)
 - Aceite de oliva
 - Pimienta
 - Sal

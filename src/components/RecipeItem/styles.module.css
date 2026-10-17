@@ -30,15 +30,32 @@
   color: white;
 }
 
-.matchReason {
-  display: block;
-  margin-top: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
-  background: rgb(0 0 0 / 70%);
+.matchHint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.28rem 0.6rem;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 999px;
+  background: rgb(15 23 42 / 68%);
   color: #fff;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.25;
+  vertical-align: middle;
+  backdrop-filter: blur(5px);
+}
+
+.matchHint svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex: none;
+}
+
+.matchHintText {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

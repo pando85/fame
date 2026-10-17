@@ -22,7 +22,7 @@ import BlogPostItems from '@theme/BlogPostItems';
 
 import styles from './styles.module.css';
 import recipeIngredients from '../../generated/recipe-ingredients.json';
-import { createRecipeSearch, isUnsupportedExclusion } from '../../utils/createRecipeSearch.mjs';
+import { createRecipeSearch, isUnsupportedExclusion, listRecipeResults } from '../../utils/createRecipeSearch.mjs';
 import { readSearchFilters, buildSearchUrl, serializeSearchFilters } from '../../utils/recipeSearchUrl.mjs';
 
 
@@ -81,26 +81,10 @@ function BlogListPageContent(props: Props): JSX.Element {
 
   const fuse = React.useMemo(() => createRecipeSearch(items, recipeIngredients), [items]);
 
-  const filteredResults = React.useMemo(() => {
-    let results = searchTerm
-      ? fuse.search(searchTerm)
-      : items.map(item => ({ item: { recipe: item }, matchLabel: '' }));
-
-    if (selectedTag) {
-      results = results.filter(({ item }) => {
-        const tags = item.recipe.content.metadata.frontMatter.tags as string[] | undefined;
-        return tags?.includes(selectedTag);
-      });
-    }
-    if (!searchTerm) {
-      results.sort((a, b) =>
-        a.item.recipe.content.metadata.title.localeCompare(
-          b.item.recipe.content.metadata.title, 'es',
-        )
-      );
-    }
-    return results;
-  }, [fuse, items, searchTerm, selectedTag]);
+  const filteredResults = React.useMemo(
+    () => listRecipeResults(items, fuse, searchTerm, selectedTag ?? ''),
+    [fuse, items, searchTerm, selectedTag],
+  );
 
   const filteredItems = filteredResults.map(({ item }) => item.recipe);
   const matchLabels = Object.fromEntries(filteredResults.map(({ item, matchLabel }) =>

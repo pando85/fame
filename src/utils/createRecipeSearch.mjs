@@ -147,3 +147,25 @@ export function createRecipeSearch(items, ingredientIndex) {
 
   return { search };
 }
+
+
+/** Shared list/filter behavior used by the UI and tested with real recipes. */
+export function listRecipeResults(items, search, query = '', selectedTag = '') {
+  let results = query
+    ? search.search(query)
+    : items.map(recipe => ({ item: { recipe }, matchLabel: '' }));
+
+  if (selectedTag) {
+    results = results.filter(({ item }) =>
+      (item.recipe.content.metadata.frontMatter.tags ?? []).includes(selectedTag),
+    );
+  }
+  if (!query) {
+    results.sort((a, b) =>
+      a.item.recipe.content.metadata.title.localeCompare(
+        b.item.recipe.content.metadata.title, 'es',
+      ),
+    );
+  }
+  return results;
+}

@@ -125,6 +125,11 @@ test('ingredient matches show short chips with detailed accessible descriptions'
     description: 'Coincide en ingredientes: 2 contramuslos de pollo',
   });
 
+  const mixed = search.search('pollo y arroz').find(({ item }) =>
+    item.recipe.content.metadata.title === 'Arroz meloso');
+  // "arroz" matches the title: only "pollo" needs explaining on the card.
+  assert.equal(mixed.matchHint?.label, 'pollo');
+
   const combined = search.search('pollo y arroz').find(({ item }) =>
     item.recipe.content.metadata.title === 'Risotto');
   assert.equal(combined.matchHint?.label, 'pollo · arroz');

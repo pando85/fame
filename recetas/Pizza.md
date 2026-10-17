@@ -5,11 +5,13 @@ tags: [pan, masa madre]
 
 ## Ingredientes
 
-- 800g de harina de fuerza (720g)
-- 70% hidratación (480g)
-- 20% de masa madre (160g)
+- 720 g de harina de fuerza (800 g en total contando la masa madre)
+- 480 g de agua (560 g en total contando la masa madre: 70 % de hidratación)
+- 160 g de masa madre al 100 % de hidratación (80 g de harina + 80 g de agua)
 - chorrito de aceite x 4
 - 20g de sal
+
+Las cantidades totales de harina y agua incluyen las aportadas por la masa madre.
 
 ## Elaboración
 

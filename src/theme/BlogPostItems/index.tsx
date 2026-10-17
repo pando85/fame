@@ -13,16 +13,26 @@ import {
 import type { Props } from '@theme/BlogPostItems';
 
 
+type SearchProps = Props & {
+  returnSearch?: string;
+  matchLabels?: Record<string, string>;
+};
+
 export default function BlogPostItems({
   items,
-}: Props): JSX.Element {
+  returnSearch = '',
+  matchLabels = {},
+}: SearchProps): JSX.Element {
   return (
     <>
       {items.map(({ content: BlogPostContent }) => (
         <BlogPostProvider
           key={BlogPostContent.metadata.permalink}
           content={BlogPostContent}>
-          <RecipeItem />
+          <RecipeItem
+            returnSearch={returnSearch}
+            matchLabel={matchLabels[BlogPostContent.metadata.permalink]}
+          />
         </BlogPostProvider>
       ))}
     </>

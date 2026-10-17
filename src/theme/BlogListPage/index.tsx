@@ -45,19 +45,28 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 function BlogListPageContent(props: Props): JSX.Element {
   const { items } = props;
   const location = useLocation();
-  const [searchTerm, setSearchTerm] = React.useState(() => readSearchFilters(location.search).query);
-  const [selectedTag, setSelectedTag] = React.useState<string | null>(
-    () => readSearchFilters(location.search).tag || null,
-  );
+  // Static Docusaurus HTML is rendered without query parameters. Restore them
+  // after hydration to avoid a different recipe list on server and client.
+  const [searchTerm, setSearchTerm] = React.useState('');
+  const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
+  const [filtersRestored, setFiltersRestored] = React.useState(false);
 
-  // Keep the current search shareable, and let recipe details link back to it.
   React.useEffect(() => {
+    const filters = readSearchFilters(location.search);
+    setSearchTerm(filters.query);
+    setSelectedTag(filters.tag || null);
+    setFiltersRestored(true);
+  }, [location.search]);
+
+  // Do not overwrite an incoming query before it has been restored.
+  React.useEffect(() => {
+    if (!filtersRestored) return;
     const url = buildSearchUrl(searchTerm, selectedTag ?? '');
     if (window.location.pathname === '/' &&
         window.location.pathname + window.location.search !== url) {
       window.history.replaceState(window.history.state, '', url);
     }
-  }, [searchTerm, selectedTag]);
+  }, [filtersRestored, searchTerm, selectedTag]);
 
   const allTags = React.useMemo(() => {
     const tagSet = new Set<string>();

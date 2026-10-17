@@ -107,7 +107,9 @@ function rankRecipe(record, queryWords, normalizedQuery, allowTypos) {
       ))];
       matchHint = {
         kind: 'ingredient',
-        label: queryWords.join(' · '),
+        label: matches.flatMap((match, index) =>
+          match.type === 'ingredient' ? [queryWords[index]] : [],
+        ).join(' · '),
         description: 'Coincide en ingredientes: ' + matchedLines.join('; '),
       };
     } else if (tagMatch) {

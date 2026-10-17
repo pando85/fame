@@ -75,6 +75,7 @@ test('unsupported exclusions and attributes do not return unsafe guesses', () =>
   }
   assert.deepEqual(titlesFor('vegano'), []);
   assert.deepEqual(titlesFor('30 minutos'), []);
+  assert.deepEqual(titlesFor('sin tahini'), ['Hummus sin tahini']);
 });
 
 test('match explanation identifies the actual matching ingredient or tag', () => {

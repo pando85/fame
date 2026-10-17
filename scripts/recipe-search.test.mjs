@@ -1,163 +1,126 @@
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
 import test from 'node:test';
-import { buildRecipeIngredientIndex, getRecipeTitle } from './generate-recipe-ingredient-index.mjs';
+
 import { createRecipeSearch, isUnsupportedExclusion, listRecipeResults } from '../src/utils/createRecipeSearch.mjs';
 import {
   buildSearchUrl, createRecipeLink, getReturnUrl, readSearchFilters, serializeSearchFilters,
 } from '../src/utils/recipeSearchUrl.mjs';
+import { ingredientIndex, recipes } from './fixtures/recipe-search-fixture.mjs';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const ingredients = buildRecipeIngredientIndex(join(root, 'recetas'));
-const tagsByTitle = new Map(readdirSync(join(root, 'recetas'))
-  .filter(filename => /\.mdx?$/.test(filename))
-  .map(filename => {
-    const source = readFileSync(join(root, 'recetas', filename), 'utf8');
-    const tagText = source.match(/^tags:\s*\[([^\]]*)\]/m)?.[1] ?? '';
-    return [getRecipeTitle(filename, source), tagText.split(',').map(value => value.trim()).filter(Boolean)];
-  }));
+// Regression tests must not read from recetas/. Editing the production menu
+// must not change expectations about how the search algorithm behaves.
+const search = createRecipeSearch(recipes, ingredientIndex);
+const getTitles = results => results.map(({ item }) => item.recipe.content.metadata.title);
+const titlesFor = query => getTitles(search.search(query));
+const filteredTitles = (query, tag) => getTitles(listRecipeResults(recipes, search, query, tag));
 
-const recipes = ingredients.map(({ title }) => ({
-  content: { metadata: {
-    title,
-    permalink: '/' + encodeURIComponent(title),
-    frontMatter: { tags: tagsByTitle.get(title) ?? [] },
-  } },
-}));
-const search = createRecipeSearch(recipes, ingredients);
-const titlesFor = query => search.search(query).map(({ item }) => item.recipe.content.metadata.title);
-
-test('ingredient search finds recipes regardless of ingredient position', () => {
+test('prioritizes exact titles over ingredient matches', () => {
+  assert.deepEqual(titlesFor('arroz'), ['Arroz meloso', 'Risotto']);
+  assert.deepEqual(titlesFor('pollo').slice(0, 2), [
+    'Pollo asado y noodles', 'Pollo tikka masala',
+  ]);
   assert.ok(titlesFor('pollo').includes('Arroz meloso'));
-  assert.ok(titlesFor('champiñones').includes('Pollo asado y noodles'));
-  assert.deepEqual(titlesFor('tomate').sort(), [
-    'Albóndigas', 'Caldo de verduras', 'Lasaña', 'Pollo tikka masala',
-  ].sort());
 });
 
-test('relevance excludes misleading fuzzy hits, including pasta vs patata', () => {
+test('matches any ingredient position even with long lists', () => {
+  const example = {
+    content: { metadata: { title: 'Verduras salteadas', frontMatter: { tags: [] } } },
+  };
+  const longIndex = [{ title: 'Verduras salteadas', ingredients: [
+    '- Zanahoria', '- Cebolla', '- Ajo',
+    ...Array.from({ length: 50 }, (_, n) => '- Otro ingrediente ' + n),
+    '- Champiñones',
+  ].join('\n') }];
+  assert.deepEqual(getTitles(createRecipeSearch([example], longIndex).search('champiñones')), [
+    'Verduras salteadas',
+  ]);
+  assert.ok(titlesFor('champiñones').includes('Pollo asado y noodles'));
+});
+
+test('exact ingredient matches exclude similar but irrelevant words', () => {
   assert.deepEqual(titlesFor('queso'), ['Lasaña']);
   assert.deepEqual(titlesFor('pasta'), ['Pollo asado y noodles']);
+  assert.deepEqual(titlesFor('tomate'), [
+    'Albóndigas', 'Lasaña', 'Pollo tikka masala', 'Caldo de verduras',
+  ]);
   assert.ok(!titlesFor('pollo').includes('Rodaballo salvaje al horno'));
   assert.ok(!titlesFor('tomate').includes('Cookies de chocolate'));
-  assert.ok(!titlesFor('garbanzos').includes('Pizza'));
+  assert.ok(!titlesFor('pasta').includes('Tortilla de patata'));
 });
 
-test('titles, diacritics, plurals, prefix typing and typos work', () => {
+test('accent, singular/plural, typing prefixes and typo fallback', () => {
   assert.deepEqual(titlesFor('albondigas'), ['Albóndigas']);
   assert.deepEqual(titlesFor('albodigas'), ['Albóndigas']);
   assert.deepEqual(titlesFor('pizz'), ['Pizza']);
   assert.deepEqual(titlesFor('calabacin'), ['Crema de calabacín']);
   assert.ok(titlesFor('huevos').includes('Crepes dulces'));
   assert.ok(titlesFor('tomtae').includes('Lasaña'));
+  assert.deepEqual(titlesFor('no-existe-esta-receta'), []);
 });
 
-test('multiple ingredient searches use AND, with optional y / con', () => {
-  assert.deepEqual(titlesFor('pollo arroz'), ['Arroz meloso', 'Risotto']);
-  assert.deepEqual(titlesFor('pollo y arroz'), ['Arroz meloso', 'Risotto']);
-  assert.deepEqual(titlesFor('arroz pollo'), ['Arroz meloso', 'Risotto']);
+test('multiple ingredient terms require every word regardless of order', () => {
+  for (const query of ['pollo arroz', 'pollo y arroz', 'arroz pollo', 'pollo con arroz']) {
+    assert.deepEqual(titlesFor(query), ['Arroz meloso', 'Risotto']);
+  }
   assert.deepEqual(titlesFor('pollo berenjena'), []);
 });
 
-test('tags can be searched directly', () => {
-  assert.ok(titlesFor('postre').includes('Flan de huevo'));
-  assert.ok(titlesFor('desayuno').includes('Crepes dulces'));
-  assert.ok(titlesFor('pescado').includes('Rodaballo salvaje al horno'));
-  assert.ok(!titlesFor('postre').includes('Cocido'));
-});
-
-test('unsupported exclusions and attributes do not return unsafe guesses', () => {
-  for (const query of ['sin huevo', 'sin gluten', 'sin lactosa']) {
-    assert.ok(isUnsupportedExclusion(query));
-    assert.deepEqual(titlesFor(query), []);
-  }
-  assert.deepEqual(titlesFor('vegano'), []);
-  assert.deepEqual(titlesFor('30 minutos'), []);
-  assert.deepEqual(titlesFor('sin tahini'), ['Hummus sin tahini']);
-});
-
-test('match explanation identifies the actual matching ingredient or tag', () => {
-  const rice = search.search('pollo').find(({ item }) =>
-    item.recipe.content.metadata.title === 'Arroz meloso');
-  assert.match(rice.matchLabel, /contramuslos de pollo/i);
-  const fish = search.search('pescado').find(({ item }) =>
-    item.recipe.content.metadata.title === 'Rodaballo salvaje al horno');
-  assert.equal(fish.matchLabel, 'Etiqueta: pescado');
-});
-
-test('search state and tag survive recipe navigation and safe return', () => {
-  const query = 'pollo y arroz';
-  const filters = serializeSearchFilters(query, 'plato principal');
-  const recipeLink = createRecipeLink('/Arroz%20meloso', filters);
-  const recipeQuery = recipeLink.slice(recipeLink.indexOf('?'));
-  const home = getReturnUrl(recipeQuery);
-  assert.equal(home, buildSearchUrl(query, 'plato principal'));
-  assert.deepEqual(readSearchFilters(home.slice(1)), { query, tag: 'plato principal' });
-  assert.equal(createRecipeLink('/Pizza', ''), '/Pizza');
-  assert.equal(getReturnUrl('?fromSearch=' + encodeURIComponent('https://attacker.example')), '/');
-  assert.equal(getReturnUrl('?fromSearch=' + 'a'.repeat(501)), '/');
-});
-
-
-test('search ranking favors exact titles and exact ingredients over fuzzy matches', () => {
-  const rice = titlesFor('arroz');
-  assert.equal(rice[0], 'Arroz meloso');
-  assert.ok(rice.indexOf('Risotto') > rice.indexOf('Arroz meloso'));
-  const chicken = titlesFor('pollo');
-  assert.deepEqual(chicken.slice(0, 2).sort(), [
-    'Pollo asado y noodles', 'Pollo tikka masala',
-  ].sort());
-  assert.ok(chicken.indexOf('Arroz meloso') > 1);
-  assert.ok(!chicken.includes('Rodaballo salvaje al horno'));
-  assert.deepEqual(titlesFor('pasta'), ['Pollo asado y noodles']);
-});
-
-test('no false matches if precise terms exist elsewhere in the catalogue', () => {
-  const cheese = titlesFor('queso');
-  assert.deepEqual(cheese, ['Lasaña']);
-  assert.ok(!cheese.includes('Flan de huevo'));
-  const tomato = titlesFor('tomate');
-  assert.deepEqual(tomato, [
-    'Albóndigas', 'Lasaña', 'Pollo tikka masala', 'Caldo de verduras',
-  ]);
-  assert.ok(!tomato.includes('Cookies de chocolate'));
-  assert.deepEqual(titlesFor('sin huevo'), []);
-});
-
-test('tag filter combines with ingredient search and preserves relevance', () => {
-  const titles = (query, tag) =>
-    listRecipeResults(recipes, search, query, tag).map(
-      ({ item }) => item.recipe.content.metadata.title,
-    );
-  assert.deepEqual(titles('tomate', 'plato principal'), [
-    'Albóndigas', 'Lasaña', 'Pollo tikka masala',
-  ]);
-  assert.deepEqual(titles('pollo arroz', 'plato principal'), ['Arroz meloso', 'Risotto']);
-  assert.deepEqual(titles('queso', 'postre'), []);
-  assert.deepEqual(titles('postre', 'postre'), [
+test('searches in tags, including when not present in the recipe title', () => {
+  assert.deepEqual(titlesFor('postre'), [
     'Bizcocho de plátano y dátiles', 'Cookies de chocolate',
     'Crème brûlée', 'Flan de huevo',
   ]);
-  assert.deepEqual(titles('', 'desayuno'), ['Crepes dulces', 'Muesli -o granola- casero 1.0']);
+  assert.deepEqual(titlesFor('desayuno'), [
+    'Crepes dulces', 'Muesli -o granola- casero 1.0',
+  ]);
+  assert.deepEqual(titlesFor('pescado'), ['Rodaballo salvaje al horno']);
+  assert.ok(!titlesFor('postre').includes('Cocido'));
 });
 
-test('search works with recipe index content independent of ingredient order', () => {
-  const recipe = title => ({
-    content: { metadata: { title, frontMatter: { tags: [] } } },
-  });
-  const index = [{ title: 'Verduras salteadas', ingredients: [
-    '- Zanahoria', '- Cebolla', '- Ajo',
-    ...Array.from({ length: 50 }, (_, i) => '- ingrediente ' + i),
-    '- Champiñones',
-  ].join('\n') }];
-  const indexed = createRecipeSearch([recipe('Verduras salteadas')], index);
-  assert.deepEqual(indexed.search('champiñones').map(({ item }) =>
-    item.recipe.content.metadata.title), ['Verduras salteadas']);
+test('combines search with selected tags without changing ranking', () => {
+  assert.deepEqual(filteredTitles('tomate', 'plato principal'), [
+    'Albóndigas', 'Lasaña', 'Pollo tikka masala',
+  ]);
+  assert.deepEqual(filteredTitles('pollo arroz', 'plato principal'), ['Arroz meloso', 'Risotto']);
+  assert.deepEqual(filteredTitles('queso', 'postre'), []);
+  assert.deepEqual(filteredTitles('postre', 'postre'), titlesFor('postre'));
+  assert.deepEqual(filteredTitles('', 'desayuno'), [
+    'Crepes dulces', 'Muesli -o granola- casero 1.0',
+  ]);
 });
 
-test('URL round trips tolerate accents, spaces and nested parameters', () => {
+test('does not invent negative ingredient, dietary or cooking-time results', () => {
+  for (const query of ['sin huevo', 'sin gluten', 'sin lactosa']) {
+    assert.equal(isUnsupportedExclusion(query), true);
+    assert.deepEqual(titlesFor(query), []);
+  }
+  // Explicit "sin" in the title is different from inferring absence from a list.
+  assert.deepEqual(titlesFor('sin tahini'), ['Hummus sin tahini']);
+  assert.deepEqual(titlesFor('vegano'), []);
+  assert.deepEqual(titlesFor('30 minutos'), []);
+});
+
+test('explains matching ingredients, tags and explicit title exclusions', () => {
+  const rice = search.search('pollo').find(({ item }) =>
+    item.recipe.content.metadata.title === 'Arroz meloso');
+  assert.match(rice.matchLabel, /contramuslos de pollo/i);
+
+  const fish = search.search('pescado')[0];
+  assert.equal(fish.matchLabel, 'Etiqueta: pescado');
+  assert.equal(search.search('sin tahini')[0].matchLabel, 'Indicado expresamente en el título');
+});
+
+test('retains query and tag through recipe navigation', () => {
+  const query = 'pollo y arroz';
+  const filters = serializeSearchFilters(query, 'plato principal');
+  const link = createRecipeLink('/Arroz%20meloso', filters);
+  const home = getReturnUrl(link.slice(link.indexOf('?')));
+  assert.equal(home, buildSearchUrl(query, 'plato principal'));
+  assert.deepEqual(readSearchFilters(home.slice(1)), { query, tag: 'plato principal' });
+  assert.equal(createRecipeLink('/Pizza', ''), '/Pizza');
+});
+
+test('URL round trips preserve accents, spaces, empty searches and filter-only searches', () => {
   const examples = [
     ['pollo', 'plato principal'],
     ['calabacín', 'entrante'],
@@ -170,9 +133,13 @@ test('URL round trips tolerate accents, spaces and nested parameters', () => {
   for (const [query, tag] of examples) {
     const filters = serializeSearchFilters(query, tag);
     const recipeUrl = createRecipeLink('/Arroz%20meloso', filters);
-    const back = getReturnUrl(recipeUrl.substring(recipeUrl.indexOf('?')));
-    assert.equal(back, buildSearchUrl(query, tag));
-    assert.deepEqual(readSearchFilters(back.slice(1)), { query, tag });
+    const returnUrl = getReturnUrl(recipeUrl.slice(recipeUrl.indexOf('?')));
+    assert.equal(returnUrl, buildSearchUrl(query, tag));
+    assert.deepEqual(readSearchFilters(returnUrl.slice(1)), { query, tag });
   }
+});
+
+test('return URL ignores untrusted external targets and overly long values', () => {
   assert.equal(getReturnUrl('?fromSearch=' + encodeURIComponent('https://bad.example')), '/');
+  assert.equal(getReturnUrl('?fromSearch=' + 'a'.repeat(501)), '/');
 });

@@ -431,7 +431,7 @@ crear la característica capa crujiente.</p>]]></content:encoded>
             <category>sous vide</category>
         </item>
         <item>
-            <title><![CDATA[Albódingas]]></title>
+            <title><![CDATA[Albóndigas]]></title>
             <link>https://fame.grigri.cloud/Albódingas</link>
             <guid>https://fame.grigri.cloud/Albódingas</guid>
             <pubDate>Mon, 07 Apr 2025 20:53:46 GMT</pubDate>
@@ -441,8 +441,8 @@ crear la característica capa crujiente.</p>]]></content:encoded>
 <li class="">1,5 kg de carne picada de ternera</li>
 <li class="">1 manojo de perejil</li>
 <li class="">Harina de garbanzo (cantidad necesaria para rebozar)</li>
-<li class="">Dientes de ajo (divididos en dos partes)</li>
-<li class="">3 cebollas grandes (divididas en dos partes)</li>
+<li class="">Ajo al gusto (un tercio para la carne y el resto para el sofrito)</li>
+<li class="">3 cebollas grandes (un tercio para la carne y el resto para el sofrito)</li>
 <li class="">800 g de tomate triturado</li>
 <li class="">Aceite de oliva virgen extra (para freír)</li>
 <li class="">Sal al gusto</li>
@@ -527,6 +527,7 @@ crear la característica capa crujiente.</p>]]></content:encoded>
 <li class="">1 cabeza de ajo</li>
 <li class="">2 cebollas grandes</li>
 <li class="">2 contramuslos de pollo</li>
+<li class="">Arroz (cantidad según las raciones; ajustar al caldo disponible)</li>
 <li class="">Aceite de oliva</li>
 <li class="">Pimienta</li>
 <li class="">Sal</li>
@@ -662,12 +663,13 @@ crear la característica capa crujiente.</p>]]></content:encoded>
             <description><![CDATA[Ingredientes]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="ingredientes">Ingredientes<a href="https://fame.grigri.cloud/Pizza#ingredientes" class="hash-link" aria-label="Enlace directo al Ingredientes" title="Enlace directo al Ingredientes" translate="no">​</a></h2>
 <ul>
-<li class="">800g de harina de fuerza (720g)</li>
-<li class="">70% hidratación (480g)</li>
-<li class="">20% de masa madre (160g)</li>
+<li class="">720 g de harina de fuerza (800 g en total contando la masa madre)</li>
+<li class="">480 g de agua (560 g en total contando la masa madre: 70 % de hidratación)</li>
+<li class="">160 g de masa madre al 100 % de hidratación (80 g de harina + 80 g de agua)</li>
 <li class="">chorrito de aceite x 4</li>
 <li class="">20g de sal</li>
 </ul>
+<p>Las cantidades totales de harina y agua incluyen las aportadas por la masa madre.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="elaboración">Elaboración<a href="https://fame.grigri.cloud/Pizza#elaboraci%C3%B3n" class="hash-link" aria-label="Enlace directo al Elaboración" title="Enlace directo al Elaboración" translate="no">​</a></h2>
 <ol>
 <li class="">Mezclar bien todo en un bol y remover con una cuchara (evitar que la sal caiga en la masa madre).

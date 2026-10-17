@@ -87,8 +87,8 @@ function BlogListPageContent(props: Props): JSX.Element {
   );
 
   const filteredItems = filteredResults.map(({ item }) => item.recipe);
-  const matchLabels = Object.fromEntries(filteredResults.map(({ item, matchLabel }) =>
-    [item.recipe.content.metadata.permalink, matchLabel],
+  const matchHints = Object.fromEntries(filteredResults.map(({ item, matchHint }) =>
+    [item.recipe.content.metadata.permalink, matchHint],
   ));
   const returnSearch = serializeSearchFilters(searchTerm, selectedTag ?? '');
 
@@ -163,7 +163,7 @@ function BlogListPageContent(props: Props): JSX.Element {
         {filteredItems.length === 0 ? (
           <p role="status">No se encontraron recetas que coincidan con la búsqueda.</p>
         ) : (
-          <BlogPostItems items={filteredItems} returnSearch={returnSearch} matchLabels={matchLabels} />
+          <BlogPostItems items={filteredItems} returnSearch={returnSearch} matchHints={matchHints} />
         )}
       </div>
     </BlogLayout>

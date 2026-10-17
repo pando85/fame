@@ -4,7 +4,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { buildRecipeIngredientIndex, getRecipeTitle } from './generate-recipe-ingredient-index.mjs';
-import { createRecipeSearch, isUnsupportedExclusion } from '../src/utils/createRecipeSearch.mjs';
+import { createRecipeSearch, isUnsupportedExclusion, listRecipeResults } from '../src/utils/createRecipeSearch.mjs';
 import {
   buildSearchUrl, createRecipeLink, getReturnUrl, readSearchFilters, serializeSearchFilters,
 } from '../src/utils/recipeSearchUrl.mjs';
@@ -98,4 +98,81 @@ test('search state and tag survive recipe navigation and safe return', () => {
   assert.equal(createRecipeLink('/Pizza', ''), '/Pizza');
   assert.equal(getReturnUrl('?fromSearch=' + encodeURIComponent('https://attacker.example')), '/');
   assert.equal(getReturnUrl('?fromSearch=' + 'a'.repeat(501)), '/');
+});
+
+
+test('search ranking favors exact titles and exact ingredients over fuzzy matches', () => {
+  const rice = titlesFor('arroz');
+  assert.equal(rice[0], 'Arroz meloso');
+  assert.ok(rice.indexOf('Risotto') > rice.indexOf('Arroz meloso'));
+  const chicken = titlesFor('pollo');
+  assert.deepEqual(chicken.slice(0, 2).sort(), [
+    'Pollo asado y noodles', 'Pollo tikka masala',
+  ].sort());
+  assert.ok(chicken.indexOf('Arroz meloso') > 1);
+  assert.ok(!chicken.includes('Rodaballo salvaje al horno'));
+  assert.deepEqual(titlesFor('pasta'), ['Pollo asado y noodles']);
+});
+
+test('no false matches if precise terms exist elsewhere in the catalogue', () => {
+  const cheese = titlesFor('queso');
+  assert.deepEqual(cheese, ['Lasaña']);
+  assert.ok(!cheese.includes('Flan de huevo'));
+  const tomato = titlesFor('tomate');
+  assert.deepEqual(tomato, [
+    'Albóndigas', 'Lasaña', 'Pollo tikka masala', 'Caldo de verduras',
+  ]);
+  assert.ok(!tomato.includes('Cookies de chocolate'));
+  assert.deepEqual(titlesFor('sin huevo'), []);
+});
+
+test('tag filter combines with ingredient search and preserves relevance', () => {
+  const titles = (query, tag) =>
+    listRecipeResults(recipes, search, query, tag).map(
+      ({ item }) => item.recipe.content.metadata.title,
+    );
+  assert.deepEqual(titles('tomate', 'plato principal'), [
+    'Albóndigas', 'Lasaña', 'Pollo tikka masala',
+  ]);
+  assert.deepEqual(titles('pollo arroz', 'plato principal'), ['Arroz meloso', 'Risotto']);
+  assert.deepEqual(titles('queso', 'postre'), []);
+  assert.deepEqual(titles('postre', 'postre'), [
+    'Bizcocho de plátano y dátiles', 'Cookies de chocolate',
+    'Crème brûlée', 'Flan de huevo',
+  ]);
+  assert.deepEqual(titles('', 'desayuno'), ['Crepes dulces', 'Muesli -o granola- casero 1.0']);
+});
+
+test('search works with recipe index content independent of ingredient order', () => {
+  const recipe = title => ({
+    content: { metadata: { title, frontMatter: { tags: [] } } },
+  });
+  const index = [{ title: 'Verduras salteadas', ingredients: [
+    '- Zanahoria', '- Cebolla', '- Ajo',
+    ...Array.from({ length: 50 }, (_, i) => '- ingrediente ' + i),
+    '- Champiñones',
+  ].join('\n') }];
+  const indexed = createRecipeSearch([recipe('Verduras salteadas')], index);
+  assert.deepEqual(indexed.search('champiñones').map(({ item }) =>
+    item.recipe.content.metadata.title), ['Verduras salteadas']);
+});
+
+test('URL round trips tolerate accents, spaces and nested parameters', () => {
+  const examples = [
+    ['pollo', 'plato principal'],
+    ['calabacín', 'entrante'],
+    ['masa madre', 'pan'],
+    ['pollo y arroz', 'plato principal'],
+    ['sin tahini', ''],
+    ['tomate', ''],
+    ['', 'postre'],
+  ];
+  for (const [query, tag] of examples) {
+    const filters = serializeSearchFilters(query, tag);
+    const recipeUrl = createRecipeLink('/Arroz%20meloso', filters);
+    const back = getReturnUrl(recipeUrl.substring(recipeUrl.indexOf('?')));
+    assert.equal(back, buildSearchUrl(query, tag));
+    assert.deepEqual(readSearchFilters(back.slice(1)), { query, tag });
+  }
+  assert.equal(getReturnUrl('?fromSearch=' + encodeURIComponent('https://bad.example')), '/');
 });

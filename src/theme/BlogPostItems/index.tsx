@@ -7,6 +7,7 @@
 
 import React from 'react';
 import RecipeItem from '../../components/RecipeItem';
+import type { SearchMatchHint } from '../../components/RecipeItem';
 import {
   BlogPostProvider,
 } from '@docusaurus/plugin-content-blog/client';
@@ -15,13 +16,13 @@ import type { Props } from '@theme/BlogPostItems';
 
 type SearchProps = Props & {
   returnSearch?: string;
-  matchLabels?: Record<string, string>;
+  matchHints?: Record<string, SearchMatchHint | null>;
 };
 
 export default function BlogPostItems({
   items,
   returnSearch = '',
-  matchLabels = {},
+  matchHints = {},
 }: SearchProps): JSX.Element {
   return (
     <>
@@ -31,7 +32,7 @@ export default function BlogPostItems({
           content={BlogPostContent}>
           <RecipeItem
             returnSearch={returnSearch}
-            matchLabel={matchLabels[BlogPostContent.metadata.permalink]}
+            matchHint={matchHints[BlogPostContent.metadata.permalink]}
           />
         </BlogPostProvider>
       ))}

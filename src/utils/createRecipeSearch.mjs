@@ -95,17 +95,32 @@ function rankRecipe(record, queryWords, normalizedQuery, allowTypos) {
     - (record.normalizedTitle === normalizedQuery ? 10 : 0)
     - (titleMatchesAll ? 1 : 0);
 
-  const ingredientMatch = matches.find(match => match.type === 'ingredient');
-  const tagMatch = matches.find(match => match.type === 'tag');
-  let matchLabel = 'Coincide con el título';
-  if (ingredientMatch) {
-    matchLabel = queryWords.length > 1
-      ? 'Ingredientes: ' + queryWords.join(', ')
-      : 'Ingrediente: ' + record.ingredientLines[ingredientMatch.index];
-  } else if (tagMatch) {
-    matchLabel = 'Etiqueta: ' + record.tags[tagMatch.index];
+  // The title already explains a title match. Add a compact hint only when
+  // another field provides the useful explanation.
+  let matchHint = null;
+  if (!titleMatchesAll) {
+    const ingredientMatches = matches.filter(match => match.type === 'ingredient');
+    const tagMatch = matches.find(match => match.type === 'tag');
+    if (ingredientMatches.length) {
+      const matchedLines = [...new Set(ingredientMatches.map(match =>
+        record.ingredientLines[match.index],
+      ))];
+      matchHint = {
+        kind: 'ingredient',
+        label: matches.flatMap((match, index) =>
+          match.type === 'ingredient' ? [queryWords[index]] : [],
+        ).join(' · '),
+        description: 'Coincide en ingredientes: ' + matchedLines.join('; '),
+      };
+    } else if (tagMatch) {
+      matchHint = {
+        kind: 'tag',
+        label: record.tags[tagMatch.index],
+        description: 'Coincide con la etiqueta ' + record.tags[tagMatch.index],
+      };
+    }
   }
-  return { item: { recipe: record.recipe }, score, matchLabel };
+  return { item: { recipe: record.recipe }, score, matchHint };
 }
 
 export function createRecipeSearch(items, ingredientIndex) {
@@ -131,7 +146,7 @@ export function createRecipeSearch(items, ingredientIndex) {
         .map(record => ({
           item: { recipe: record.recipe },
           score: 0,
-          matchLabel: 'Indicado expresamente en el título',
+          matchHint: null,
         }));
     }
     const terms = words(query).filter(term => !ignoredWords.has(term));
@@ -153,7 +168,7 @@ export function createRecipeSearch(items, ingredientIndex) {
 export function listRecipeResults(items, search, query = '', selectedTag = '') {
   let results = query
     ? search.search(query)
-    : items.map(recipe => ({ item: { recipe }, matchLabel: '' }));
+    : items.map(recipe => ({ item: { recipe }, matchHint: null }));
 
   if (selectedTag) {
     results = results.filter(({ item }) =>

@@ -16,7 +16,7 @@
     "cap:android": "cap open android",
     "android:build": "yarn build && cap sync android",
     "android:run": "cap run android",
-    "test": "node --test scripts/generate-recipe-ingredient-index.test.mjs"
+    "test": "node --test scripts/*.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.1.0",

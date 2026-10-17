@@ -7,7 +7,6 @@
 
 import React from 'react';
 import clsx from 'clsx';
-import Fuse from 'fuse.js';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {
@@ -22,14 +21,7 @@ import BlogPostItems from '@theme/BlogPostItems';
 
 import styles from './styles.module.css';
 import recipeIngredients from '../../generated/recipe-ingredients.json';
-
-const normalizeRecipeTitle = (title: string): string =>
-  title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es')
-    .replace(/[^a-z0-9]+/g, ' ').trim();
-
-const indexedIngredientsByTitle = new Map(
-  recipeIngredients.map(({ title, ingredients }) => [normalizeRecipeTitle(title), ingredients]),
-);
+import { createRecipeSearch } from '../../utils/createRecipeSearch.mjs';
 
 
 function BlogListPageMetadata(props: Props): JSX.Element {
@@ -64,22 +56,7 @@ function BlogListPageContent(props: Props): JSX.Element {
     return Array.from(tagSet).sort();
   }, [items]);
 
-  const searchableItems = React.useMemo(() => items.map(item => ({
-    recipe: item,
-    title: item.content.metadata.title,
-    ingredients: indexedIngredientsByTitle.get(
-      normalizeRecipeTitle(item.content.metadata.title),
-    ) ?? '',
-  })), [items]);
-
-  const fuse = React.useMemo(() => new Fuse(searchableItems, {
-    ignoreDiacritics: true,
-    threshold: 0.4,
-    keys: [
-      { name: 'title', weight: 0.7 },
-      { name: 'ingredients', weight: 0.3 },
-    ],
-  }), [searchableItems]);
+  const fuse = React.useMemo(() => createRecipeSearch(items, recipeIngredients), [items]);
 
   const filteredItems = React.useMemo(() => {
     let result = searchTerm

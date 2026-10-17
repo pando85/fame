@@ -29,3 +29,17 @@
   font-size: 1.5rem;
   color: white;
 }
+
+.matchReason {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  background: rgb(0 0 0 / 70%);
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { useLocation } from '@docusaurus/router';
 import clsx from 'clsx';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -21,7 +22,8 @@ import BlogPostItems from '@theme/BlogPostItems';
 
 import styles from './styles.module.css';
 import recipeIngredients from '../../generated/recipe-ingredients.json';
-import { createRecipeSearch } from '../../utils/createRecipeSearch.mjs';
+import { createRecipeSearch, isUnsupportedExclusion, listRecipeResults } from '../../utils/createRecipeSearch.mjs';
+import { readSearchFilters, buildSearchUrl, serializeSearchFilters } from '../../utils/recipeSearchUrl.mjs';
 
 
 function BlogListPageMetadata(props: Props): JSX.Element {
@@ -42,8 +44,29 @@ function BlogListPageMetadata(props: Props): JSX.Element {
 
 function BlogListPageContent(props: Props): JSX.Element {
   const { items } = props;
+  const location = useLocation();
+  // Static Docusaurus HTML is rendered without query parameters. Restore them
+  // after hydration to avoid a different recipe list on server and client.
   const [searchTerm, setSearchTerm] = React.useState('');
   const [selectedTag, setSelectedTag] = React.useState<string | null>(null);
+  const [filtersRestored, setFiltersRestored] = React.useState(false);
+
+  React.useEffect(() => {
+    const filters = readSearchFilters(location.search);
+    setSearchTerm(filters.query);
+    setSelectedTag(filters.tag || null);
+    setFiltersRestored(true);
+  }, [location.search]);
+
+  // Do not overwrite an incoming query before it has been restored.
+  React.useEffect(() => {
+    if (!filtersRestored) return;
+    const url = buildSearchUrl(searchTerm, selectedTag ?? '');
+    if (window.location.pathname === '/' &&
+        window.location.pathname + window.location.search !== url) {
+      window.history.replaceState(window.history.state, '', url);
+    }
+  }, [filtersRestored, searchTerm, selectedTag]);
 
   const allTags = React.useMemo(() => {
     const tagSet = new Set<string>();
@@ -58,26 +81,16 @@ function BlogListPageContent(props: Props): JSX.Element {
 
   const fuse = React.useMemo(() => createRecipeSearch(items, recipeIngredients), [items]);
 
-  const filteredItems = React.useMemo(() => {
-    let result = searchTerm
-      ? fuse.search(searchTerm).map(({ item }) => item.recipe)
-      : [...items];
+  const filteredResults = React.useMemo(
+    () => listRecipeResults(items, fuse, searchTerm, selectedTag ?? ''),
+    [fuse, items, searchTerm, selectedTag],
+  );
 
-    if (selectedTag) {
-      result = result.filter(item => {
-        const tags = item.content.metadata.frontMatter.tags as string[] | undefined;
-        return tags?.includes(selectedTag);
-      });
-    }
-
-    if (!searchTerm) {
-      result.sort((a, b) =>
-        a.content.metadata.title.localeCompare(b.content.metadata.title, 'es')
-      );
-    }
-
-    return result;
-  }, [fuse, items, searchTerm, selectedTag]);
+  const filteredItems = filteredResults.map(({ item }) => item.recipe);
+  const matchLabels = Object.fromEntries(filteredResults.map(({ item, matchLabel }) =>
+    [item.recipe.content.metadata.permalink, matchLabel],
+  ));
+  const returnSearch = serializeSearchFilters(searchTerm, selectedTag ?? '');
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -94,6 +107,7 @@ function BlogListPageContent(props: Props): JSX.Element {
           <input
             type="text"
             id="searchInput"
+            aria-label="Buscar recetas por nombre, ingredientes o etiquetas"
             placeholder="Buscar recetas..."
             value={searchTerm}
             onChange={handleSearchChange}
@@ -138,11 +152,18 @@ function BlogListPageContent(props: Props): JSX.Element {
           </div>
         )}
       </div>
+      {(searchTerm || selectedTag) && (
+        <p role="status" aria-live="polite">
+          {isUnsupportedExclusion(searchTerm)
+            ? 'Para «sin …» solo mostramos recetas que lo indican en su título; revisa siempre los ingredientes si hay alergias o intolerancias.'
+            : `${filteredItems.length} ${filteredItems.length === 1 ? 'receta encontrada' : 'recetas encontradas'}`}
+        </p>
+      )}
       <div className={styles.container}>
         {filteredItems.length === 0 ? (
           <p role="status">No se encontraron recetas que coincidan con la búsqueda.</p>
         ) : (
-          <BlogPostItems items={filteredItems} />
+          <BlogPostItems items={filteredItems} returnSearch={returnSearch} matchLabels={matchLabels} />
         )}
       </div>
     </BlogLayout>

@@ -100,14 +100,46 @@ test('does not invent negative ingredient, dietary or cooking-time results', () 
   assert.deepEqual(titlesFor('30 minutos'), []);
 });
 
-test('explains matching ingredients, tags and explicit title exclusions', () => {
+test('title matches do not display redundant explanations', () => {
+  for (const query of ['arroz', 'pollo', 'pizz', 'sin tahini']) {
+    const results = search.search(query);
+    const titleMatches = {
+      arroz: 'Arroz meloso',
+      pollo: 'Pollo tikka masala',
+      pizz: 'Pizza',
+      'sin tahini': 'Hummus sin tahini',
+    };
+    const match = results.find(({ item }) =>
+      item.recipe.content.metadata.title === titleMatches[query]);
+    assert.equal(match?.matchHint, null);
+  }
+  assert.equal(listRecipeResults(recipes, search, '')[0].matchHint, null);
+});
+
+test('ingredient matches show short chips with detailed accessible descriptions', () => {
   const rice = search.search('pollo').find(({ item }) =>
     item.recipe.content.metadata.title === 'Arroz meloso');
-  assert.match(rice.matchLabel, /contramuslos de pollo/i);
+  assert.deepEqual(rice.matchHint, {
+    kind: 'ingredient',
+    label: 'pollo',
+    description: 'Coincide en ingredientes: 2 contramuslos de pollo',
+  });
 
+  const combined = search.search('pollo y arroz').find(({ item }) =>
+    item.recipe.content.metadata.title === 'Risotto');
+  assert.equal(combined.matchHint?.label, 'pollo · arroz');
+  assert.equal(combined.matchHint?.kind, 'ingredient');
+  assert.match(combined.matchHint.description, /Caldo de pollo/);
+  assert.match(combined.matchHint.description, /Arroz para risotto/);
+});
+
+test('tag matches show a short label and remain accessible', () => {
   const fish = search.search('pescado')[0];
-  assert.equal(fish.matchLabel, 'Etiqueta: pescado');
-  assert.equal(search.search('sin tahini')[0].matchLabel, 'Indicado expresamente en el título');
+  assert.deepEqual(fish.matchHint, {
+    kind: 'tag',
+    label: 'pescado',
+    description: 'Coincide con la etiqueta pescado',
+  });
 });
 
 test('retains query and tag through recipe navigation', () => {

@@ -1,4 +1,5 @@
 ---
+title: Albóndigas
 image: ./img/albondigas.jpg
 tags: [plato principal, carne]
 ---
@@ -8,8 +9,8 @@ tags: [plato principal, carne]
 - 1,5 kg de carne picada de ternera
 - 1 manojo de perejil
 - Harina de garbanzo (cantidad necesaria para rebozar)
-- Dientes de ajo (divididos en dos partes)
-- 3 cebollas grandes (divididas en dos partes)
+- Ajo al gusto (un tercio para la carne y el resto para el sofrito)
+- 3 cebollas grandes (un tercio para la carne y el resto para el sofrito)
 - 800 g de tomate triturado
 - Aceite de oliva virgen extra (para freír)
 - Sal al gusto

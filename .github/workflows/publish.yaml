@@ -37,6 +37,7 @@ jobs:
             [ $i -eq 3 ] && exit 1
             sleep 5
           done
+          npm test
           npm run build
   gh-release:
     if: github.event_name != 'pull_request'

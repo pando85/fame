@@ -21,6 +21,15 @@ import type { Props } from '@theme/BlogListPage';
 import BlogPostItems from '@theme/BlogPostItems';
 
 import styles from './styles.module.css';
+import recipeIngredients from '../../generated/recipe-ingredients.json';
+
+const normalizeRecipeTitle = (title: string): string =>
+  title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es')
+    .replace(/[^a-z0-9]+/g, ' ').trim();
+
+const indexedIngredientsByTitle = new Map(
+  recipeIngredients.map(({ title, ingredients }) => [normalizeRecipeTitle(title), ingredients]),
+);
 
 
 function BlogListPageMetadata(props: Props): JSX.Element {
@@ -55,18 +64,27 @@ function BlogListPageContent(props: Props): JSX.Element {
     return Array.from(tagSet).sort();
   }, [items]);
 
-  const fuseOptions = {
+  const searchableItems = React.useMemo(() => items.map(item => ({
+    recipe: item,
+    title: item.content.metadata.title,
+    ingredients: indexedIngredientsByTitle.get(
+      normalizeRecipeTitle(item.content.metadata.title),
+    ) ?? '',
+  })), [items]);
+
+  const fuse = React.useMemo(() => new Fuse(searchableItems, {
     ignoreDiacritics: true,
     threshold: 0.4,
     keys: [
-      'content.metadata.title',
+      { name: 'title', weight: 0.7 },
+      { name: 'ingredients', weight: 0.3 },
     ],
-  };
-
-  const fuse = React.useMemo(() => new Fuse(items, fuseOptions), [items]);
+  }), [searchableItems]);
 
   const filteredItems = React.useMemo(() => {
-    let result = items;
+    let result = searchTerm
+      ? fuse.search(searchTerm).map(({ item }) => item.recipe)
+      : [...items];
 
     if (selectedTag) {
       result = result.filter(item => {
@@ -75,19 +93,9 @@ function BlogListPageContent(props: Props): JSX.Element {
       });
     }
 
-    if (searchTerm) {
-      const searchResults = fuse.search(searchTerm).map(result => result.item);
-      if (selectedTag) {
-        const searchSet = new Set(searchResults);
-        result = result.filter(item => searchSet.has(item));
-      } else {
-        result = searchResults;
-      }
-    }
-
-    if (!searchTerm && !selectedTag) {
-      result = [...items].sort((a, b) =>
-        a.content.metadata.title.localeCompare(b.content.metadata.title)
+    if (!searchTerm) {
+      result.sort((a, b) =>
+        a.content.metadata.title.localeCompare(b.content.metadata.title, 'es')
       );
     }
 
@@ -154,11 +162,11 @@ function BlogListPageContent(props: Props): JSX.Element {
         )}
       </div>
       <div className={styles.container}>
-        <BlogPostItems
-          items={filteredItems.map(item => ({
-            ...item,
-          }))}
-        />
+        {filteredItems.length === 0 ? (
+          <p role="status">No se encontraron recetas que coincidan con la búsqueda.</p>
+        ) : (
+          <BlogPostItems items={filteredItems} />
+        )}
       </div>
     </BlogLayout>
   );

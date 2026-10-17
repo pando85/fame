@@ -4,6 +4,8 @@ tags: [desayuno]
 author: escabechada
 ---
 
+Con estas cantidades salen aproximadamente 3–4 crepes medianos, según el tamaño de la sartén.
+
 ## Ingredientes
 
 - 15g de azucar

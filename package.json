@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build && node scripts/check-pwa-build.mjs",
+    "start": "node scripts/generate-recipe-ingredient-index.mjs && docusaurus start",
+    "build": "node scripts/generate-recipe-ingredient-index.mjs && docusaurus build && node scripts/check-pwa-build.mjs",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "node scripts/generate-recipe-ingredient-index.mjs && docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -15,7 +15,8 @@
     "cap:sync": "cap sync",
     "cap:android": "cap open android",
     "android:build": "yarn build && cap sync android",
-    "android:run": "cap run android"
+    "android:run": "cap run android",
+    "test": "node --test scripts/generate-recipe-ingredient-index.test.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^8.1.0",

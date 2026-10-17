@@ -162,15 +162,13 @@ function BlogListPageContent(props: Props): JSX.Element {
       {(searchTerm || selectedTag) && (
         <p role="status" aria-live="polite">
           {isUnsupportedExclusion(searchTerm)
-            ? 'Las búsquedas «sin …» no están disponibles: una lista de ingredientes no garantiza la ausencia de alérgenos.'
+            ? 'Para «sin …» solo mostramos recetas que lo indican en su título; revisa siempre los ingredientes si hay alergias o intolerancias.'
             : `${filteredItems.length} ${filteredItems.length === 1 ? 'receta encontrada' : 'recetas encontradas'}`}
         </p>
       )}
       <div className={styles.container}>
         {filteredItems.length === 0 ? (
-          !isUnsupportedExclusion(searchTerm) && (
-            <p role="status">No se encontraron recetas que coincidan con la búsqueda.</p>
-          )
+          <p role="status">No se encontraron recetas que coincidan con la búsqueda.</p>
         ) : (
           <BlogPostItems items={filteredItems} returnSearch={returnSearch} matchLabels={matchLabels} />
         )}

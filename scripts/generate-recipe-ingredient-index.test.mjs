@@ -39,11 +39,11 @@ test('generates a deterministic browser-importable index from Markdown', () => {
   }
 });
 
-test('missing ingredients fail fast instead of silently dropping recipes', () => {
+test('non-recipe guides without ingredients remain title-searchable', () => {
   const root = mkdtempSync(join(tmpdir(), 'fame-recipes-'));
   try {
-    writeFileSync(join(root, 'Sin ingredientes.md'), '## Elaboración\n1. Cocinar\n');
-    assert.throws(() => buildRecipeIngredientIndex(root), /Missing ingredient section/);
+    writeFileSync(join(root, 'Sous vide.md'), '## Carne\n### Pollo\nTemperatura: 65 C\n');
+    assert.deepEqual(buildRecipeIngredientIndex(root), [{ title: 'Sous vide', ingredients: '' }]);
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

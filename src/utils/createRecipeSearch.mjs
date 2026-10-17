@@ -123,8 +123,17 @@ export function createRecipeSearch(items, ingredientIndex) {
   });
 
   const search = (query) => {
-    if (isUnsupportedExclusion(query)) return [];
     const normalizedQuery = normalizeText(query);
+    if (isUnsupportedExclusion(query)) {
+      // A recipe explicitly titled "Hummus sin tahini" may match "sin tahini".
+      // Never infer ingredient exclusions from an incomplete recipe list.
+      return records.filter(record => record.normalizedTitle.includes(normalizedQuery))
+        .map(record => ({
+          item: { recipe: record.recipe },
+          score: 0,
+          matchLabel: 'Indicado expresamente en el título',
+        }));
+    }
     const terms = words(query).filter(term => !ignoredWords.has(term));
     if (!terms.length) return [];
 

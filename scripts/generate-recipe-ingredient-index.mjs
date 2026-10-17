@@ -30,7 +30,7 @@ export function buildRecipeIngredientIndex(recipesDirectory) {
     .map(filename => {
       const source = readFileSync(join(recipesDirectory, filename), 'utf8');
       const ingredients = extractIngredients(source);
-      if (!ingredients) throw new Error('Missing ingredient section in ' + filename);
+      // Guides such as Sous vide have no ingredient section and remain title-searchable.
       return { title: getRecipeTitle(filename, source), ingredients };
     });
 }

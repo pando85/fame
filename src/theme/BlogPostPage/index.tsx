@@ -16,16 +16,19 @@ import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import type { Props } from '@theme/BlogPostPage';
 import Link from '@docusaurus/Link';
+import { useLocation } from '@docusaurus/router';
+import { getReturnUrl } from '../../utils/recipeSearchUrl.mjs';
 
 function BlogPostPageContent({
   children,
 }: {
   children: ReactNode;
 }): JSX.Element {
+  const location = useLocation();
   return (
     <BlogLayout>
       <Link
-        to="/"
+        to={getReturnUrl(location.search)}
         className="margin-bottom--md"
         style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
       >

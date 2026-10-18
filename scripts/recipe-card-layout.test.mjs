@@ -22,6 +22,15 @@ test('recipe cards preserve dimensions regardless of the search indicator', () =
   assert.match(card, /position:\s*relative\s*;/);
   assert.match(card, /overflow:\s*hidden\s*;/);
   assert.match(rule('cardTitle'), /margin:\s*0\s*;/);
+  // Never reintroduce the previous one-line ellipsis: long names must wrap.
+  const title = rule('cardTitle');
+  assert.match(title, /white-space:\s*normal\s*;/);
+  assert.match(title, /overflow-wrap:\s*anywhere\s*;/);
+  assert.match(title, /line-height:\s*1\.25\s*;/);
+  assert.doesNotMatch(title, /text-overflow:\s*ellipsis\s*;/);
+  assert.doesNotMatch(component, /text--truncate/);
+  assert.doesNotMatch(component, /padding--xl/);
+  assert.match(card, /padding:\s*0\.75rem\s+1rem\s*;/);
 
   // The indicator is positioned over the image, not in document flow.
   const badge = rule('matchHint');

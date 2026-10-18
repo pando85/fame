@@ -45,6 +45,7 @@ export default function RecipeItem({
           <span
             className={styles.matchHint}
             title={matchHint.description}
+            role="img"
             aria-label={matchHint.description}>
             {matchHint.kind === 'ingredient' ? (
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"
@@ -61,7 +62,6 @@ export default function RecipeItem({
                 <circle cx="7" cy="7" r="1.5" />
               </svg>
             )}
-            <span className={styles.matchHintText}>{matchHint.label}</span>
           </span>
         )}
       </Link>

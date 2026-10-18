@@ -34,11 +34,11 @@ export default function RecipeItem({
   return (
     <div className={clsx(styles.container, 'col col--4', className)}>
       <Link
-        className={clsx('card padding--xl', styles.cardContainer)}
+        className={clsx('card', styles.cardContainer)}
         href={createRecipeLink(permalink, returnSearch)}
         style={{ backgroundImage: `url(${image})` }}>
 
-        <h1 className={clsx('text--truncate', styles.cardTitle)} title={title}>
+        <h1 className={styles.cardTitle} title={title}>
           {title}
         </h1>
         {matchHint && (

@@ -11,6 +11,8 @@
   position: relative;
   width: 100%;
   aspect-ratio: 2 / 1;
+  /* Compact padding leaves room for multi-line titles in narrow columns. */
+  padding: 0.75rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,9 +40,20 @@
 .cardTitle {
   max-width: 100%;
   margin: 0;
-  font-size: 1.5rem;
+  /* The complete recipe name must remain visible, including on narrow cards. */
+  font-size: clamp(0.95rem, 2vw, 1.5rem);
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
   text-align: center;
   color: white;
+}
+
+@media (max-width: 600px) {
+  .cardTitle {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
 }
 
 .matchHint {

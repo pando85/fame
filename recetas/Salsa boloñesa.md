@@ -1,4 +1,5 @@
 ---
+image: ./img/salsa_bolonesa.avif
 tags: [salsa, carne, pasta]
 ---
 
